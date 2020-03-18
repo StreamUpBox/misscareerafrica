@@ -1,5 +1,5 @@
 <header id="fh5co-header-section">
-                    <div class="container">
+                    <div class="">
                         <div class="nav-header">
                             <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
                             <span id="fh5co-logo"><a href="/"><img src="images/logo.png" class="img-rounded"
