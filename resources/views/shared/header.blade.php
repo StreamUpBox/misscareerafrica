@@ -1,5 +1,5 @@
 <header id="fh5co-header-section">
-                    <div class="">
+                    <div class="mr-5 ml-5">
                         <div class="nav-header">
                             <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
                             <span id="fh5co-logo"><a href="/"><img src="images/logo.png" class="img-rounded"
@@ -14,7 +14,7 @@
                                             NOW</a></li>
                                     <li><a class="can-voting" style="color: white;" href="selected-candidates">VOTE PRESELECTED CANDIDATES</a></li>
 
-                                    <li><a class="" style="color: white;" href="past-candidates">PAST CANDIDATES</a></li>
+                                    <li><a class="" style="color: white;" href="past-candidates">VIEW PAST CANDIDATES</a></li>
 
 
                                     <li><a style="color: white;" href="#">ORGANIZATION</a>
