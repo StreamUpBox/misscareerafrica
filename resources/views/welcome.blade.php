@@ -154,6 +154,15 @@ background-position: 50% 20%;margin-top: -15px;background-image: url(images/tab_
                                     <a class="title_link" href="https://www.microlendaustralia.com.au">
                                         <img src="images/microland.png" class="img-rounded" style="width: 200px">
                                     </a>
+                                    <a class="title_link" href="#">
+                                        <img src="images/a.jpeg" class="img-rounded" style="width: 200px;height: 100px">
+                                    </a>
+                                    <a class="title_link" href="#">
+                                        <img src="images/b.jpeg" class="img-rounded" style="width: 200px;height: 100px">
+                                    </a>
+                                    <a class="title_link" href="#">
+                                        <img src="images/c.jpeg" class="img-rounded" style="width: 200px;height: 100px">
+                                    </a>
                                 </div>
 
                             </div>
