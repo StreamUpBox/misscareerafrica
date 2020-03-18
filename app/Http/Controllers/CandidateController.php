@@ -222,8 +222,8 @@ class CandidateController extends AppBaseController
 
     public function pastCandidates(){
         $candidates =[];
-      
-            foreach(Candidate::where('is_selected',1)->orderBy('votes', 'DESC')->get() as $cand){
+        $session =    Session::where('is_voting_open',1)->first();
+            foreach(Candidate::where('is_selected',1)->where('session_id','!=',$session->id)->orderBy('votes', 'DESC')->get() as $cand){
            $v=candiateVoter::where('candidate_id', $cand->id)->count();
             $cand->votes=$cand->votes+$v;
             $candidates[]=$cand;
