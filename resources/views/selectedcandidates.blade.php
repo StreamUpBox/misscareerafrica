@@ -11,7 +11,7 @@
 
             </div>
             <!-- end:fh5co-header -->
-            <div class="fh5co-parallax-1" style="background-image: url(images/vots.jpeg);"
+            <div class="fh5co-parallax-1" style="background-image: url(images/past-candidate.jpeg);"
                 data-stellar-background-ratio="0.5">
                 <div class="overlay"></div>
                 <div class="container">
