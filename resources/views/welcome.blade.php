@@ -163,6 +163,9 @@ background-position: 50% 20%;margin-top: -15px;background-image: url(images/tab_
                                     <a class="title_link" href="#">
                                         <img src="images/c.jpeg" class="img-rounded" style="width: 200px;height: 100px">
                                     </a>
+                                    <a class="title_link" href="#">
+                                        <img src="images/d.jpeg" class="img-rounded" style="width: 200px;height: 100px">
+                                    </a>
                                 </div>
 
                             </div>
