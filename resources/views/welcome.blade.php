@@ -155,21 +155,21 @@ background-position: 50% 20%;margin-top: -15px;background-image: url(images/tab_
                                         <img src="images/microland.png" class="img-rounded" style="width: 200px">
                                     </a>
                                     <a class="title_link" href="#">
-                                        <img src="images/a.jpeg" class="img-rounded" style="width: 200px;height: 100px">
+                                        <img src="images/a.jpeg" class="img-rounded" style="width: 220px;height: 100px">
                                     </a>
                                     <a class="title_link" href="#">
-                                        <img src="images/b.jpeg" class="img-rounded" style="width: 200px;height: 100px">
+                                        <img src="images/b.jpeg" class="img-rounded" style="width: 220px;height: 100px">
                                     </a>
                                     <a class="title_link" href="#">
-                                        <img src="images/c.jpeg" class="img-rounded" style="width: 200px;height: 100px">
+                                        <img src="images/c.jpeg" class="img-rounded" style="width: 220px;height: 100px">
                                     </a>
                                     <a class="title_link" href="#">
-                                        <img src="images/d.jpeg" class="img-rounded" style="width: 200px;height: 100px">
+                                        <img src="images/d.jpeg" class="img-rounded" style="width: 220px;height: 100px">
                                     </a>
                                 </div>
 
                             </div>
-                            <p class="text-center">
+                            <p class="text-center mt-4">
                                 <a href="sponsor" class="btn btn-primary btn-lg">Become a Sponsor/Partner</a>
                             </p>
 
