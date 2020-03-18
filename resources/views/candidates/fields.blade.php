@@ -154,13 +154,13 @@
 </div>
 
 <!-- 'bootstrap / Toggle Switch Is Selected Field' -->
-<!-- <div class="form-group col-sm-6">
+<div class="form-group col-sm-6">
     {!! Form::label('is_selected', 'Is Selected:') !!}
     <label class="checkbox-inline">
         {!! Form::hidden('is_selected', 0) !!}
         {!! Form::checkbox('is_selected', 1, null,  ['data-toggle' => 'toggle']) !!}
     </label>
-</div> -->
+</div>
 
 
 <!-- Submit Field -->
