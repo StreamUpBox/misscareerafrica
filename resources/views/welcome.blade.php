@@ -148,7 +148,7 @@ background-position: 50% 20%;margin-top: -15px;background-image: url(images/tab_
                         <p class="text-center mt-3" style="color:white!important"><b style="color:white!important">Meet
                                 Our Sponsors and partners</b></h3>
 
-                            <div class="row m-5">
+                            <div class="row">
 
                                 <div class="col-md-12 text-center">
                                     <a class="title_link" href="https://www.microlendaustralia.com.au">
