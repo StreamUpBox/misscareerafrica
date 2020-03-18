@@ -14,7 +14,7 @@
                                             NOW</a></li>
                                     <li><a class="can-voting" style="color: white;" href="selected-candidates">VOTE PRESELECTED CANDIDATES</a></li>
 
-                                    <li><a class="" style="color: white;" href="past-candidates">VIEW PAST CANDIDATES</a></li>
+                                    <li><a class="" style="color: white;" href="past-candidates">PAST CANDIDATES</a></li>
 
 
                                     <li><a style="color: white;" href="#">ORGANIZATION</a>
@@ -30,7 +30,7 @@
                                             <li><a href="sponsor">Become a sponsor</a></li>
                                         </ul>
                                     </li>
-                                    <li><a style="color: white;" href="#">MORE....</a>
+                                    <li><a style="color: white;" href="#">MORE..</a>
                                         <ul class="fh5co-sub-menu">
                                         <li><a href="videos">VIDEO AND LINKS</a></li>
                                             <li><a href="scholarship">MCA SCHOLARSHIP</a></li>
