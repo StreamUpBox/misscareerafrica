@@ -42,16 +42,19 @@
                             </p>
 
                             <p style="color: #252525!important;">
-                                Each year, Close to 15000 of young women across five regions of Africa compete at the
-                                local, national, regional and continental levels. Each regional competition is hosted in
-                                particular member country and finally, Before the Continental grand finale, five cities
-                                in five countries have hosted regional grand finale(s). Our local and regional teams
-                                full of volunteers from universities, working class youth and other strategic partners
-                                with influence in their respective careers across the Africa together with our
-                                headquarters team, contribute almost hundreds of hours every day to ensure our
-                                participants have a life changing experience, Proofreading their career and business
-                                projects, placing them to the right internships, getting them scholarships, creating a
-                                mentorship network for them to learn new skills and making new strategic networks.
+                            Each year, Close to 15000 young career women & Aspiring Entrepreneurs across five regions of Africa compete at regional and continental 
+                            levels and competition first goes online through applications with  high 
+                            level of scrutiny in selecting and due diligence. Each regional competition 
+                            goes across all member countries inclusively and finally, Before the Continental grand finale,
+                             Most competitive Africa’s young Career women and serial entrepreneurs across the continent, 
+                             will have had an opportunity to show case their business modelings and projects in their
+                              Regional selection respectively and the most deserving will attend the continental Grand Finale.
+                               Our local and regional teams full of volunteers from universities, working class youth and other 
+                               strategic partners with influence in their respective careers across the Africa together
+                                with our headquarters team and others from all member countries on a regional level ,
+                                 contribute almost hundreds of hours every day to ensure our participants have a life changing experience,
+                                  Proofreading their career and business projects, placing them to the right internships, getting them scholarships opportunities ,
+                                   creating a mentorship network for them to learn new skills and making new strategic networks.
                             </p>
 
                             <p style="color: #252525!important;">
