@@ -201,29 +201,41 @@ class CandidateController extends AppBaseController
 
         return view('candidates.show')->with('candidate', $candidate);
     }
+
+    function sortDataDesc($data,$sortedKey){
+        $sortedKeyArray = array();
+        foreach ($data as $key => $row)
+        {
+            $sortedKeyArray[$key] = $row[$sortedKey];
+        }
+        return array_multisort($sortedKeyArray, SORT_DESC, $data);
+    }
 //
 
     public function listSelectedCandidates(){
         $candidates =[];
         
-
         $session =    Session::where('is_voting_open',1)->first();
         if($session){
-            foreach(Candidate::where('is_selected',1)->where('session_id',$session->id)->orderBy('votes', 'DESC')->get() as $cand){
+            
+            foreach(Candidate::where('is_selected',1)
+            ->where('session_id',$session->id)
+            ->orderBy('votes', 'DESC')->get() as $cand){
            $v=candiateVoter::where('candidate_id', $cand->id)->count();
             $cand->votes=$cand->votes+$v;
             $candidates[]=$cand;
             }
         }
 
-
-        return $this->sendResponse(count($candidates) > 0?$candidates:[], 'List Selected Candidates');
+        return $this->sendResponse(count($candidates) > 0?$this->sortDataDesc($candidates,'votes'):[], 'List Selected Candidates');
     }
 
     public function pastCandidates(){
         $candidates =[];
         $session =    Session::where('is_voting_open',1)->first();
-            foreach(Candidate::where('is_selected',1)->where('session_id','!=',$session->id)->orderBy('votes', 'DESC')->get() as $cand){
+            foreach(Candidate::where('is_selected',1)
+            ->where('session_id','!=',$session->id)
+            ->orderBy('votes', 'DESC')->get() as $cand){
            $v=candiateVoter::where('candidate_id', $cand->id)->count();
             $cand->votes=$cand->votes+$v;
             $candidates[]=$cand;

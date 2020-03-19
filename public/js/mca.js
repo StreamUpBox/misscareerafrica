@@ -25,7 +25,7 @@ function loadCurrentSession(){
 
                 const data=response.data;
                 if(data.is_current_applying || data.is_voting_open){
-                    var candidate=data.is_voting_open?' <a href="https://theeventx.com/view-event/30" class="btn btn-info"> Get Ticket </a><a href="/selected-candidates" style="color:white!important" class="btn btn-success mr-1 text-white can-voting">VOTE PRESELECTED CANDIDATES</a>':'';
+                    var candidate=data.is_voting_open?' <a href="https://www.theeventx.com/view-event/44" class="btn btn-info"> Get Ticket </a><a href="/selected-candidates" style="color:white!important" class="btn btn-success mr-1 text-white can-voting">VOTE PRESELECTED CANDIDATES</a>':'';
                     var apply=!data.is_voting_open?'<a href="/candidate-application" class="btn btn-primary mr-5">APPLY NOW!</a>':'';
                     row=` <div class="card">
                     <img class="card-img"  style="min-height:350px;max-height:700px" src="images/${data.image}" alt="${data.title}">
@@ -119,7 +119,7 @@ function loadSelectedCandidates(){
                                 </button>
                                 </div>
                                 <div class="col-12">
-                                <a href="https://theeventx.com/view-event/30" class="btn btn-success btn-block btn-sm">
+                                <a href="https://www.theeventx.com/view-event/44" class="btn btn-success btn-block btn-sm">
                                 Get Ticket
                                 </a>
                                 </div>
@@ -172,7 +172,7 @@ if(!localStorage.getItem('xosdw9433423zasie')){
                 loadSelectedCandidates();
                 localStorage.setItem('xosdw9433423zasie','xosdw9433423zasie');
                 alert('Thank you!');
-                window.location.href="https://theeventx.com/view-event/30";
+                window.location.href="https://www.theeventx.com/view-event/44";
             }
 
             },error:function(error)
@@ -182,7 +182,7 @@ if(!localStorage.getItem('xosdw9433423zasie')){
     });
 }else{
     alert('you have already voted. Thank you!');
-    window.location.href="https://theeventx.com/view-event/30";
+    window.location.href="https://www.theeventx.com/view-event/44";
 }
 
 }
