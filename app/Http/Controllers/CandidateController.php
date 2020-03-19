@@ -227,7 +227,7 @@ class CandidateController extends AppBaseController
             }
         }
 
-        return $this->sendResponse(count($candidates) > 0?$this->sortDataDesc($candidates,'votes'):[], 'List Selected Candidates');
+        return $this->sendResponse(count($candidates) > 0?$candidates:[], 'List Selected Candidates');
     }
 
     public function pastCandidates(){
