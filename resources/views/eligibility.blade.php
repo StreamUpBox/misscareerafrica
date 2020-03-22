@@ -35,7 +35,7 @@
                         -Young female professionals<br />
                         -Entrepreneurs High School graduates, University Students and working class(Under 24
                         years).<br />
-                        -Western Africa and<br />
+                        -Southern Africa and<br />
                         -In a range of 18-24 Years
                     </p>
                     <p>
@@ -53,8 +53,8 @@
                         will be sent to you.
                         <br> -->
                         <a href="#">Application timeline:</a><br>
-                        Application open: Monday 23rd Dec,2019<br>
-                        Deadline: Sunday, 23rd Feb,2020.(11:59) PM.
+                        Application open: Sunday 22nd Mar,2020<br>
+                        Deadline: Starday, 18th Apr,2020.(11:59) PM.
                     </p>
                 </div>
             </div>

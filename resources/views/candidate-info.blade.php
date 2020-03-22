@@ -153,7 +153,7 @@ Facebook: 		https://www.facebook.com/yegobox
                                 <a href="https://twitter.com/Misscareerafric"><i
                                         class="icon-twitter-with-circle"></i></a>
                                 <!-- <a href="#"><i class="icon-facebook-with-circle"></i></a> -->
-                                <a href="https://www.instagram.com/miss_career_africa19/"><i
+                                <a href="https://www.instagram.com/miss_career_africa20/"><i
                                         class="icon-instagram-with-circle"></i></a>
                                 <!-- <a href="#"><i class="icon-linkedin-with-circle"></i></a> -->
                             </li>

@@ -10,9 +10,10 @@
 		<div class="col-sm-6 float-right">
 			<ul class="social-icons float-right">
 				<li>
+
 					<a href="https://twitter.com/Misscareerafric"><i class="icon-twitter-with-circle"></i></a>
-					<!-- <a href="#"><i class="icon-facebook-with-circle"></i></a> -->
-					<a href="https://www.instagram.com/miss_career_africa19/"><i class="icon-instagram-with-circle"></i></a>
+					<a href="#"><i class="icon-facebook-with-circle"></i></a>
+					<a href="https://www.instagram.com/miss_career_africa20/"><i class="icon-instagram-with-circle"></i></a>
 					<!-- <a href="#"><i class="icon-linkedin-with-circle"></i></a> -->
 				</li>
 			</ul>
@@ -58,7 +59,7 @@
 			</div>
 			<div class="row mt-5">
 				<div class="mx-auto col-6 text-center">
-					<p> Copyright &copy; 2019 Miss Career Africa.</p>
+					<p> Copyright &copy; 2020 Miss Career Africa.</p>
 
 				</div>
 			</div>
