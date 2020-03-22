@@ -151,19 +151,19 @@
                             <div class="row">
 
                                 <div class="col-md-12">
-                                    <a class="title_link" href="https://www.microlendaustralia.com.au">
+                                    <a class="title_link" href="https://www.microlendaustralia.com.au" target="_blank">
                                         <img src="images/microland.png" class="img-rounded" style="width: 200px">
                                     </a>
-                                    <a class="title_link" href="https://twitter.com/alltrustconsult?lang=en">
+                                    <a class="title_link" href="https://twitter.com/alltrustconsult?lang=en" target="_blank">
                                         <img src="images/a.png" class="img-rounded" style="width: 200px;">
                                     </a>
-                                    <a class="title_link" href="https://theeventx.com/">
+                                    <a class="title_link" href="https://theeventx.com/" target="_blank">
                                         <img src="images/b.png" class="img-rounded" style="width: 200px;">
                                     </a>
-                                    <a class="title_link" href="http://rwandainspirer.com/2018/04/30/high-school-students-best-business-ideas-awarded-during-yes-conference-2/">
+                                    <a class="title_link" href="#">
                                         <img src="images/c.png" class="img-rounded" style="width: 200px;">
                                     </a>
-                                    <a class="title_link" href="https://yegobox.com/">
+                                    <a class="title_link" href="https://yegobox.com/" target="_blank">
                                         <img src="images/d.png" class="img-rounded" style="width: 200px;">
                                     </a>
                                 </div>
