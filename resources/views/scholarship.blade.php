@@ -67,19 +67,19 @@
                                     Their education results, extracurricular achievements, leadership traits and level
                                     of their character and personal values determine their chance to win this most
                                     competitive Africa’s scholarships exclusively for young women leaders in their
-                                    respective communities. Those various items put together help them earn scholarships
+                                    respective communities. <br /><br />Those various items put together help them earn scholarships
                                     to study abroad and in other various regional universities, and equips them to kick
                                     start their careers back in their respective African communities.<br /><br /> Every couple of
                                     years, Miss Career Africa Scholarship Program will be helping provide over 30
                                     scholarships to most deserving- talented girls from the Miss Career Africa-Network
                                     across continent. The organization through strategic education partners, Will work
                                     hard to offer stupendous number of scholarships equivalent of over $5 million to top
-                                    notch list of universities abroad and in Africa. For the first 12 months of the
+                                    notch list of universities abroad and in Africa. <br /> For the first 12 months of the
                                     program, Before the scholarship candidates are called #Scholars4Change and so, they
                                     immerse themselves in Miss Career Africa’s rigorous Career Guidance cohort dubbed
                                     #CareerSkiesProgram offered by All Trust Consult, Business Modeling Program offered
                                     by Australian Partner organization dubbed Microlend Australian and leadership
-                                    courses all offered at the ATC's Entrepreneurship Incubation Center. Scholars are
+                                    courses all offered at the ATC's Entrepreneurship Incubation Center. <br /> Scholars are
                                     required to make a full-time commitment to the Career Guidance and Entrepreneurship
                                     program without any guarantee they will be awarded a university scholarship. <br />In
                                     addition, they sign a written commitment that if they are awarded an international
@@ -87,7 +87,7 @@
                                     their university graduation. In addition to academic performance and English
                                     language skills, the selection process considers leadership potential,
                                     Entrepreneurial capabilities, people skills, spiritual depth/Character and the
-                                    student’s desire to make a difference in her country. The Winners of the Scholarship
+                                    student’s desire to make a difference in her country. <br /><br /> The Winners of the Scholarship
                                     are called #ScholarsOnMission. Those who fail to win scholarships in the end, They
                                     have access to Miss Career Fund which finances the most profitable business
                                     modelling(s)/ projects so as to enable start their own businesses as they try other
