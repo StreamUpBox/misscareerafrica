@@ -2,12 +2,12 @@
 loadCurrentSession();
 loadAllSession();
 loadSelectedCandidates();
-
+// $('.can-voting').hide(); 
+$('.apply').hide();
 function loadCurrentSession(){
     $('.apply').hide();
-    $('.can-voting').hide(); 
+  
     $('.loading-overlay').show();
-
     var htmls= $('#current_session');
     var row;
     $.ajaxSetup({
@@ -24,7 +24,7 @@ function loadCurrentSession(){
             if(response.success){
 
                 const data=response.data;
-                if(data.is_current_applying || data.is_voting_open){
+                if(data.is_current_applying){
                     var candidate=data.is_voting_open?' <a href="https://www.theeventx.com/view-event/44" class="btn btn-info"> Get Ticket </a><a href="/selected-candidates" style="color:white!important" class="btn btn-success mr-1 text-white can-voting">VOTE PRESELECTED CANDIDATES</a>':'';
                     var apply=!data.is_voting_open?'<a href="/candidate-application" class="btn btn-primary mr-5">APPLY NOW!</a>':'';
                     row=` <div class="card">
@@ -47,16 +47,10 @@ function loadCurrentSession(){
                     </div>
                 </div>
                     `;
-                    if(data.is_voting_open){
-                        $('.can-voting').show(); 
-                    }
-                    if(!data.is_voting_open){
-                        $('.apply').show();
-                    }
                    
+                    $('.apply').show(); 
 
                 }else{
-                    $('.can-voting').hide();
                     $('.apply').hide();
                 }
 
@@ -189,6 +183,7 @@ if(!localStorage.getItem('xosdw9433423zasie')){
 
 function loadAllSession(){
     $('.loading-overlay').show();
+    $('.can-voting').hide(); 
     var htmls= $('#all_session');
     var row='';
     $.ajaxSetup({
@@ -205,6 +200,14 @@ function loadAllSession(){
                 if(response.success && response.data.length > 0){
                     const data=response.data;
                 data.forEach(element => {
+                    var candidate='';
+                    if(element.is_voting_open){
+                        $('.can-voting').show(); 
+                     candidate=element.is_voting_open?' <a href="https://www.theeventx.com/view-event/44" class="btn btn-info"> Get Ticket </a><a href="/selected-candidates" style="color:white!important" class="btn btn-success mr-1 text-white can-voting">VOTE PRESELECTED CANDIDATES</a>':'';
+                    }else{
+                        // $('.can-voting').hide(); 
+                        candidate='';
+                    }
                 row+=`
                 <div class="col-md-6 mt-5">
                         <div class="card">
@@ -218,8 +221,9 @@ function loadAllSession(){
                                     <a class="title_link" href="#">
                                         <h2 class="wpb_heading wpb_singleimage_heading2 text-center">
 
-                                            <hr />
-                                            <div class="float-left"><h4 href="#" class="ml-5 mt-4 card-link text-info">${element.date}</h4></div>
+                                        <div class="float-left"><h4 href="#" class="ml-5 mt-4 card-link text-info">${element.date}</h4></div>
+                                        <div class="float-right">${candidate}</div>
+            
 
 
                                         </h2>

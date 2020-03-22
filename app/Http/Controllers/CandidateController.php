@@ -95,7 +95,7 @@ class CandidateController extends AppBaseController
     public function store(CreateCandidateRequest $request)
     {
         $input = $request->all();
-        $request['session_id']=Session::where('is_current_applying',1)->first();
+        $request['session_id']=Session::where('is_current_applying',1)->where('is_voting_open',0)->first();
         $candidate = $this->candidateRepository->create($input);
 
         Flash::success('Candidate saved successfully.');
@@ -141,7 +141,7 @@ class CandidateController extends AppBaseController
     {
         $input = $request->all();
 
-        $input['session_id']=Session::where('is_current_applying',1)->first()->id;
+        $input['session_id']=Session::where('is_current_applying',1)->where('is_voting_open',0)->first()->id;
         $input['is_selected']=0;
         $input['votes']=0;
 
@@ -150,7 +150,7 @@ class CandidateController extends AppBaseController
             $profile = env('APP_URL') . Storage::url($path);
             $input['profile']=$profile?$profile:'-';
           }else{
- $input['profile']='-';
+            $input['profile']='-';
 }
 
         $candidate = $this->candidateRepository->create($input);
@@ -215,10 +215,11 @@ class CandidateController extends AppBaseController
     public function listSelectedCandidates(){
         $candidates =[];
         
-        $session =    Session::where('is_voting_open',1)->first();
+        $session =    Session::where('is_voting_open',1)->where('is_current_applying',0)->first();
         if($session){
-            
-            foreach(Candidate::where('is_selected',1)
+
+    
+       foreach(Candidate::where('is_selected',1)
             ->where('session_id',$session->id)
             ->orderBy('votes', 'DESC')->get() as $cand){
            $v=candiateVoter::where('candidate_id', $cand->id)->count();
@@ -232,9 +233,10 @@ class CandidateController extends AppBaseController
 
     public function pastCandidates(){
         $candidates =[];
-        $session =    Session::where('is_voting_open',1)->first();
+        $sessions =  Session::where('is_voting_open',0)->where('is_current_applying',0)->pluck('id');
+        
             foreach(Candidate::where('is_selected',1)
-            ->where('session_id','!=',$session->id)
+            ->whereIn('session_id', $sessions)
             ->orderBy('votes', 'DESC')->get() as $cand){
            $v=candiateVoter::where('candidate_id', $cand->id)->count();
             $cand->votes=$cand->votes+$v;

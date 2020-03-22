@@ -90,7 +90,7 @@ class SessionController extends AppBaseController
     }
 
     public function currentSession(){
-        $session = Session::where('is_current_applying',1)->first();
+        $session = Session::where('is_current_applying',1)->where('is_voting_open',0)->first();
         return $this->sendResponse($session?$session->toArray():[], 'Session saved successfully');
     }
 
