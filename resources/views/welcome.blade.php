@@ -157,13 +157,13 @@
                                     <a class="title_link" href="#">
                                         <img src="images/a.png" class="img-rounded" style="width: 200px;">
                                     </a>
-                                    <a class="title_link" href="#">
+                                    <a class="title_link" href="https://theeventx.com/">
                                         <img src="images/b.png" class="img-rounded" style="width: 200px;">
                                     </a>
                                     <a class="title_link" href="#">
                                         <img src="images/c.png" class="img-rounded" style="width: 200px;">
                                     </a>
-                                    <a class="title_link" href="#">
+                                    <a class="title_link" href="https://yegobox.com/">
                                         <img src="images/d.png" class="img-rounded" style="width: 200px;">
                                     </a>
                                 </div>
