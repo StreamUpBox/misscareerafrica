@@ -154,13 +154,13 @@
                                     <a class="title_link" href="https://www.microlendaustralia.com.au">
                                         <img src="images/microland.png" class="img-rounded" style="width: 200px">
                                     </a>
-                                    <a class="title_link" href="#">
+                                    <a class="title_link" href="https://twitter.com/alltrustconsult?lang=en">
                                         <img src="images/a.png" class="img-rounded" style="width: 200px;">
                                     </a>
                                     <a class="title_link" href="https://theeventx.com/">
                                         <img src="images/b.png" class="img-rounded" style="width: 200px;">
                                     </a>
-                                    <a class="title_link" href="#">
+                                    <a class="title_link" href="http://rwandainspirer.com/2018/04/30/high-school-students-best-business-ideas-awarded-during-yes-conference-2/">
                                         <img src="images/c.png" class="img-rounded" style="width: 200px;">
                                     </a>
                                     <a class="title_link" href="https://yegobox.com/">
