@@ -110,37 +110,34 @@
 
                 <div class="row mt-5"
                     style="position: relative; left: 2px; margin-top:10px; margin-bottom:35px; box-sizing: border-box;">
-                    <a href="competition">
-                            <div class="col-md-4" style="background-repeat: no-repeat;
-                                background-size: cover;
-                                background-position: center center;background-image: url(images/competition.jpg);height:380px">
-                                <a class="title_link" href="competition">
-                                    <h2 class="wpb_heading wpb_singleimage_heading text-center">The Competition</h2>
-                                </a>
 
-                            </div>
-                    </a>
-                    <a  href="job">
-                    <div class="col-md-4" style="background-repeat: no-repeat;
-                        background-size: cover;
-                        background-position: center center;background-image: url(images/our-job.jpeg);height:380px">
+                    <div class="col-md-4" onclick="window.location.href='/competition'" style="cursor:pointer;background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center center;background-image: url(images/competition.jpg);height:380px">
+                        <a class="title_link" href="competition">
+                            <h2 class="wpb_heading wpb_singleimage_heading text-center">The Competition</h2>
+                        </a>
+
+                    </div>
+
+                    <div class="col-md-4" onclick="window.location.href='/competition'" style="cursor:pointer;background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center center;background-image: url(images/our-job.jpeg);height:380px">
                         <a class="title_link" href="job">
                             <h2 class="wpb_heading wpb_singleimage_heading text-center">The Job</h2>
                         </a>
 
                     </div>
-                    </a>
 
-                    <a href="mission">
-                    <div class="col-md-4" style="background-repeat: no-repeat;
-                        background-size: cover;
-                        background-position: center center;background-image: url(images/our-mission.jpeg);height:380px">
+
+                    <div class="col-md-4" onclick="window.location.href='/competition'" style="cursor:pointer;background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center center;background-image: url(images/our-mission.jpeg);height:380px">
                         <a class="title_link" href="mission">
                             <h2 class="wpb_heading wpb_singleimage_heading text-center">Our Mission</h2>
                         </a>
 
                     </div>
-                    </a>
 
                 </div>
 
