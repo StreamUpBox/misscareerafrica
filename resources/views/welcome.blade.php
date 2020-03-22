@@ -110,7 +110,7 @@
 
                 <div class="row mt-5"
                     style="position: relative; left: 2px; margin-top:10px; margin-bottom:35px; box-sizing: border-box;">
-                    <a class="title_link" href="competition">
+                    <a href="competition">
                             <div class="col-md-4" style="background-repeat: no-repeat;
                                 background-size: cover;
                                 background-position: center center;background-image: url(images/competition.jpg);height:380px">
@@ -120,7 +120,7 @@
 
                             </div>
                     </a>
-                    <a class="title_link" href="job">
+                    <a  href="job">
                     <div class="col-md-4" style="background-repeat: no-repeat;
                         background-size: cover;
                         background-position: center center;background-image: url(images/our-job.jpeg);height:380px">
@@ -131,7 +131,7 @@
                     </div>
                     </a>
 
-                    <a class="title_link" href="job">
+                    <a href="mission">
                     <div class="col-md-4" style="background-repeat: no-repeat;
                         background-size: cover;
                         background-position: center center;background-image: url(images/our-mission.jpeg);height:380px">
