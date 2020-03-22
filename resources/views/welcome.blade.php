@@ -150,11 +150,11 @@ background-position: 50% 20%;margin-top: -15px;background-image: url(images/tab_
 
                             <div class="row m-5">
 
-                                <div class="col-md-12 text-center">
+                                <div class="col-md-12">
                                     <a class="title_link" href="https://www.microlendaustralia.com.au">
                                         <img src="images/microland.png" class="img-rounded" style="width: 200px">
                                     </a>
-                                    <!-- <a class="title_link" href="#">
+                                    <a class="title_link" href="#">
                                         <img src="images/a.jpeg" class="img-rounded" style="width: 220px;height: 100px">
                                     </a>
                                     <a class="title_link" href="#">
@@ -164,8 +164,8 @@ background-position: 50% 20%;margin-top: -15px;background-image: url(images/tab_
                                         <img src="images/c.jpeg" class="img-rounded" style="width: 220px;height: 100px">
                                     </a>
                                     <a class="title_link" href="#">
-                                        <img src="images/d.jpeg" class="img-rounded" style="width: 220px;height: 100px">
-                                    </a> -->
+                                        <img src="images/d.png" class="img-rounded" style="width: 220px;height: 100px">
+                                    </a>
                                 </div>
 
                             </div>

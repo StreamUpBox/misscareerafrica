@@ -33,24 +33,25 @@
                         <br><a href="/candidate-application">APPLY HERE</a><br>
 
                         <b style="font-size:20px">Eligible candidate(s):</b><br />
-                        -Young female professionals
-                        -Entrepreneurs
-                        -High School graduates & University Students. -Working class(Under 24 years)
-                        -In a range of 18-24 Years
-                        -Speaking either English or French
-                        -Viable Business Plan or Idea
+                        -Young female professionals<br />
+                        -Entrepreneurs<br />
+                        -High School graduates & University Students.<br />
+                         -Working class(Under 24 years)<br />
+                        -In a range of 18-24 Years<br />
+                        -Speaking either English or French<br />
+                        -Viable Business Plan or Idea<br />
 
-                        Application Requirements:
-                        -Complete Online Application as required!
-                        -Incomplete Applications will not be accepted.
-                        What else is required?
-                        Online Voting & Boot Camp Tickets orientation is required and the information regarding
-                        that session will be given to you 3 weeks before the boot camp. Transportation Affairs: Note:
-                        Miss Career Africa Organization/The competition is not responsible of the candidate's transports
-                        to the country that is hosting both Boot camp and Grand Finale.
-                        Therefore, one should be optimistic to raise her own transport budget from friends, families,
-                        school and other interested organizations. One should cater for her dress-codes during the boot
-                        camp and Grand finale. Ps: The competition only provides accommodations, meals, airport pick-up
+                        Application Requirements:<br />
+                        -Complete Online Application as required!<br />
+                        -Incomplete Applications will not be accepted.<br />
+                        What else is required?<br />
+                        Online Voting & Boot Camp Tickets orientation is required and the information regarding<br />
+                        that session will be given to you 3 weeks before the boot camp. Transportation Affairs: Note:<br />
+                        Miss Career Africa Organization/The competition is not responsible of the candidate's transports<br />
+                        to the country that is hosting both Boot camp and Grand Finale.<br />
+                        Therefore, one should be optimistic to raise her own transport budget from friends, families,<br />
+                        school and other interested organizations. One should cater for her dress-codes during the boot<br />
+                        camp and Grand finale. Ps: The competition only provides accommodations, meals, airport pick-up<br />
                         and internal transports for those attending grand finale:)
                       
                     <p>
