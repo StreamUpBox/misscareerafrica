@@ -155,13 +155,13 @@ background-position: 50% 20%;margin-top: -15px;background-image: url(images/tab_
                                         <img src="images/microland.png" class="img-rounded" style="width: 200px">
                                     </a>
                                     <a class="title_link" href="#">
-                                        <img src="images/a.png" class="img-rounded" style="width: 220px;height: 100px">
+                                        <img src="images/a.png" class="img-rounded" style="width: 200px;height: 100px">
                                     </a>
                                     <a class="title_link" href="#">
-                                        <img src="images/b.png" class="img-rounded" style="width: 220px;height: 100px">
+                                        <img src="images/b.png" class="img-rounded" style="width: 200px;height: 100px">
                                     </a>
                                     <a class="title_link" href="#">
-                                        <img src="images/c.png" class="img-rounded" style="width: 220px;height: 100px">
+                                        <img src="images/c.png" class="img-rounded" style="width: 200px;height: 100px">
                                     </a>
                                     <a class="title_link" href="#">
                                         <img src="images/d.png" class="img-rounded" style="width: 200px;">
