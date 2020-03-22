@@ -12,7 +12,7 @@
 				<li>
 
 					<a href="https://twitter.com/Misscareerafric"><i class="icon-twitter-with-circle"></i></a>
-					<a href="#"><i class="icon-facebook-with-circle"></i></a>
+					<a href="https://web.facebook.com/Miss-Career-Africa-104492644307436/?ref=br_rs"><i class="icon-facebook-with-circle"></i></a>
 					<a href="https://www.instagram.com/miss_career_africa20/"><i class="icon-instagram-with-circle"></i></a>
 					<!-- <a href="#"><i class="icon-linkedin-with-circle"></i></a> -->
 				</li>
