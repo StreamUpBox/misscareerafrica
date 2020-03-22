@@ -1,5 +1,5 @@
+@include('shared.styles',['title' => 'Miss Career Africa','description'=>'Miss Career Africa'])
 
- @include('shared.styles',['title' => 'Miss Career Africa','description'=>'Miss Career Africa'])
 <body>
 
 
@@ -9,8 +9,8 @@
 
             <div id="fh5co-header">
 
-			   @include('shared.header')
-             
+                @include('shared.header')
+
             </div>
 
 
@@ -110,40 +110,43 @@
 
                 <div class="row mt-5"
                     style="position: relative; left: 2px; margin-top:10px; margin-bottom:35px; box-sizing: border-box;">
+                    <a class="title_link" href="competition">
+                            <div class="col-md-4" style="background-repeat: no-repeat;
+                                background-size: cover;
+                                background-position: center center;background-image: url(images/competition.jpg);height:380px">
+                                <a class="title_link" href="competition">
+                                    <h2 class="wpb_heading wpb_singleimage_heading text-center">The Competition</h2>
+                                </a>
 
+                            </div>
+                    </a>
+                    <a class="title_link" href="job">
                     <div class="col-md-4" style="background-repeat: no-repeat;
-			background-size: cover;
-			background-position: center center;background-image: url(images/competition.jpg);height:380px">
-                        <a class="title_link" href="competition">
-                            <h2 class="wpb_heading wpb_singleimage_heading text-center">The Competition</h2>
-                        </a>
-
-                    </div>
-
-                    <div class="col-md-4" style="background-repeat: no-repeat;
-			background-size: cover;
-			background-position: center center;background-image: url(images/our-job.jpeg);height:380px">
+                        background-size: cover;
+                        background-position: center center;background-image: url(images/our-job.jpeg);height:380px">
                         <a class="title_link" href="job">
                             <h2 class="wpb_heading wpb_singleimage_heading text-center">The Job</h2>
                         </a>
 
                     </div>
+                    </a>
 
-
+                    <a class="title_link" href="job">
                     <div class="col-md-4" style="background-repeat: no-repeat;
-			background-size: cover;
-			background-position: center center;background-image: url(images/our-mission.jpeg);height:380px">
+                        background-size: cover;
+                        background-position: center center;background-image: url(images/our-mission.jpeg);height:380px">
                         <a class="title_link" href="mission">
                             <h2 class="wpb_heading wpb_singleimage_heading text-center">Our Mission</h2>
                         </a>
 
                     </div>
+                    </a>
 
                 </div>
 
                 <div id="row mt-5" style=" background-repeat: no-repeat;
-background-size: cover;color:white!important;font-size:30px;
-background-position: 50% 20%;margin-top: -15px;background-image: url(images/tab_img_2.jpg);">
+                    background-size: cover;color:white!important;font-size:30px;
+                    background-position: 50% 20%;margin-top: -15px;background-image: url(images/tab_img_2.jpg);">
                     <div class="container">
                         <p class="text-center mt-3" style="color:white!important"><b style="color:white!important">Meet
                                 Our Sponsors and partners</b></h3>
@@ -176,7 +179,7 @@ background-position: 50% 20%;margin-top: -15px;background-image: url(images/tab_
                     </div>
 
 
-					@include('shared.footer')
+                    @include('shared.footer')
 
 </body>
 
