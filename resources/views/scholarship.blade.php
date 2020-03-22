@@ -36,8 +36,64 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <p style="color: #252525!important;">
-                                The mission of the Miss Career Africa Scholarship Program is to create a movement of over 250,000 African professional women in the next 100 years through ongoing and transformational-locally organized training(s), career guidance and life skills around: Access to the global education touch, advanced leadership, high end corporate communication skills, Business perspectives and entrepreneurship, Spiritual Growth and Mental health education. A package they will feed on a regular basis through workshops, cohorts, conferences, competitions like Miss Career Africa, fellowships and Online courses that will be developed in the nearest future. This program, In its lifetime,  plans to provide minimum of 5000 scholarships to the Africa’s next generation of female  entrepreneurs who will shoulder the African community   challenges and responsibilities in the futures a head. These female game-changers will be given scholarships for further education abroad and in their regions across Africa where education is decent. This program aims at transforming these Africa’s female beacons into grounded souls, globally-educated young female leaders in Africa with the tenacity, sagacity and seniority to run the next Africa’s biggest corporations, organizations, churches, ministries, countries and more so, run their homes successfully and so, Gloom and Nurture the next generations of Africa. The Miss Career Scholars will be challenged to take up leadership positions in their respective communities, establish startup companies, run social programs, and run for political positions, hold the keys to the power rooms and run the shows. They are expected to transform their communities and accelerate growth in their countries. The Miss Career Africa Scholarship program selects the most gifted high school and university students, drop outs and other youths with capacity to further their education to become better leaders. More so, If the girl is encouraged to run as one of the Candidates of Miss Career Africa Contest. Another portion of these amazing young female professionals are directly Recommended girls by their respective schools and few others recommended by the local leaderships, and organizations, and Churches. Their education results, extracurricular achievements, leadership traits and level of their character and personal values determine their chance to win this most competitive Africa’s scholarships exclusively for young women leaders in their respective communities. Those various items put together help them earn scholarships to study abroad and in other various regional universities, and equips them to kick start their careers back in their respective African communities. Every couple of years, Miss Career Africa Scholarship Program will be  helping provide over 30 scholarships to most deserving- talented girls from the Miss Career Africa-Network across continent.  The organization through strategic education partners, Will work hard to  offer stupendous number of scholarships  equivalent of over $5 million  to top notch list of  universities abroad and in Africa. For the first 12 months of the program, Before the scholarship candidates are called #Scholars4Change and so, they  immerse themselves in Miss Career Africa’s rigorous Career Guidance cohort dubbed #CareerSkiesProgram offered by All Trust Consult, Business Modeling Program offered by Australian Partner organization dubbed Microlend Australian and leadership courses all offered at the ATC's Entrepreneurship Incubation Center.  Scholars are required to make a full-time commitment to the Career Guidance and Entrepreneurship program without any guarantee they will be awarded a university scholarship. In addition, they sign a written commitment that if they are awarded an international or regional scholarship they will return to work in their respective countries after their university graduation. In addition to academic performance and English language skills, the selection process considers leadership potential, Entrepreneurial capabilities, people skills, spiritual depth/Character and the student’s desire to make a difference in her country. The Winners of the Scholarship are called #ScholarsOnMission.  Those who fail to win scholarships in the end, They have access to Miss Career Fund which finances  the most profitable  business modelling(s)/ projects so as to enable  start their own businesses as they try other possibilities of sponsoring themselves in their local countries from their business earnings.</p>
-                               
+                                    The mission of the Miss Career Africa Scholarship Program is to create a movement of
+                                    over 250,000 African professional women in the next 100 years through ongoing and
+                                    transformational-locally organized training(s), career guidance and life skills
+                                    around: Access to the global education touch, advanced leadership, high end
+                                    corporate communication skills, Business perspectives and entrepreneurship,
+                                    Spiritual Growth and Mental health education. <br /><br /> A package they will feed
+                                    on a regular basis through workshops, cohorts, conferences, competitions like Miss
+                                    Career Africa, fellowships and Online courses that will be developed in the nearest
+                                    future. This program, In its lifetime, plans to provide minimum of 5000 scholarships
+                                    to the Africa’s next generation of female entrepreneurs who will shoulder the
+                                    African community challenges and responsibilities in the futures a head.
+                                    <br /><br />These female game-changers will be given scholarships for further
+                                    education abroad and in their regions across Africa where education is decent. This
+                                    program aims at transforming these Africa’s female beacons into grounded souls,
+                                    globally-educated young female leaders in Africa with the tenacity, sagacity and
+                                    seniority to run the next Africa’s biggest corporations, organizations, churches,
+                                    ministries, countries and more so, run their homes successfully and so, Gloom and
+                                    Nurture the next generations of Africa. <br /> The Miss Career Scholars will be
+                                    challenged to take up leadership positions in their respective communities,
+                                    establish startup companies, run social programs, and run for political positions,
+                                    hold the keys to the power rooms and run the shows.<br /> <br />They are expected to
+                                    transform their communities and accelerate growth in their countries. The Miss
+                                    Career Africa Scholarship program selects the most gifted high school and university
+                                    students, drop outs and other youths with capacity to further their education to
+                                    become better leaders.<br /> More so, If the girl is encouraged to run as one of the
+                                    Candidates of Miss Career Africa Contest. Another portion of these amazing young
+                                    female professionals are directly Recommended girls by their respective schools and
+                                    few others recommended by the local leaderships, and organizations, and Churches.
+                                    Their education results, extracurricular achievements, leadership traits and level
+                                    of their character and personal values determine their chance to win this most
+                                    competitive Africa’s scholarships exclusively for young women leaders in their
+                                    respective communities. Those various items put together help them earn scholarships
+                                    to study abroad and in other various regional universities, and equips them to kick
+                                    start their careers back in their respective African communities.<br /><br /> Every couple of
+                                    years, Miss Career Africa Scholarship Program will be helping provide over 30
+                                    scholarships to most deserving- talented girls from the Miss Career Africa-Network
+                                    across continent. The organization through strategic education partners, Will work
+                                    hard to offer stupendous number of scholarships equivalent of over $5 million to top
+                                    notch list of universities abroad and in Africa. For the first 12 months of the
+                                    program, Before the scholarship candidates are called #Scholars4Change and so, they
+                                    immerse themselves in Miss Career Africa’s rigorous Career Guidance cohort dubbed
+                                    #CareerSkiesProgram offered by All Trust Consult, Business Modeling Program offered
+                                    by Australian Partner organization dubbed Microlend Australian and leadership
+                                    courses all offered at the ATC's Entrepreneurship Incubation Center. Scholars are
+                                    required to make a full-time commitment to the Career Guidance and Entrepreneurship
+                                    program without any guarantee they will be awarded a university scholarship. <br />In
+                                    addition, they sign a written commitment that if they are awarded an international
+                                    or regional scholarship they will return to work in their respective countries after
+                                    their university graduation. In addition to academic performance and English
+                                    language skills, the selection process considers leadership potential,
+                                    Entrepreneurial capabilities, people skills, spiritual depth/Character and the
+                                    student’s desire to make a difference in her country. The Winners of the Scholarship
+                                    are called #ScholarsOnMission. Those who fail to win scholarships in the end, They
+                                    have access to Miss Career Fund which finances the most profitable business
+                                    modelling(s)/ projects so as to enable start their own businesses as they try other
+                                    possibilities of sponsoring themselves in their local countries from their business
+                                    earnings.</p>
+
                             </div>
 
                             <div class="col-md-6">
