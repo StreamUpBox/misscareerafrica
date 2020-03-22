@@ -155,13 +155,13 @@
                                         <img src="images/microland.png" class="img-rounded" style="width: 200px">
                                     </a>
                                     <a class="title_link" href="#">
-                                        <img src="images/a.png" class="img-rounded" style="width: 200px;height: 100px">
+                                        <img src="images/a.png" class="img-rounded" style="width: 200px;">
                                     </a>
                                     <a class="title_link" href="#">
-                                        <img src="images/b.png" class="img-rounded" style="width: 200px;height: 100px">
+                                        <img src="images/b.png" class="img-rounded" style="width: 200px;">
                                     </a>
                                     <a class="title_link" href="#">
-                                        <img src="images/c.png" class="img-rounded" style="width: 200px;height: 100px">
+                                        <img src="images/c.png" class="img-rounded" style="width: 200px;">
                                     </a>
                                     <a class="title_link" href="#">
                                         <img src="images/d.png" class="img-rounded" style="width: 200px;">
