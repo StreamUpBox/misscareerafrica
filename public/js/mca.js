@@ -30,9 +30,9 @@ function loadCurrentSession(){
                     row=` <div class="card">
                     <img class="card-img"  style="min-height:350px;max-height:700px" src="/images/${data.image}" alt="${data.title}">
                     <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
-                      <h3 class="wpb_heading wpb_singleimage_heading1 card-title text-center">${data.title}</h3>
+                      <h3 class="wpb_heading wpb_singleimage_heading1 card-title text-center">${data.title} - ${data.country}</h3>
 
-                      <span class="card-subtitle mb-2" style="color:#fff!important;font-size:40px"><b class="text-white" style="color:#fff!important">${data.country}</b></span>
+                      <span class="card-subtitle mb-2" style="color:#fff!important;font-size:40px"><b class="text-white" style="color:#fff!important"></b></span>
 
                     <a class="title_link" href="/candidate-application">
                         <h2 class="wpb_heading wpb_singleimage_heading2 text-center">
@@ -213,9 +213,9 @@ function loadAllSession(){
                         <div class="card">
                                     <img class="card-img"  style="min-height:350px;max-height:700px" src="/images/${element.image}" alt="${element.title}">
                                     <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
-                                    <h3 class="wpb_heading wpb_singleimage_heading1 card-title text-center">${element.title}</h3>
+                                    <h3 class="wpb_heading wpb_singleimage_heading1 card-title text-center">${element.title} - ${element.country}</h3>
 
-                                    <span class="card-subtitle mb-2" style="color:#fff!important;font-size:40px"><b class="text-white" style="color:#fff!important">${element.country}</b></span>
+                                    <span class="card-subtitle mb-2" style="color:#fff!important;font-size:40px"><b class="text-white" style="color:#fff!important"></b></span>
 
 
                                     <a class="title_link" href="#">
