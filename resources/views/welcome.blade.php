@@ -166,6 +166,15 @@
                                     <a class="title_link" href="https://yegobox.com/" target="_blank">
                                         <img src="images/d.png" class="img-rounded" style="width: 200px;">
                                     </a>
+                                    <a class="title_link" href="https://yegobox.com/" target="_blank">
+                                        <img src="images/e.jpeg" class="img-rounded" style="width: 200px;">
+                                    </a>
+                                    <a class="title_link" href="https://yegobox.com/" target="_blank">
+                                        <img src="images/f.jpeg" class="img-rounded" style="width: 200px;">
+                                    </a>
+                                    <a class="title_link" href="https://yegobox.com/" target="_blank">
+                                        <img src="images/g.jpeg" class="img-rounded" style="width: 200px;">
+                                    </a>
                                 </div>
 
                             </div>
