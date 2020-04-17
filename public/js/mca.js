@@ -90,11 +90,7 @@ function loadSelectedCandidates(){
             const datas=response.data;
             datas.forEach(element => {
                 if(element){
-                //     <div class="col-12">
-                //     <button type="button" class="btn btn-primary btn-block btn-sm" onclick="votes(${element.id},${element.votes})">
-                //     Vote Now! &nbsp;&nbsp;${element.votes}
-                // </button>
-                // </div>
+                   
                     rows+=`
                     <div class="col-md-4">
                             <div class="card border-success mb-3" style="max-width: 100%">
@@ -112,7 +108,11 @@ function loadSelectedCandidates(){
                                     </div>
                             </a>
                             <div class="card-footer bg-transparent border-success">
-                               
+                            <div class="col-12">
+                            <button type="button" class="btn btn-primary btn-block btn-sm" onclick="votes(${element.id},${element.votes})">
+                            Vote Now! &nbsp;&nbsp;${element.votes}
+                        </button>
+                        </div>
                                 <div class="col-12">
                                 <a href="https://www.theeventx.com/view-event/44" class="btn btn-success btn-block btn-sm">
                                 Get Ticket
@@ -143,6 +143,9 @@ function loadSelectedCandidates(){
 
 
 function votes(id,votes){
+    
+return alert('Voting system is closed');
+
 return window.location.href="candiateVoters/"+id;
 if(!localStorage.getItem('xosdw9433423zasie')){
 
