@@ -12,7 +12,9 @@
                                    
                                     <li><a class="apply" style="color: white;" href="candidate-application">APPLY
                                             NOW</a></li>
-                                    <li><a class="can-voting" style="color: white;" href="selected-candidates">VOTE PRESELECTED CANDIDATES</a></li>
+                                            
+                                            <li><a class="can-voting" style="color: white;" href="selected-candidates">View WA-Boot Camp-Candidates |Top 10 By Votes</a></li>
+                                    <!-- <li><a class="can-voting" style="color: white;" href="selected-candidates">VOTE PRESELECTED CANDIDATES</a></li> -->
 
                                     <li><a class="" style="color: white;" href="past-candidates">VIEW PAST CANDIDATES</a></li>
 
