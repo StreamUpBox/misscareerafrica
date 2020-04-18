@@ -33,7 +33,7 @@
                 <div class="container" id="blog">
                     <div class="row">
                         <div class="col-md-6">
-                            <img src="images/competition.jpg" class="img-responsive img-rounded" alt="Image">
+                            <img src="images/final-west.jpg" class="img-responsive img-rounded" alt="Image">
                         </div>
                         <div class="col-md-6">
                             <h3 class="heading">The Miss Career Africa Competition </h3>
