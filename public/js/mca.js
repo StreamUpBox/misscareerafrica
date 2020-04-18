@@ -135,7 +135,7 @@ function loadSelectedCandidates(){
                             <div class="card-footer bg-transparent border-success">
                             <div class="col-12">
                             <button type="button" class="btn btn-primary btn-block btn-sm" onclick="votes(${element.id},${element.votes})">
-                            Vote Now! &nbsp;&nbsp;${element.votes}
+                            Votes &nbsp;&nbsp;${element.votes}
                         </button>
                         </div>
                                 <div class="col-12">

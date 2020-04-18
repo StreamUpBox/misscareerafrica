@@ -113,7 +113,7 @@
 
                     <div class="col-md-4" onclick="window.location.href='/competition'" style="cursor:pointer;background-repeat: no-repeat;
 			background-size: cover;
-			background-position: center center;background-image: url(images/competition.jpg);height:380px">
+			background-position: center center;background-image: url(images/final-west.jpg);height:380px">
                         <a class="title_link" href="competition">
                             <h2 class="wpb_heading wpb_singleimage_heading text-center">The Competition</h2>
                         </a>
@@ -173,7 +173,7 @@
                                         <img src="images/f.jpeg" class="img-rounded" style="width: 200px;">
                                     </a>
                                     <a class="title_link" href="https://yegobox.com/" target="_blank">
-                                        <img src="images/g.jpeg" class="img-rounded" style="width: 200px;">
+                                        <img src="images/g.jpeg" class="img-rounded" style="height:115px;width: 200px;">
                                     </a>
                                 </div>
 
