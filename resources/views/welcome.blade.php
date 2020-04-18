@@ -175,6 +175,9 @@
                                     <a class="title_link" href="https://yegobox.com/" target="_blank">
                                         <img src="images/g.jpeg" class="img-rounded" style="height:115px;width: 200px;">
                                     </a>
+                                    <a class="title_link" href="https://yegobox.com/" target="_blank">
+                                        <img src="images/h.jpg" class="img-rounded" style="height:115px;width: 200px;">
+                                    </a>
                                 </div>
 
                             </div>
