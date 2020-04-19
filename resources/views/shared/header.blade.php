@@ -1,3 +1,36 @@
+<button class="btn btn-info btn-sm" data-toggle="modal" data-target="#Translate" style="position:fixed; bottom:10px;right:2px; color:#fff">
+                <span >Translate</span> 
+                </button>
+
+            <div id="Translate" class="modal fade" role="dialog" data-backdrop="false">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h4 class="modal-title pull-left">Translate </h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        
+                    </div>
+                    <div class="modal-body" style="overflow:hidden; text-align:left;">
+                       
+                        <div class="row">
+                            <div class="col-sm-12">
+                            <h4 class="modal-title pull-left">Translate </h4>
+                            </div>
+                        </div>
+                        <div id="google_translate_element"></div>
+                        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+
+                    </div>
+                </div>
+            </div>
+          </div>
+
 <header id="fh5co-header-section">
                     <div class="mr-5 ml-5">
                         <div class="nav-header">
@@ -48,3 +81,4 @@
                         </div>
                     </div>
                 </header>
+               
