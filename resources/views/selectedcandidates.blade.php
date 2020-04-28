@@ -28,15 +28,15 @@
                 </div>
             </div>
 
-
+           
 
             <div id="fh5co-blog-section">
                 <div class="container" id="contact">
 
-                    <!-- <div class="card border-success mb-3" style="max-width: 100%">
-                        <h1 class="text-center"><b>VOTES CLOSED</b></h1>
+                    <div class="card border-success mb-3" style="max-width: 100%">
+                        <h1 class="text-center"><b>Online Voting Open Now -Till Tues, 2nd June 2020</b></h1>
 
-                        <img class="img-fluid" src="/images/final-west.jpg" style="width:100%;">
+                        <img class="img-fluid" src="/images/final-sa.jpeg" style="width:100%;">
 
                         <div class="card-footer bg-transparent border-success">
                             <a href="https://theeventx.com/view-event/44" class="btn btn-success btn-block btn-sm">
@@ -48,7 +48,7 @@
                     </div>
                     <br>
                     <hr>
-                    <br> -->
+                    <br>
                     <div class="row can-voting" id="selected_candidates">
 
                     </div>

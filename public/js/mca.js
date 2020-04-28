@@ -25,7 +25,7 @@ function loadCurrentSession(){
 
                 const data=response.data;
                 if(data.is_current_applying){
-                    var candidate=data.is_voting_open?' <a href="https://www.theeventx.com/view-event/44" class="btn btn-info"> Get Ticket </a><a href="/selected-candidates" style="color:white!important" class="btn btn-success mr-1 text-white can-voting">View WA-Boot Camp-Candidates |Top 10 By Votes</a>':'';
+                    var candidate=data.is_voting_open?' <a href="https://www.theeventx.com/view-event/44" class="btn btn-info"> Get Ticket </a><a href="/selected-candidates" style="color:white!important" class="btn btn-success mr-1 text-white can-voting">View SA Region-15 Preselected Candidates</a>':'';
                     var apply=!data.is_voting_open?'<a href="/candidate-application" class="btn btn-primary mr-5">APPLY NOW!</a>':'';
                     row=` <div class="card">
                     <img class="card-img"  style="min-height:350px;max-height:700px" src="/images/${data.image}" alt="${data.title}">
