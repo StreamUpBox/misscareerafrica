@@ -35,21 +35,26 @@
                 <div class="container" id="contact">
                     @foreach($allSessions as $session)
                     <hr>
-                    <h2 class="text-center">{{$session->title}}-{{$session->country}} </h2>
-                    <h4 class="text-center">{{$session->date}} </h4>
+                    <div class="row">
+                        <div class="col-sm-3"  style="background-image: url('{{$candidate->profile}}');
+                                    background-repeat: no-repeat;width:100%;min-height:90px;
+                                    background-size: cover; background-size: center center">
+
+                        </div>
+                        <div class="col-sm-9">
+                            <h2 class="text-center">{{$session->title}}-{{$session->country}} </h2>
+                            <h4 class="text-center">{{$session->date}} </h4>
+                        </div>
+                    </div>
                     <hr>
                     <div class="row">
-                    <?php
+                        <?php
                     $candidates = \App\Models\Candidate::where('is_selected',1)
                     ->where('session_id', $session->id)
                     ->orderBy('votes', 'DESC')->get();
                     ?>
                         @foreach($candidates as $candidate)
 
-                        <?php 
-                    $v=\App\Models\candiateVoter::where('candidate_id', $candidate->id)->count();
-                    $candidate->votes=$candidate->votes+$v;
-                    ?>
                         <div class="col-md-4">
                             <div class="card border-success mb-3" style="max-width: 100%">
                                 <div class="card-header bg-transparent border-success"><b>{{$candidate->fname}}
