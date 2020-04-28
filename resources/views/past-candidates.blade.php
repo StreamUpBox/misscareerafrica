@@ -54,7 +54,10 @@
                     ->orderBy('votes', 'DESC')->get();
                     ?>
                         @foreach($candidates as $candidate)
-
+                        <?php 
+                        $v=\App\Models\candiateVoter::where('candidate_id', $candidate->id)->count();
+                        $candidate->votes=$candidate->votes+$v;
+                        ?>
                         <div class="col-md-4">
                             <div class="card border-success mb-3" style="max-width: 100%">
                                 <div class="card-header bg-transparent border-success"><b>{{$candidate->fname}}
@@ -64,8 +67,15 @@
                                     background-repeat: no-repeat;width:100%;min-height:300px;
                                     background-size: cover; background-size: center center"></div>
                                     <div class="card-body text-success">
+                                        <div class="row">
+                                        <div class="col-sm-8">
                                         <h5 class="card-title"><b>{{$candidate->city}} - {{$candidate->country}}</b>
                                         </h5>
+                                        </div>
+                                        <div class="col-sm-4 float-right">
+                                       <b> Votes: {{$candidate->votes}}</b> 
+                                        </div>
+                                        </div>
                                         <b class="card-text">
                                             <hr />
                                             <a
@@ -75,6 +85,8 @@
                                 </a>
 
                                 <div class="card-footer bg-transparent border-success">
+                                <a href="https://www.theeventx.com/view-event/44" class="btn btn-info btn-block btn-sm"> GET TICKET </a>
+                                            
                                     <a href="book-mca" class="btn btn-success btn-block btn-sm">
                                         BOOK HER
                                     </a>

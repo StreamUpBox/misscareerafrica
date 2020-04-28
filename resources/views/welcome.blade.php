@@ -113,7 +113,7 @@
 
                     <div class="col-md-4" onclick="window.location.href='/competition'" style="cursor:pointer;background-repeat: no-repeat;
 			background-size: cover;
-			background-position: center center;background-image: url(images/final-west.jpg);height:380px">
+			background-position: center center;background-image: url(images/final-sa.jpeg);height:380px">
                         <a class="title_link" href="competition">
                             <h2 class="wpb_heading wpb_singleimage_heading text-center">The Competition</h2>
                         </a>
@@ -166,6 +166,27 @@
                                     <a class="title_link" href="https://yegobox.com/" target="_blank">
                                         <img src="images/d.png" class="img-rounded" style="width: 200px;">
                                     </a>
+                                    <a class="title_link" href="https://igihe.com/" target="_blank">
+                                        <img src="images/g.png" class="img-rounded" style="width: 200px;">
+                                    </a>
+                                    <a class="title_link" href="https://rba.co.rw/" target="_blank">
+                                        <img src="images/h.png" class="img-rounded" style="width: 200px;">
+                                    </a>
+
+                                    <a class="title_link" href="https://inyarwanda.com/" target="_blank">
+                                        <img src="images/l.png" class="img-rounded" style="width: 200px;">
+                                    </a>
+                                    <a class="title_link" href="https://www.newtimes.co.rw/" target="_blank">
+                                        <img src="images/p.png" class="img-rounded" style="width: 200px;">
+                                    </a>
+                                    <a class="title_link" href="#" target="_blank">
+                                        <img src="images/o.png" class="img-rounded" style="width: 200px;">
+                                    </a>
+                                    <a class="title_link" href="https://www.radiotv10.rw/" target="_blank">
+                                        <img src="images/t.png" class="img-rounded" style="height:150px;width: 200px;">
+                                    </a>
+
+
                                     <a class="title_link" href="https://yegobox.com/" target="_blank">
                                         <img src="images/e.jpeg" class="img-rounded" style="width: 200px;">
                                     </a>
