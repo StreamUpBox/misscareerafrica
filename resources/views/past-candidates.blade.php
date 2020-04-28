@@ -28,58 +28,61 @@
                 </div>
             </div>
 
-<?php 
-  $sessions =  \App\Models\Session::where('view_past_candidate',1)->get();
-?>
+            <?php 
+                $allSessions =  \App\Models\Session::where('view_past_candidate',1)->get();
+                ?>
             <div id="fh5co-blog-section">
                 <div class="container" id="contact">
-                @foreach($sessions as $session)
-                <hr>
-                <h2>{{$session->title}}({{$session->country}}) </h2>
-                <hr>
+                    @foreach($allSessions as $session)
+                    <hr>
+                    <h2 class="text-center">{{$session->title}}({{$session->country}}) </h2>
+                    <hr>
                     <div class="row">
                     <?php
                     $candidates = \App\Models\Candidate::where('is_selected',1)
-                    ->whereIn('session_id', $session->id)
+                    ->where('session_id', $session->id)
                     ->orderBy('votes', 'DESC')->get();
                     ?>
-                    @foreach($candidates as $candidate)
+                        @foreach($candidates as $candidate)
 
-                    <?php 
+                        <?php 
                     $v=\App\Models\candiateVoter::where('candidate_id', $candidate->id)->count();
                     $candidate->votes=$candidate->votes+$v;
                     ?>
-                    <div class="col-md-4">
+                        <div class="col-md-4">
                             <div class="card border-success mb-3" style="max-width: 100%">
-                            <div class="card-header bg-transparent border-success"><b>{{$candidate->fname}} {{$candidate->lname}}</b></div>
-                            <a href="past-candidate-page/{{$candidate->id}}">
+                                <div class="card-header bg-transparent border-success"><b>{{$candidate->fname}}
+                                        {{$candidate->lname}}</b></div>
+                                <a href="past-candidate-page/{{$candidate->id}}">
                                     <div class="img-fluid" style=" background-image: url('{{$candidate->profile}}');
                                     background-repeat: no-repeat;width:100%;min-height:300px;
                                     background-size: cover; background-size: center center"></div>
                                     <div class="card-body text-success">
-                                    <h5 class="card-title"><b>{{$candidate->city}} - {{$candidate->country}}</b></h5>
+                                        <h5 class="card-title"><b>{{$candidate->city}} - {{$candidate->country}}</b>
+                                        </h5>
                                         <b class="card-text">
-                                        <hr />
-                                        <a href="past-candidate-page/{{$candidate->id}}">{{str_limit($candidate->bio, $limit = 100, $end = 'read more ....')}}</a>
+                                            <hr />
+                                            <a
+                                                href="past-candidate-page/{{$candidate->id}}">{{str_limit($candidate->bio, $limit = 100, $end = 'read more ....')}}</a>
                                         </b>
                                     </div>
-                            </a>
-                            
-                        <div class="card-footer bg-transparent border-success">
-                            <a href="book-mca" class="btn btn-success btn-block btn-sm">
-                            BOOK HER
-                            </a>
+                                </a>
 
+                                <div class="card-footer bg-transparent border-success">
+                                    <a href="book-mca" class="btn btn-success btn-block btn-sm">
+                                        BOOK HER
+                                    </a>
+
+                                </div>
+
+
+                            </div>
                         </div>
-                       
-                           
-                        </div>
-                  </div>
-                  @endforeach
+                        @endforeach
 
                     </div>
                     @endforeach
-                  
+
                 </div>
 
             </div>
