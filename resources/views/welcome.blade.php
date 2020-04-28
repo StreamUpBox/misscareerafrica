@@ -151,21 +151,7 @@
                             <div class="row">
 
                                 <div class="col-md-12">
-                                    <a class="title_link" href="https://www.microlendaustralia.com.au" target="_blank">
-                                        <img src="images/microland.png" class="img-rounded" style="width: 200px">
-                                    </a>
-                                    <a class="title_link" href="https://twitter.com/alltrustconsult?lang=en" target="_blank">
-                                        <img src="images/a.png" class="img-rounded" style="width: 200px;">
-                                    </a>
-                                    <a class="title_link" href="https://theeventx.com/" target="_blank">
-                                        <img src="images/b.png" class="img-rounded" style="width: 200px;">
-                                    </a>
-                                    <a class="title_link" href="#">
-                                        <img src="images/c.png" class="img-rounded" style="width: 200px;">
-                                    </a>
-                                    <a class="title_link" href="https://yegobox.com/" target="_blank">
-                                        <img src="images/d.png" class="img-rounded" style="width: 200px;">
-                                    </a>
+                                  
                                     <a class="title_link" href="https://igihe.com/" target="_blank">
                                         <img src="images/g.png" class="img-rounded" style="width: 200px;">
                                     </a>
@@ -182,11 +168,28 @@
                                     <a class="title_link" href="#" target="_blank">
                                         <img src="images/o.png" class="img-rounded" style="width: 200px;">
                                     </a>
+
+                                    
+                                      <a class="title_link" href="https://www.microlendaustralia.com.au" target="_blank">
+                                        <img src="images/microland.png" class="img-rounded" style="width: 200px">
+                                    </a>
+                                    <a class="title_link" href="https://twitter.com/alltrustconsult?lang=en" target="_blank">
+                                        <img src="images/a.png" class="img-rounded" style="width: 200px;">
+                                    </a>
+                                    <a class="title_link" href="https://theeventx.com/" target="_blank">
+                                        <img src="images/b.png" class="img-rounded" style="width: 200px;">
+                                    </a>
+                                    <a class="title_link" href="#">
+                                        <img src="images/c.png" class="img-rounded" style="width: 200px;">
+                                    </a>
+                                    <a class="title_link" href="https://yegobox.com/" target="_blank">
+                                        <img src="images/d.png" class="img-rounded" style="width: 200px;">
+                                    </a>
+
                                     <a class="title_link" href="https://www.radiotv10.rw/" target="_blank">
                                         <img src="images/t.png" class="img-rounded" style="height:150px;width: 200px;">
                                     </a>
-
-
+                                    
                                     <a class="title_link" href="https://yegobox.com/" target="_blank">
                                         <img src="images/e.jpeg" class="img-rounded" style="width: 200px;">
                                     </a>

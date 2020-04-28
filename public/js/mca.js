@@ -169,7 +169,6 @@ function loadSelectedCandidates(){
 
 function votes(id,votes){
 
-// return alert('VOTES CLOSED');
 
 return window.location.href="candiateVoters/"+id;
 if(!localStorage.getItem('xosdw9433423zasie')){
