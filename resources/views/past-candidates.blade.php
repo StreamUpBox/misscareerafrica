@@ -72,7 +72,7 @@
                                         <h5 class="card-title"><b>{{$candidate->city}} - {{$candidate->country}}</b>
                                         </h5>
                                         </div>
-                                        <div class="col-sm-7">
+                                        <div class="col-sm-5">
                                        <b> Votes: {{$candidate->votes}}</b> 
                                         </div>
                                         </div>
