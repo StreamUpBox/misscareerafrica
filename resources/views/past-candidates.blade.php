@@ -29,7 +29,7 @@
             </div>
 
 <?php 
-  $sessions =  App\Models\Session::where('view_past_candidate',1)->get();
+  $sessions =  \App\Models\Session::where('view_past_candidate',1)->get();
 ?>
             <div id="fh5co-blog-section">
                 <div class="container" id="contact">
@@ -39,14 +39,14 @@
                 <hr>
                     <div class="row">
                     <?php
-                    $candidates = App\Models\Candidate::where('is_selected',1)
+                    $candidates = \App\Models\Candidate::where('is_selected',1)
                     ->whereIn('session_id', $session->id)
                     ->orderBy('votes', 'DESC')->get();
                     ?>
                     @foreach($candidates as $candidate)
 
                     <?php 
-                    $v=App\Models\candiateVoter::where('candidate_id', $candidate->id)->count();
+                    $v=\App\Models\candiateVoter::where('candidate_id', $candidate->id)->count();
                     $candidate->votes=$candidate->votes+$v;
                     ?>
                     <div class="col-md-4">
