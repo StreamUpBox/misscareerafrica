@@ -71,9 +71,15 @@
                                         <div class="col-sm-7">
                                         <h5 class="card-title"><b>{{$candidate->city}} - {{$candidate->country}}</b>
                                         </h5>
+                                       
                                         </div>
                                         <div class="col-sm-5">
                                        <b> Votes: {{$candidate->votes}}</b> 
+                                        </div>
+                                        </div>
+                                        <div class="row">
+                                        <div class="col-sm-12">
+                                        <b>Date of birth: {{$candidate->dob}}</b>
                                         </div>
                                         </div>
                                         <b class="card-text">

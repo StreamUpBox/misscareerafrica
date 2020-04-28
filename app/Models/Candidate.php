@@ -103,6 +103,9 @@ class Candidate extends Model
     public static $rules = [
 
     ];
-
+    public function getDobAttribute($value)
+    {
+        return date('j F, Y', strtotime($value));
+    }
 
 }
