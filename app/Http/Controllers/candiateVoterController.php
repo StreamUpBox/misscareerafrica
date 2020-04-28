@@ -81,7 +81,6 @@ class candiateVoterController extends AppBaseController
      */
     public function show($id)
     {
-        return redirect('/');
         return view('candiate_voters.create')->with('id',$id);
         // $candiateVoter = $this->candiateVoterRepository->find($id);
 
