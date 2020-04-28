@@ -55,6 +55,13 @@
         {!! Form::checkbox('is_voting_open', 1, null,  ['data-toggle' => 'toggle']) !!}
     </label>
 </div>
+<div class="form-group col-sm-6">
+    {!! Form::label('view_past_candidate', 'Show Past Candidate:') !!}
+    <label class="checkbox-inline">
+        {!! Form::hidden('view_past_candidate', 0) !!}
+        {!! Form::checkbox('view_past_candidate', 1, null,  ['data-toggle' => 'toggle']) !!}
+    </label>
+</div>
 
 
 

@@ -28,11 +28,27 @@
                 </div>
             </div>
 
-
+<?php 
+  $sessions =  App\Models\Session::where('view_past_candidate',1)->get();
+?>
             <div id="fh5co-blog-section">
                 <div class="container" id="contact">
+                @foreach($sessions as $session)
+                <hr>
+                <h2>{{$session->title}}({{$session->country}}) </h2>
+                <hr>
                     <div class="row">
+                    <?php
+                    $candidates = App\Models\Candidate::where('is_selected',1)
+                    ->whereIn('session_id', $session->id)
+                    ->orderBy('votes', 'DESC')->get();
+                    ?>
                     @foreach($candidates as $candidate)
+
+                    <?php 
+                    $v=App\Models\candiateVoter::where('candidate_id', $candidate->id)->count();
+                    $candidate->votes=$candidate->votes+$v;
+                    ?>
                     <div class="col-md-4">
                             <div class="card border-success mb-3" style="max-width: 100%">
                             <div class="card-header bg-transparent border-success"><b>{{$candidate->fname}} {{$candidate->lname}}</b></div>
@@ -62,6 +78,7 @@
                   @endforeach
 
                     </div>
+                    @endforeach
                   
                 </div>
 

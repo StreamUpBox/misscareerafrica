@@ -32,7 +32,8 @@ class Session extends Model
         'image',
         'numbering',
         'is_current_applying',
-        'is_voting_open'
+        'is_voting_open',
+        'view_past_candidate'
     ];
 
     /**
@@ -49,7 +50,8 @@ class Session extends Model
         'image' => 'string',
         'numbering' => 'integer',
         'is_current_applying' => 'boolean',
-        'is_voting_open'=>'boolean'
+        'is_voting_open'=>'boolean',
+        'view_past_candidate'=>'boolean'
     ];
 
     /**
