@@ -232,7 +232,7 @@ function loadAllSession(){
                     var candidate='';
                     if(element.is_voting_open){
                         $('.can-voting').show(); 
-                     candidate=element.is_voting_open?' <a href="https://www.theeventx.com/view-event/44" class="btn btn-info"> Get Ticket </a><a href="/selected-candidates" style="color:white!important" class="btn btn-success mr-1 text-white can-voting">View WA-Boot Camp-Candidates |Top 10 By Votes</a>':'';
+                     candidate=element.is_voting_open?' <a href="https://www.theeventx.com/view-event/44" class="btn btn-info"> Get Ticket </a><a href="/selected-candidates" style="color:white!important" class="btn btn-success mr-1 text-white can-voting">SA Region-15 Preselected Candidates</a>':'';
                     }else{
                         // $('.can-voting').hide(); 
                         candidate='';
