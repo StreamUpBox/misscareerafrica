@@ -35,7 +35,8 @@
                 <div class="container" id="contact">
                     @foreach($allSessions as $session)
                     <hr>
-                    <h2 class="text-center">{{$session->title}}({{$session->country}}) </h2>
+                    <h2 class="text-center">{{$session->title}}-{{$session->country}} </h2>
+                    <h4 class="text-center">{{$session->date}} </h4>
                     <hr>
                     <div class="row">
                     <?php
