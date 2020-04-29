@@ -77,11 +77,7 @@
                                        <b> Votes: {{$candidate->votes}}</b> 
                                         </div>
                                         </div>
-                                        <div class="row">
-                                        <div class="col-sm-12">
-                                        <b>Date of birth: {{$candidate->dob}}</b>
-                                        </div>
-                                        </div>
+                                        
                                         <b class="card-text">
                                             <hr />
                                             <a
