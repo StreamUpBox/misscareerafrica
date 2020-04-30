@@ -143,10 +143,10 @@
 </div>
 
 <!-- Votes Field -->
-<!-- <div class="form-group col-sm-6">
+<div class="form-group col-sm-6">
     {!! Form::label('votes', 'Votes:') !!}
     {!! Form::text('votes', null, ['class' => 'form-control']) !!}
-</div> -->
+</div>
 
 <div class="form-group col-sm-12 col-lg-12">
     {!! Form::label('bio', 'Bio:') !!}
