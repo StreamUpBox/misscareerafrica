@@ -183,7 +183,7 @@ return [
         \InfyOm\GeneratorBuilder\GeneratorBuilderServiceProvider::class,
         Yajra\DataTables\DataTablesServiceProvider::class,
         Jenssegers\Agent\AgentServiceProvider::class,
-        Cohensive\Embed\EmbedServiceProvider::class,
+        Cohensive\Embed\EmbedServiceProvider::class
 
     ],
 

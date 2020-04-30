@@ -10,6 +10,8 @@ use App\Models\candiateVoter;
 use Illuminate\Http\Request;
 use Flash;
 use Response;
+use Validator;
+
 
 class candiateVoterController extends AppBaseController
 {
@@ -53,24 +55,70 @@ class candiateVoterController extends AppBaseController
      *
      * @return Response
      */
-    public function store(CreatecandiateVoterRequest $request)
+    public function store(Request $request)
     {
        
         $input = $request->all();
         
-       $candidate= candiateVoter::where('phone_number',$input['phone_number'])
+        $this->validate($request,[
+            'email' => ['required'],
+        ]);
+
+        $info=explode('@',$input['email'])[0];
+        if(isset($info) && $info=='info'){
+            Flash::error('Info email ['.$input['email'].'] does not allowed, Please try another email!');
+            return redirect()->back();
+        }
+        $response=$this->emailValidation($input['email']);
+
+        if(isset($response{'message'}) && $response{'message'}=="This feature is unavailable please contact support."){
+            Flash::error('This feature is unavailable please contact support.');
+            return redirect()->back();
+        }
+
+         if(isset($response{'result'}) && $response{'result'}=='undeliverable'){
+            Flash::error('Invalid Email Address, Please try another email!');
+            return redirect()->back();
+
+         }
+
+       $candidate= candiateVoter::where('phone_number',$input['email'])
         ->where('candidate_id',$input['candidate_id'])->first();
         
         if($candidate){
             Flash::error('You have voted this candidate');
             return redirect()->back();
         }
+        $input['phone_number']=$input['email'];
         $candiateVoter = $this->candiateVoterRepository->create($input);
 
         Flash::success('Thank you for voting this candidate.');
 
         return redirect()->back();
     }
+    
+
+    function emailValidation($email) {
+        $params = array(
+            "address" => $email
+        );
+        $ch = curl_init();
+      
+        curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
+        curl_setopt($ch, CURLOPT_USERPWD, 'api:b251faeb94e70061b3ad5dc2be993e4f-65b08458-84bd192b');
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+      
+        curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'GET');
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $params);
+        curl_setopt($ch, CURLOPT_URL, 'https://api.mailgun.net/v4/address/validate');
+        $result = curl_exec($ch);
+        curl_close($ch);
+      
+        return  json_decode($result, true);
+      }
+      
+
+  
 
     /**
      * Display the specified candiateVoter.

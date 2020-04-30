@@ -11,8 +11,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Vote For {{$candidate->fname}} {{$candidate->lname}}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Miss Career Africa Preselected Candidate Details" />
-    <meta name="keywords" content="Miss Career, yegobox, flipper" />
+    <meta name="description" content="{{$candidate->bio}}" />
+    <meta name="keywords" content="Miss Career, Yegobox, Theeventx,Hireher" />
     <meta name="author" content="Yegobox Team" />
 
     <!--
@@ -27,19 +27,19 @@ Facebook: 		https://www.facebook.com/yegobox
 -->
 
     <!-- Facebook and Twitter integration -->
-    <meta property="og:title" content="" />
-    <meta property="og:image" content="" />
+    <meta property="og:title" content="Vote For {{$candidate->fname}} {{$candidate->lname}}" />
+    <meta property="og:image" content="{{$candidate->profile}}" />
     <meta property="og:url" content="" />
     <meta property="og:site_name" content="" />
-    <meta property="og:description" content="" />
-    <meta name="twitter:title" content="" />
-    <meta name="twitter:image" content="" />
+    <meta property="og:description" content="{{$candidate->bio}}" />
+    <meta name="twitter:title" content="Vote For {{$candidate->fname}} {{$candidate->lname}}" />
+    <meta name="twitter:image" content="{{$candidate->profile}}" />
     <meta name="twitter:url" content="" />
-    <meta name="twitter:card" content="" />
+    <meta name="twitter:card" content="{{$candidate->bio}}" />
 
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <link rel="shortcut icon" href="/images/logo.png">
+    <link rel="shortcut icon" href="{{$candidate->profile}}">
     <!-- <link href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700italic,900,700,900italic' rel='stylesheet' type='text/css'> -->
 
     <!-- Stylesheets -->
@@ -112,7 +112,7 @@ Facebook: 		https://www.facebook.com/yegobox
                                     </b>
                                 </div>
 
-                                <!-- <div class="card-footer bg-transparent border-success">
+                                <div class="card-footer bg-transparent border-success">
                                     <div class="row">
                                         <div class="col-6">
                                            
@@ -123,13 +123,13 @@ Facebook: 		https://www.facebook.com/yegobox
                                         </div>
 
                                         <div class="col-6">
-                                            <a href="https://theeventx.com/view-event/30"
+                                            <a href="https://theeventx.com/view-event/44"
                                                 class="btn btn-success btn-block btn-sm">
                                                 Get Ticket
                                             </a>
                                         </div>
                                     </div>
-                                </div> -->
+                                </div> 
                             </div>
                         </div>
                     </div>

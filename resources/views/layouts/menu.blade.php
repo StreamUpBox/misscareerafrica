@@ -27,9 +27,9 @@
     <a href="{!! route('bookings.index') !!}"><i class="fa fa-edit"></i><span>Bookings</span></a>
 </li>
 
-<li class="{{ Request::is('candiateVoters*') ? 'active' : '' }}">
+<!-- <li class="{{ Request::is('candiateVoters*') ? 'active' : '' }}">
     <a href="{!! route('candiateVoters.index') !!}"><i class="fa fa-edit"></i><span>Candiate Voters</span></a>
-</li>
+</li> -->
 
 <li class="{{ Request::is('links*') ? 'active' : '' }}">
     <a href="{!! route('links.index') !!}"><i class="fa fa-edit"></i><span>Links</span></a>
