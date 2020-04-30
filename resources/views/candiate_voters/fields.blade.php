@@ -1,7 +1,7 @@
 <!-- Phone Number Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('email', 'Enter a Valid Email:') !!}
-    {!! Form::text('email', null, ['class' => 'form-control']) !!}
+    {!! Form::email('email', null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Candiateid Field -->
