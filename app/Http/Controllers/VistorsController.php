@@ -33,6 +33,7 @@ class VistorsController extends AppBaseController
         
 $countries = \App\Models\Vistors::select('country', \DB::raw('MAX(country) as country,COUNT(country) as num'))
 ->where('country','!=',null)
+->orderBy('num','DESC')
 ->groupBy('country')->paginate(10);
 
         return view('vistors.index')
