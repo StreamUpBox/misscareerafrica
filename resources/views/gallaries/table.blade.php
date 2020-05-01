@@ -11,7 +11,7 @@
         @foreach($gallaries as $gallaries)
             <tr>
                 <td>{!! $gallaries->name !!}</td>
-            <td><img src="{!! $gallaries->name !!}" alt="" style="width:100px"></td>
+            <td><img src="{!! $gallaries->image !!}" alt="" style="width:100px"></td>
                 <td>
                     {!! Form::open(['route' => ['gallaries.destroy', $gallaries->id], 'method' => 'delete']) !!}
                     <div class='btn-group'>
