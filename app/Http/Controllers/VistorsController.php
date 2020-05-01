@@ -31,9 +31,13 @@ class VistorsController extends AppBaseController
     {
         $vistors = $this->vistorsRepository->paginate(10);
         
+$countries = \App\Models\Vistors::select('country', \DB::raw('MAX(country) as country,COUNT(country) as num'))
+->where('country','!=',null)
+->groupBy('country')->paginate(10);
 
         return view('vistors.index')
-            ->with('vistors', $vistors);
+            ->with('vistors', $vistors)
+            ->with('countries', $countries);
     }
 
     /**
