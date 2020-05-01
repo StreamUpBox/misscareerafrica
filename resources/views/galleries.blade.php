@@ -43,7 +43,7 @@
 
 
                     </div> -->
-
+<hr>
                     <div class="tz-gallery">
                     <?php 
                          $gallaries =  \App\Models\Gallaries::get();
