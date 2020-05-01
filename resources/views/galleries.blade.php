@@ -50,10 +50,10 @@
                     ?>
                         <div class="row">
                             @foreach($gallaries as $gallary)
-                            
+
                             <div class="col-sm-4 col-md-4">
                                 <a class="lightbox" href="{{$gallary->image}}">
-                                    <img src="{{$gallary->image}}" alt="Park">
+                                    <img src="{{$gallary->image}}" class="img-fluid" style="width:100%"  alt="Park">
                                 </a>
                             </div>
 
