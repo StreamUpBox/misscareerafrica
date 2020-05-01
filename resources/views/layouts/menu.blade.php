@@ -27,11 +27,21 @@
     <a href="{!! route('bookings.index') !!}"><i class="fa fa-edit"></i><span>Bookings</span></a>
 </li>
 
-<!-- <li class="{{ Request::is('candiateVoters*') ? 'active' : '' }}">
-    <a href="{!! route('candiateVoters.index') !!}"><i class="fa fa-edit"></i><span>Candiate Voters</span></a>
-</li> -->
+
 
 <li class="{{ Request::is('links*') ? 'active' : '' }}">
     <a href="{!! route('links.index') !!}"><i class="fa fa-edit"></i><span>Links</span></a>
+</li>
+
+<li class="{{ Request::is('vistors*') ? 'active' : '' }}">
+    <a href="{!! route('vistors.index') !!}"><i class="fa fa-edit"></i><span>Vistors</span></a>
+</li>
+
+<li class="{{ Request::is('crowneds*') ? 'active' : '' }}">
+    <a href="{!! route('crowneds.index') !!}"><i class="fa fa-edit"></i><span>Crowned</span></a>
+</li>
+
+<li class="{{ Request::is('candiateVoters*') ? 'active' : '' }}">
+    <a href="{!! route('candiateVoters.index') !!}"><i class="fa fa-edit"></i><span>Candidate Voted</span></a>
 </li>
 

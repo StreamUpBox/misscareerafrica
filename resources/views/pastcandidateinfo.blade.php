@@ -9,12 +9,12 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Vote For {{$candidate->fname}} {{$candidate->lname}}</title>
+    <title>Candidate {{$candidate->fname}} {{$candidate->lname}}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Miss Career Africa Preselected Candidate Details" />
     <meta name="keywords" content="Miss Career, yegobox, flipper" />
     <meta name="author" content="Yegobox Team" />
-
+    <?php  $vistor=new App\Models\Vistors; $vistor->saveVistor('Visit past candidate '.$candidate->fname.' '.$candidate->lname) ?>
     <!--
 //////////////////////////////////////////////////////
 

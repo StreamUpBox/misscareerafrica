@@ -15,6 +15,7 @@
     <meta name="keywords" content="Miss Career, Yegobox, Theeventx,Hireher" />
     <meta name="author" content="Yegobox Team" />
 
+    <?php  $vistor=new App\Models\Vistors; $vistor->saveVistor('Visit vote candidate '.$candidate->fname.' '.$candidate->lname) ?>
     <!--
 //////////////////////////////////////////////////////
 

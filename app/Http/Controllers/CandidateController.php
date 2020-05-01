@@ -133,7 +133,6 @@ class CandidateController extends AppBaseController
         'https' =>request()->server('HTTP_USER_AGENT'),
         'candidate_id'=>$candidate_id
        ];
-       Log::info($data);
        return Device::create($data);
     }
 
@@ -214,7 +213,7 @@ class CandidateController extends AppBaseController
 
     public function listSelectedCandidates(){
         $candidates =[];
-        
+       
         $session =    Session::where('is_voting_open',1)->where('is_current_applying',0)->first();
         if($session){
 

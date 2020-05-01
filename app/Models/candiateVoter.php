@@ -42,5 +42,8 @@ class candiateVoter extends Model
         'phone_number'=>'required'
     ];
 
-    
+    public function candidate(){
+
+        return $this->belongsTo('App\Models\Candidate','candidate_id'); 
+    }
 }

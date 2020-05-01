@@ -182,8 +182,9 @@ return [
         \InfyOm\AdminLTETemplates\AdminLTETemplatesServiceProvider::class,
         \InfyOm\GeneratorBuilder\GeneratorBuilderServiceProvider::class,
         Yajra\DataTables\DataTablesServiceProvider::class,
+        
         Jenssegers\Agent\AgentServiceProvider::class,
-        Cohensive\Embed\EmbedServiceProvider::class
+        Cohensive\Embed\EmbedServiceProvider::class,
 
     ],
 
@@ -235,7 +236,7 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-        'DataTables' => Yajra\DataTables\Facades\DataTables::class,
+        'Datatables' => Yajra\DataTables\Facades\DataTables::class,
         'GeoIP' => \Torann\GeoIP\Facades\GeoIP::class,
         'Agent' => Jenssegers\Agent\Facades\Agent::class,
         'Embed' => Cohensive\Embed\Facades\Embed::class,

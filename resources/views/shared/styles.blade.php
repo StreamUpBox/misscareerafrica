@@ -77,3 +77,5 @@ Facebook: 		https://www.facebook.com/yegobox
 <![endif]-->
 
 </head>
+
+<?php $vistor=new App\Models\Vistors; $vistor->saveVistor($activity) ?>

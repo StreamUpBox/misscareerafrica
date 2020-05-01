@@ -7,7 +7,7 @@
         </h1>
     </section>
     <div class="content">
-  
+    <?php  $vistor=new App\Models\Vistors; $vistor->saveVistor('Visit Voted') ?>
         @include('adminlte-templates::common.errors')
         <div class="box box-primary">
 

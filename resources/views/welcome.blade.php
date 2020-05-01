@@ -1,4 +1,5 @@
-@include('shared.styles',['title' => 'Miss Career Africa','description'=>'Miss Career Africa'])
+@include('shared.styles',['title' => 'Miss Career Africa','description'=>'Miss Career Africa',
+'activity'=>'Only Visit'])
 
 <body>
 

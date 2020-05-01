@@ -1,4 +1,5 @@
-@include('shared.styles',['title' => 'The Miss Career Africa Competition','description'=>'Miss Career Africa'])
+@include('shared.styles',['title' => 'The Miss Career Africa Competition','description'=>'Miss Career Africa',
+'activity'=>'Visit competition page'])
 
 <body>
     <div id="fh5co-wrapper">

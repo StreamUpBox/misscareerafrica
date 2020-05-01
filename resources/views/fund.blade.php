@@ -1,4 +1,5 @@
-@include('shared.styles',['title' => 'Become a volunteer :: Miss Career','description'=>'Miss Career Africa'])
+@include('shared.styles',['title' => 'Fund Form :: Miss Career','description'=>'Miss Career Africa',
+'activity'=>'Visit Fund Form page'])
 
 <body>
     <div id="fh5co-wrapper">

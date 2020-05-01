@@ -78,7 +78,14 @@ Route::get('/scholarship', function () {
 Route::get('/selected-candidates', function () {
     return view('selectedcandidates');
 });
-
+Route::get('/crowned', function () {
+    return view('crowned');
+});
+//crwoned-info
+Route::get('/crwoned-info/{id}', function ($id) {
+    return view('crwoned-info')->with('id',$id);
+});
+//crowned
 Route::get('/past-candidates', function () {
     return view('past-candidates');
 });
@@ -135,3 +142,7 @@ Route::resource('candiateVoters', 'candiateVoterController');
 
 Route::resource('links', 'LinksController');
 Route::get('videos', 'LinksController@videos');
+
+Route::resource('vistors', 'VistorsController');
+
+Route::resource('crowneds', 'CrownedController');

@@ -1,4 +1,5 @@
-@include('shared.styles',['title' => 'GET TICKET :: Miss Career Africa','description'=>'Miss Career Africa'])
+@include('shared.styles',['title' => 'GET TICKET :: Miss Career Africa','description'=>'Miss Career Africa',
+'activity'=>'Visit get ticket page'])
 
 <body>
     <div id="fh5co-wrapper"  style=" background-image: url('/images/image-2.jpg');

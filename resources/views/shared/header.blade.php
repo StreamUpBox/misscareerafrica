@@ -41,8 +41,10 @@ function googleTranslateElementInit() {
                                 <ul class="sf-menu" id="fh5co-primary-menu">
                                     <li><a href="/" style="color: white;">HOME</a></li>
                                     <li><a href="book-mca" style="color: white;">BOOK HER</a></li>
-                                    
-                                   
+                                    <?php $crowned=\App\Models\Crowned::where('published',1)->count(); 
+                                    if($crowned > 0){ ?>
+                                    <li><a href="crowned" style="color: white;">Crowned</a></li>
+                                    <?php } ?>
                                     <li><a class="apply" style="color: white;" href="candidate-application">APPLY
                                             NOW</a></li>
                                             
@@ -81,4 +83,5 @@ function googleTranslateElementInit() {
                         </div>
                     </div>
                 </header>
+               
                
