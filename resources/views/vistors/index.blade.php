@@ -5,10 +5,10 @@
 
 <?php $dailyVisitors=\DB::table('vistors')->whereRaw('Date(created_at) = CURDATE()')->count();
 
-$country = \DB::table('vistors')
-                   ->select('country', DB::raw('MAX(country) as country'))
-                   ->where('country','!=',null)
-                   ->groupBy('country')->get();
+// $country = \DB::table('vistors')
+//                    ->select('country', DB::raw('MAX(country) as country'))
+//                    ->where('country','!=',null)
+//                    ->groupBy('country')->get();
 
                    $monthlyVisitors = \DB::table('vistors')
                 ->whereMonth('created_at', date('n'))
@@ -26,7 +26,6 @@ $country = \DB::table('vistors')
 
         <h1 class="pull-left ml-5" style="margin-left:40px">{{$yearlyVisitors}} Yearly Vistor(s)</h1>
 
-        <h1 class="pull-left ml-5" style="margin-left:40px"> Most Country {{$country}}</h1>
         <h1 class="pull-right">
            <!-- <a class="btn btn-primary pull-right" style="margin-top: -10px;margin-bottom: 5px" href="{!! route('sessions.create') !!}">Add New</a> -->
         </h1>
