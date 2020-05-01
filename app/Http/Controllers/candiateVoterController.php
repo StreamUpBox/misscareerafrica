@@ -69,18 +69,18 @@ class candiateVoterController extends AppBaseController
             Flash::error('Info email ['.$input['email'].'] does not allowed, Please try another email!');
             return redirect()->back();
         }
-        $response=$this->emailValidation($input['email']);
+        // $response=$this->emailValidation($input['email']);
 
-        if(isset($response{'message'}) && $response{'message'}=="This feature is unavailable please contact support."){
-            Flash::error('This feature is unavailable please contact support.');
-            return redirect()->back();
-        }
+        // if(isset($response{'message'}) && $response{'message'}=="This feature is unavailable please contact support."){
+        //     Flash::error('This feature is unavailable please contact support.');
+        //     return redirect()->back();
+        // }
 
-         if(isset($response{'result'}) && $response{'result'}=='undeliverable'){
-            Flash::error('Invalid Email Address, Please try another email!');
-            return redirect()->back();
+        //  if(isset($response{'result'}) && $response{'result'}=='undeliverable'){
+        //     Flash::error('Invalid Email Address, Please try another email!');
+        //     return redirect()->back();
 
-         }
+        //  }
 
        $candidate= candiateVoter::where('phone_number',$input['email'])
         ->where('candidate_id',$input['candidate_id'])->first();

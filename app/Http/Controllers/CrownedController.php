@@ -59,6 +59,10 @@ class CrownedController extends AppBaseController
     {
         $input = $request->all();
 
+        $request->validate([
+            'image' => 'required|image|mimes:jpeg,png,jpg',
+        ]);
+
         if ($request->file('image')) {
             $path = $request->file('image')->storePublicly('public');
             $image = env('APP_URL') . Storage::url($path);
@@ -125,7 +129,8 @@ class CrownedController extends AppBaseController
     public function update($id, UpdateCrownedRequest $request)
     {
         $crowned = $this->crownedRepository->find($id);
-
+        $input = $request->all();
+        
         if (empty($crowned)) {
             Flash::error('Crowned not found');
 
@@ -139,7 +144,9 @@ class CrownedController extends AppBaseController
             $input['image']=$crowned->image;
             }
 
-        $crowned = $this->crownedRepository->update($request->all(), $id);
+            
+
+        $crowned = $this->crownedRepository->update($input, $id);
 
         Flash::success('Crowned updated successfully.');
 
