@@ -42,6 +42,6 @@
 </li>
 
 <li class="{{ Request::is('candiateVoters*') ? 'active' : '' }}">
-    <a href="{!! route('candiateVoters.index') !!}"><i class="fa fa-edit"></i><span>Candidate Voted</span></a>
+    <a href="{!! route('candiateVoters.index') !!}"><i class="fa fa-edit"></i><span>Candidate Voters</span></a>
 </li>
 
