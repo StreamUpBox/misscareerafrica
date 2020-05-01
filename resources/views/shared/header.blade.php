@@ -50,7 +50,7 @@
                                     if($crowned > 0){ ?>
                     <li><a href="crowned" style="color: white;">Crowned</a></li>
                     <?php } ?>
-                    <li><a href="photos">Photos</a></li>
+                    <li><a href="photos" style="color: white;">Photos</a></li>
 
                     <li><a class="apply" style="color: white;" href="candidate-application">APPLY
                             NOW</a></li>
