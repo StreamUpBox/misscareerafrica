@@ -3,20 +3,16 @@
 @section('content')
 <?php $visitorss=\App\Models\Vistors::where('id','!=',0)->count(); ?>
 
-<?php $dailyVisitors=\DB::table('vistors')
-->whereDate('created_at', '2016-12-31')->count();
+<?php $dailyVisitors=\App\Models\Vistors::whereRaw('Date(created_at) = CURDATE()')->count();
 
-$country = \DB::table('vistors')
-                   ->select('country', \DB::raw('MAX(country) as country'))
+$country = \App\Models\Vistors::select('country', \DB::raw('MAX(country) as country'))
                    ->where('country','!=',null)
                    ->groupBy('country')->get();
 
-                   $monthlyVisitors = \DB::table('vistors')
-                ->whereMonth('created_at', date('n'))
+                   $monthlyVisitors = \App\Models\Vistors::whereMonth('created_at', date('n'))
                 ->count();
 
-                $yearlyVisitors = \DB::table('users')
-                ->whereYear('created_at', date("Y"))
+                $yearlyVisitors =\App\Models\Vistors::whereYear('created_at', date("Y"))
                 ->count();
 ?>
     <section class="content-header">
