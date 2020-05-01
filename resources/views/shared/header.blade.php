@@ -41,10 +41,7 @@ function googleTranslateElementInit() {
                                 <ul class="sf-menu" id="fh5co-primary-menu">
                                     <li><a href="/" style="color: white;">HOME</a></li>
                                     <li><a href="book-mca" style="color: white;">BOOK HER</a></li>
-                                    <?php $crowned=\App\Models\Crowned::where('published',1)->count(); 
-                                    if($crowned > 0){ ?>
-                                    <li><a href="crowned" style="color: white;">Crowned</a></li>
-                                    <?php } ?>
+                                 
                                     <li><a class="apply" style="color: white;" href="candidate-application">APPLY
                                             NOW</a></li>
                                             
@@ -68,7 +65,12 @@ function googleTranslateElementInit() {
                                         </ul>
                                     </li>
                                     <li><a style="color: white;" href="#">MORE..</a>
-                                        <ul class="fh5co-sub-menu">
+                                        <ul class="fh5co-sub-menu" style="margin-left:-50px">
+                                        <?php $crowned=\App\Models\Crowned::where('published',1)->count(); 
+                                    if($crowned > 0){ ?>
+                                    <li><a href="crowned" style="color: white;">CROWNED</a></li>
+                                    <?php } ?>
+                                    <li><a href="galleries">GALLERIES</a></li>
                                         <li><a href="videos">VIDEO AND LINKS</a></li>
                                             <li><a href="scholarship">MCA SCHOLARSHIP</a></li>
                                             <li><a href="fund">MCA FUND</a></li>

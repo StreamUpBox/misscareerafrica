@@ -81,6 +81,9 @@ Route::get('/selected-candidates', function () {
 Route::get('/crowned', function () {
     return view('crowned');
 });
+Route::get('/galleries', function () {
+    return view('galleries');
+});
 //crwoned-info
 Route::get('/crwoned-info/{id}', function ($id) {
     return view('crwoned-info')->with('id',$id);
