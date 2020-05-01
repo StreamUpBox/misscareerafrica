@@ -10,7 +10,9 @@
             <th>City</th>
             <th>State</th>
             <th>Date/Time</th>
+        <?php if(Auth::check()) {?>
         <th >Action</th>
+        <?php } ?>
          </tr>
         </thead>
         <tbody>
@@ -24,6 +26,7 @@
                 <td>{!! $vistor->city !!}</td>
                 <td>{!! $vistor->state !!}</td>
                 <td>{!! $vistor->created_at !!}</td>
+                <?php if(Auth::check()) {?>
                 <td>
                     {!! Form::open(['route' => ['vistors.destroy', $vistor->id], 'method' => 'delete']) !!}
                     <div class='btn-group'>
@@ -31,6 +34,7 @@
                     </div>
                     {!! Form::close() !!}
                 </td>
+                <?php } ?>
             </tr>
         @endforeach
         </tbody>

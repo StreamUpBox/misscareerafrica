@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app',['title'=>'View Analytics'])
 
 @section('content')
 <style>
@@ -24,6 +24,14 @@
     }
 
 </style>
+<?php if(!Auth::check()) {?>
+<style>
+
+body{
+    background-color: #ecf0f5!important; 
+}
+</style>
+<?php } ?>
 <?php $visitorss=\App\Models\Vistors::where('id','!=',0)->count(); ?>
 
 <?php $dailyVisitors=\App\Models\Vistors::whereRaw('Date(created_at) = CURDATE()')->count();
@@ -53,7 +61,7 @@ $country = \App\Models\Vistors::select('country', \DB::raw('MAX(country) as coun
         </div>
 
         <div class="col-sm-3">
-            <div class="box box-primary">
+            <div class="box box-success">
                 <div class="box-body">
                     Daily Vistor(s)
                     <hr>
@@ -63,8 +71,8 @@ $country = \App\Models\Vistors::select('country', \DB::raw('MAX(country) as coun
             </div>
         </div>
 
-        <div class="col-sm-3">
-            <div class="box box-primary">
+        <div class="col-sm-3 box-warning">
+            <div class="box box-warning">
                 <div class="box-body">
                     Monthly Vistor(s)
                     <hr>
@@ -75,7 +83,7 @@ $country = \App\Models\Vistors::select('country', \DB::raw('MAX(country) as coun
         </div>
 
         <div class="col-sm-3">
-            <div class="box box-primary">
+            <div class="box box-info">
                 <div class="box-body">
                     Yearly Vistor(s)
                     <hr>

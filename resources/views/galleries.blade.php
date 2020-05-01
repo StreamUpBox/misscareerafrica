@@ -1,5 +1,5 @@
-@include('shared.styles',['title' => 'Gallaries','description'=>'Miss Career Africa',
-'activity'=>'Visit Gallaries Page'])
+@include('shared.styles',['title' => 'Photos','description'=>'Miss Career Africa - Photos',
+'activity'=>'Visit Photos Page'])
 
 <body>
     <div id="fh5co-wrapper" style=" background-image: url('/images/sld1.png');

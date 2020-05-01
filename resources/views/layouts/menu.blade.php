@@ -46,6 +46,6 @@
 </li>
 
 <li class="{{ Request::is('gallaries*') ? 'active' : '' }}">
-    <a href="{!! route('gallaries.index') !!}"><i class="fa fa-edit"></i><span>Gallaries</span></a>
+    <a href="{!! route('gallaries.index') !!}"><i class="fa fa-edit"></i><span>Photos</span></a>
 </li>
 
