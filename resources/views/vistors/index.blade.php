@@ -3,7 +3,8 @@
 @section('content')
 <?php $visitorss=\App\Models\Vistors::where('id','!=',0)->count(); ?>
 
-<?php $dailyVisitors=\DB::table('vistors')->whereRaw('Date(created_at) = CURDATE()')->count();
+<?php $dailyVisitors=\DB::table('vistors')
+->whereDate('created_at', '2016-12-31')->count();
 
 $country = \DB::table('vistors')
                    ->select('country', \DB::raw('MAX(country) as country'))
