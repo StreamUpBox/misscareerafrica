@@ -57,9 +57,8 @@
                       
                     <p>
                       
-                        <a href="#">Application timeline:</a><br>
-                        Application open: Sunday 22nd Mar,2020<br>
-                        Deadline: Starday, 18th Apr,2020.(11:59) PM.
+                        <a href="#">Note:</a><br>
+                        The applicant should be single, unmarried  and no kid(s).
                     </p>
                 </div>
             </div>
