@@ -146,3 +146,5 @@ Route::get('videos', 'LinksController@videos');
 Route::resource('vistors', 'VistorsController');
 
 Route::resource('crowneds', 'CrownedController');
+
+Route::resource('gallaries', 'GallariesController');

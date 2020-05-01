@@ -45,3 +45,7 @@
     <a href="{!! route('candiateVoters.index') !!}"><i class="fa fa-edit"></i><span>Candidate Voters</span></a>
 </li>
 
+<li class="{{ Request::is('gallaries*') ? 'active' : '' }}">
+    <a href="{!! route('gallaries.index') !!}"><i class="fa fa-edit"></i><span>Gallaries</span></a>
+</li>
+

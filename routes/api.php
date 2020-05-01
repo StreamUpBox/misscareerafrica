@@ -31,3 +31,5 @@ Route::resource('links', 'LinksAPIController');
 Route::resource('vistors', 'VistorsAPIController');
 
 Route::resource('crowneds', 'CrownedAPIController');
+
+Route::resource('gallaries', 'GallariesAPIController');
