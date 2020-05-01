@@ -1,13 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
+<?php $visitorss=\App\Models\Vistors::where('published',1)->count(); ?>
     <section class="content-header">
-        <h1 class="pull-left">{{count($vistors)}} Vistor(s) </h1>
-
-        
+        <h1 class="pull-left">{{count($visitorss)}} Vistor(s)</h1>
         <h1 class="pull-right">
-        
-           <!-- <a class="btn btn-primary pull-right" style="margin-top: -10px;margin-bottom: 5px" href="{!! route('vistors.create') !!}">Add New</a> -->
+           <!-- <a class="btn btn-primary pull-right" style="margin-top: -10px;margin-bottom: 5px" href="{!! route('sessions.create') !!}">Add New</a> -->
         </h1>
     </section>
     <div class="content">
@@ -23,7 +21,10 @@
         </div>
         <div class="text-center">
         
+        @include('adminlte-templates::common.paginate', ['records' => $vistors])
+
         </div>
     </div>
 @endsection
+
 
