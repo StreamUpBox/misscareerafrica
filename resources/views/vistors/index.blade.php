@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<?php $visitorss=\App\Models\Vistors::where('published',1)->count(); ?>
+<?php $visitorss=\App\Models\Vistors::where('id','!=',0)->count(); ?>
     <section class="content-header">
         <h1 class="pull-left">{{count($visitorss)}} Vistor(s)</h1>
         <h1 class="pull-right">
