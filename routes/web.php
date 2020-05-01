@@ -81,7 +81,7 @@ Route::get('/selected-candidates', function () {
 Route::get('/crowned', function () {
     return view('crowned');
 });
-Route::get('/galleries', function () {
+Route::get('/photos', function () {
     return view('galleries');
 });
 //crwoned-info

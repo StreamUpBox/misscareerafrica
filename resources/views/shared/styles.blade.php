@@ -71,6 +71,10 @@ Facebook: 		https://www.facebook.com/yegobox
 
     <!-- Modernizr JS -->
     <script src="{{ asset('js/modernizr-2.6.2.min.js') }}"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <link rel="stylesheet" href="gallery-grid.css">
+    
     <!-- FOR IE9 below -->
     <!--[if lt IE 9]>
 <script src="js/respond.min.js"></script>
