@@ -98,7 +98,7 @@
                                  <div class="col-12">
                                 <a href="https://www.theeventx.com/view-event/44" class="btn btn-info btn-block btn-sm"> GET TICKET </a>
                                             
-                                    <a href="book-mca" class="btn btn-info btn-block btn-sm">
+                                    <a href="book-mca" class="btn btn-primary btn-block btn-sm">
                                         BOOK HER
                                     </a>
                                 </div>
