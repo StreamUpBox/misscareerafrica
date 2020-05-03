@@ -9421,3 +9421,27 @@ label.error {
 {
 max-width:300px;
 }
+
+.donate {
+	box-shadow: -1px 1px 2px 0px #3dc21b;
+	background-color:#44c767;
+	border-radius:2px;
+	border:2px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:4px 50px;
+	text-decoration:none;
+	text-shadow:0px -1px 25px #2f6627;
+}
+
+.donate:hover {
+	background-color:#5cbf2a;
+}
+.donate:active {
+	position:relative;
+	top:1px;
+}

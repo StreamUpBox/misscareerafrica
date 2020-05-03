@@ -93,6 +93,11 @@ Route::get('/past-candidates', function () {
     return view('past-candidates');
 });
 
+Route::get('/donate', function () {
+     $vistor=new App\Models\Vistors; $vistor->saveVistor('Donate');
+    return redirect('https://donate.microlendaustralia.com.au/');
+});
+
 //
 Auth::routes([ 'register' => false ]);
 

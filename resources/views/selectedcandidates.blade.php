@@ -40,7 +40,14 @@
                         <img class="img-fluid" src="/images/final-sa.jpeg" style="width:100%;">
 
                         <div class="card-footer bg-transparent border-success">
-                            <a href="https://theeventx.com/view-event/44" class="btn btn-success btn-block btn-sm">
+                   
+                        <div class="col-12 mb-2">
+                                   
+                                   <a href="/donate" class="donate text-center  btn-block">#Donate2HerProject</a>
+                               
+                            </div>
+                       
+                            <a href="https://theeventx.com/view-event/44" class="btn btn-info btn-block btn-sm">
                                 Get Ticket
                             </a>
 

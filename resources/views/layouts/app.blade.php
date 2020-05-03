@@ -108,6 +108,7 @@
 
     </div>
 @else
+<?php if(Auth::check()){ ?>
     <nav class="navbar navbar-default navbar-static-top">
         <div class="container">
             <div class="navbar-header">
@@ -142,6 +143,7 @@
             </div>
         </div>
     </nav>
+<?php } ?>
 
     <div id="page-content-wrapper">
         <div class="container-fluid">

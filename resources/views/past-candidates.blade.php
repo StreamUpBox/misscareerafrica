@@ -81,13 +81,21 @@
                                         
                                         <b class="card-text">
                                             <hr />
-                                            <a
-                                                href="past-candidate-page/{{$candidate->id}}">{{str_limit($candidate->bio, $limit = 100, $end = 'read more ....')}}</a>
+                                         
+                                            <a href="past-candidate-page/{{$candidate->id}}">{{str_limit($candidate->bio, $limit = 100, $end = 'read more ....')}}</a>
+                                      
                                         </b>
                                     </div>
                                 </a>
 
                                 <div class="card-footer bg-transparent border-success">
+
+                                <div class="col-12 mb-2">
+                                   
+                                        <a href="/donate" class="donate text-center  btn-block">#Donate2HerProject</a>
+                                    
+                                 </div>
+
                                 <a href="https://www.theeventx.com/view-event/44" class="btn btn-info btn-block btn-sm"> GET TICKET </a>
                                             
                                     <a href="book-mca" class="btn btn-success btn-block btn-sm">

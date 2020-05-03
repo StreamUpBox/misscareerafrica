@@ -138,8 +138,13 @@ function loadSelectedCandidates(){
                             Votes &nbsp;&nbsp;${element.votes}
                         </button>
                         </div>
+                              <div class="col-12 mb-2">
+                                   
+                                        <a href="/donate" class="donate text-center  btn-block">#Donate2HerProject</a>
+                                    
+                                 </div>
                                 <div class="col-12">
-                                <a href="https://www.theeventx.com/view-event/44" class="btn btn-success btn-block btn-sm">
+                                <a href="https://www.theeventx.com/view-event/44" class="btn btn-info btn-block btn-sm">
                                 Get Ticket
                                 </a>
                                 </div>

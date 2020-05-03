@@ -101,11 +101,16 @@ Facebook: 		https://www.facebook.com/yegobox
                                 </div>
                         <div class="card-footer bg-transparent border-success">
                                     <div class="row">
-                                       
+                                   
+                                    <div class="col-12 mb-2">
+                                   
+                                        <a href="/donate" class="donate text-center  btn-block">#Donate2HerProject</a>
+                                    
+                                    </div>
 
                                         <div class="col-12">
                                             <a href="/book-mca"
-                                                class="btn btn-success btn-block btn-sm">
+                                                class="btn btn-info btn-block btn-sm">
                                                 BOOK HER
                                             </a>
                                         </div>

@@ -115,6 +115,12 @@ Facebook: 		https://www.facebook.com/yegobox
 
                                 <div class="card-footer bg-transparent border-success">
                                     <div class="row">
+
+                                    <div class="col-12 mb-2">
+                                   
+                                        <a href="/donate" class="donate text-center  btn-block">#Donate2HerProject</a>
+                                    
+                                    </div>
                                         <div class="col-6">
                                            
                                             <a href="/candiateVoters/{{$candidate->id}}"
@@ -125,7 +131,7 @@ Facebook: 		https://www.facebook.com/yegobox
 
                                         <div class="col-6">
                                             <a href="https://theeventx.com/view-event/44"
-                                                class="btn btn-success btn-block btn-sm">
+                                                class="btn btn-info btn-block btn-sm">
                                                 Get Ticket
                                             </a>
                                         </div>
