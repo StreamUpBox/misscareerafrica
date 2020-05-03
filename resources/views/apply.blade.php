@@ -41,6 +41,7 @@
                                     <h1><b>MISS CAREER AFRICA - APPLICATION FORM</b></h1>
                                     <!-- <h1 class="text-center text-warning"><b>APPLICATION CLOSED</b></h1> -->
                                     <hr />
+                                   
                                     <!-- <img src="images/apply-next.jpeg"> -->
                                 </div>
 
@@ -620,6 +621,7 @@
                                                 <input type="submit" value="Submit" id="submit"
                                                     class="btn btn-primary btn-lg btn-block">
                                             </div>
+                                            <a href="/donate" class="donate text-center m-2  btn-block">#Donate2HerProject</a>
                                         </div>
 
                                     </div>

@@ -38,12 +38,17 @@ function loadCurrentSession(){
                         <h2 class="wpb_heading wpb_singleimage_heading2 text-center">
 
                             <hr />
-                            <div class="float-left"><h4 href="#" class="ml-5 mt-4 card-link text-info">${data.date}</h4></div>
-                            <div class="float-right">${candidate} ${apply}</div>
+                           
+
+                            <div class="float-left"><h4 href="#" class="ml-5 mt-4 card-link text-info">${data.date}  </h4>
+                           
+                            </div>
+                            <div class="float-right">  ${candidate} ${apply}</div>
 
                         </h2>
+                      
                     </a>
-
+                   
                     </div>
                 </div>
                     `;
