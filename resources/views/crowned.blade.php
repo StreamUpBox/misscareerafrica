@@ -34,29 +34,29 @@
                 ?>
             <div id="fh5co-blog-section">
                 <div class="container" id="contact">
-                 
+
                     <div class="row">
-                
+
                         @foreach($crowneds as $crowend)
-                    
+
                         <div class="col-md-4">
                             <div class="card border-success mb-3" style="max-width: 100%">
                                 <div class="card-header bg-transparent border-success"><b>{{$crowend->title}}
-                                  </b></div>
-                                  <a href="crwoned-info/{{$crowend->id}}">
+                                    </b></div>
+                                <a href="crwoned-info/{{$crowend->id}}">
                                     <div class="img-fluid" style=" background-image: url('{{$crowend->image}}');
                                     background-repeat: no-repeat;width:100%;min-height:300px;
                                     background-size: cover; background-size: center center"></div>
                                     <div class="card-body text-success">
                                         <div class="row">
-                                        <div class="col-sm-12">
-                                        <h5 class="card-title"><b>Award: {{$crowend->award}}</b>
-                                        </h5>
-                                       
+                                            <div class="col-sm-12">
+                                                <h5 class="card-title"><b>Award: {{$crowend->award}}</b>
+                                                </h5>
+
+                                            </div>
+
                                         </div>
-                                      
-                                        </div>
-                                        
+
                                         <b class="card-text">
                                             <hr />
                                             <a
@@ -66,12 +66,17 @@
                                 </a>
 
                                 <div class="card-footer bg-transparent border-success">
-                                <!-- <a href="https://www.theeventx.com/view-event/44" class="btn btn-info btn-block btn-sm"> GET TICKET </a> -->
-                                            
-                                    <a href="book-mca" class="btn btn-success btn-block btn-sm">
-                                        BOOK HER
-                                    </a>
+                                    <!-- <a href="https://www.theeventx.com/view-event/44" class="btn btn-info btn-block btn-sm"> GET TICKET </a> -->
+                                    <div class="col-12 mb-2">
 
+                                        <a href="/donate" class="donate text-center  btn-block">#Donate2HerProject</a>
+
+                                    </div>
+                                    <div class="col-12">
+                                        <a href="book-mca" class="btn btn-success btn-block btn-sm">
+                                            BOOK HER
+                                        </a>
+                                    </div>
                                 </div>
 
 
@@ -79,11 +84,11 @@
                         </div>
                         @endforeach
 
-                </div>
+                    </div>
 
+                </div>
             </div>
-        </div>
-        @include('shared.footer')
+            @include('shared.footer')
 
 </body>
 

@@ -120,7 +120,11 @@ Facebook: 		https://www.facebook.com/yegobox
 
                                 <div class="card-footer bg-transparent border-success">
                                     <div class="row">
-                                     
+                                    <div class="col-12 mb-2">
+                                   
+                                   <a href="/donate" class="donate text-center  btn-block">#Donate2HerProject</a>
+                               
+                                  </div>
 
                                         <!-- <div class="col-12">
                                             <a href="https://theeventx.com/view-event/44"
