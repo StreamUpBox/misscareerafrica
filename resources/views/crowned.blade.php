@@ -73,7 +73,7 @@
 
                                     </div>
                                     <div class="col-12">
-                                        <a href="book-mca" class="btn btn-success btn-block btn-sm">
+                                        <a href="book-mca" class="btn btn-info btn-block btn-sm">
                                             BOOK HER
                                         </a>
                                     </div>
