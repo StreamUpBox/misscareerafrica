@@ -37,7 +37,7 @@
                     @foreach($allSessions as $session)
                     <hr>
                     <div class="row">
-                        <div class="col-sm-3"  style="background-image: url('/images/{{$session->image}}');
+                        <div class="col-sm-3"  style="background-image: url('{{$session->image}}');
                                     background-repeat: no-repeat;width:100%;min-height:90px;
                                     background-size: cover; background-size: center center">
 
