@@ -134,6 +134,7 @@ class GallariesController extends AppBaseController
 
             return redirect(route('gallaries.index'));
         }
+        $input = $request->all();
 
         if ($request->file('image')) {
             $path = $request->file('image')->storePublicly('public');
@@ -143,7 +144,7 @@ class GallariesController extends AppBaseController
             $input['image']=$crowned->image;
             }
             
-        $gallaries = $this->gallariesRepository->update($request->all(), $id);
+        $gallaries = $this->gallariesRepository->update($input, $id);
 
         Flash::success('Gallaries updated successfully.');
 

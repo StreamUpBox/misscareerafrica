@@ -1,7 +1,9 @@
 <li class="{{ Request::is('sessions*') ? 'active' : '' }}">
     <a href="{!! route('sessions.index') !!}"><i class="fa fa-edit"></i><span>Sessions</span></a>
 </li>
-
+<li class="{{ Request::is('donateSessions*') ? 'active' : '' }}">
+    <a href="{!! route('donateSessions.index') !!}"><i class="fa fa-edit"></i><span>Donate Sessions</span></a>
+</li>
 
 <li class="{{ Request::is('candidates*') ? 'active' : '' }}">
     <a href="{!! route('candidates.index') !!}"><i class="fa fa-edit"></i><span>Candidates</span></a>
@@ -47,5 +49,11 @@
 
 <li class="{{ Request::is('gallaries*') ? 'active' : '' }}">
     <a href="{!! route('gallaries.index') !!}"><i class="fa fa-edit"></i><span>Photos</span></a>
+</li>
+
+
+
+<li class="{{ Request::is('donationApplicants*') ? 'active' : '' }}">
+    <a href="{!! route('donationApplicants.index') !!}"><i class="fa fa-edit"></i><span>Donation Applicants</span></a>
 </li>
 

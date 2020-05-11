@@ -50,6 +50,8 @@
                                     if($crowned > 0){ ?>
                     <li><a href="crowned" style="color: white;">Crowned</a></li>
                     <?php } ?>
+
+                  
                     <li><a href="photos" style="color: white;">Photos</a></li>
 
                     <li><a class="apply" style="color: white;" href="candidate-application">APPLY
@@ -59,7 +61,23 @@
                             Preselected</a></li>
                     <!-- <li><a class="can-voting" style="color: white;" href="selected-candidates">VOTE PRESELECTED CANDIDATES</a></li> -->
 
-                    <li><a class="" style="color: white;" href="past-candidates">PAST CANDIDATES</a></li>
+                    <?php 
+                    $opnDonateSessions=\App\Models\DonateSessions::where('can_open_donation_system',1)->count(); 
+
+                    $appyDonateSessions=\App\Models\DonateSessions::where('can_start_application_system',1)->count(); 
+
+                     if($opnDonateSessions > 0 || $appyDonateSessions){ ?>
+                    <li><a style="color: white;" href="#">DONATION</a>
+                        <ul class="fh5co-sub-menu">
+                        <?php  if($appyDonateSessions > 0){ ?>
+                            <li><a href="apply-donation">Apply For Donation</a></li>
+                            <?php } ?>
+                            <?php  if($opnDonateSessions > 0){ ?>
+                                    <li><a href="donate-to-her">Donate To Her</a></li>
+                            <?php } ?>
+                        </ul>
+                    </li>
+                    <?php } ?>
 
 
                     <li><a style="color: white;" href="#">ORGANIZATION</a>
@@ -77,6 +95,7 @@
                     </li>
                     <li><a style="color: white;" href="#">MORE..</a>
                         <ul class="fh5co-sub-menu" style="margin-left:-50px">
+                        <li><a class="" style="color: white;" href="past-candidates">PAST CANDIDATES</a></li>
                             <li><a href="book-mca" style="color: white;">BOOK HER</a></li>
 
                             <li><a href="videos">VIDEO AND LINKS</a></li>

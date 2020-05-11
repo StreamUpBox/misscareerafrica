@@ -6,20 +6,23 @@
 <html class="no-js">
 <!--<![endif]-->
 <?php  
-$crowned =  \App\Models\Crowned::find($id);
-if(!$crowned) {
-    abort('404');
-} 
-$vistor=new App\Models\Vistors; $vistor->saveVistor('Visit Crowned');
+
+ $candidates = \App\Models\DonationApplicants::where('allowed_dantion',1)->where('id',$id)->first();
+   if(!$candidates) {
+      echo "<h2> 404</h2>";
+      return;
+   }               
+
+$vistor=new App\Models\Vistors; $vistor->saveVistor('Visit Donate -'.$candidates->full_name);
 
 ?>
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{{$crowned->title}}</title>
+    <title>Donate - {{$candidates->full_name}}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="{{$crowned->bio}}" />
+    <meta name="description" content="{{$candidates->bio}}" />
     <meta name="keywords" content="Miss Career, Yegobox, Theeventx,Hireher" />
     <meta name="author" content="Yegobox Team" />
 
@@ -36,19 +39,19 @@ Facebook: 		https://www.facebook.com/yegobox
 -->
 
     <!-- Facebook and Twitter integration -->
-    <meta property="og:title" content="{{$crowned->title}}" />
-    <meta property="og:image" content="{{$crowned->image}}" />
+    <meta property="og:title" content="Donate - {{$candidates->full_name}}" />
+    <meta property="og:image" content="{{$candidates->upload_your_profile_picture}}" />
     <meta property="og:url" content="" />
     <meta property="og:site_name" content="" />
-    <meta property="og:description" content="{{$crowned->bio}}" />
-    <meta name="twitter:title" content="{{$crowned->title}}}" />
-    <meta name="twitter:image" content="{{$crowned->image}}" />
+    <meta property="og:description" content="{{$candidates->bio}}" />
+    <meta name="twitter:title" content="Donate - {{$candidates->full_name}}" />
+    <meta name="twitter:image" content="{{$candidates->upload_your_profile_picture}}" />
     <meta name="twitter:url" content="" />
-    <meta name="twitter:card" content="{{$crowned->bio}}" />
+    <meta name="twitter:card" content="{{$candidates->bio}}" />
 
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <link rel="shortcut icon" href="{{$crowned->image}}">
+    <link rel="shortcut icon" href="{{$candidates->upload_your_profile_picture}}">
     <!-- <link href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700italic,900,700,900italic' rel='stylesheet' type='text/css'> -->
 
     <!-- Stylesheets -->
@@ -110,14 +113,14 @@ Facebook: 		https://www.facebook.com/yegobox
                     <div class="row can-voting">
                         <div class="col-md-12">
                             <div class="card border-success mb-3" style="max-width: 100%">
-                                <div class="card-header bg-transparent border-success"><b>{{$crowned->title}}
+                                <div class="card-header bg-transparent border-success"><b>{{$candidates->full_name}}
                                       </b></div>
-                                <img class="img-fluid" src="{{$crowned->image}}" style="width:100%;">
+                                <img class="img-fluid" src="{{$candidates->upload_your_profile_picture}}" style="width:100%;">
                                 <div class="card-body text-success">
-                                    <h5 class="card-title"><b>Award: {{$crowned->award}}</b></h5>
+                                
                                     <b class="card-text">
                                         <hr />
-                                        {{$crowned->bio}}
+                                        {{$candidates->bio}}
                                     </b>
                                 </div>
 

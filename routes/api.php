@@ -33,3 +33,7 @@ Route::resource('vistors', 'VistorsAPIController');
 Route::resource('crowneds', 'CrownedAPIController');
 
 Route::resource('gallaries', 'GallariesAPIController');
+
+Route::resource('donate_sessions', 'DonateSessionsAPIController');
+
+Route::resource('donation_applicants', 'DonationApplicantsAPIController');

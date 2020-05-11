@@ -81,6 +81,19 @@ Route::get('/selected-candidates', function () {
 Route::get('/crowned', function () {
     return view('crowned');
 });
+//apply-donation
+Route::get('/apply-donation', function () {
+    return view('apply-donation');
+});
+
+Route::get('/donate-to-her', function () {
+    return view('donate-to-her');
+});
+Route::get('/donate-to-her-details/{id}', function ($id) {
+    return view('donate-to-her-details')->with('id',$id);
+});
+
+
 Route::get('/photos', function () {
     return view('galleries');
 });
@@ -156,3 +169,7 @@ Route::resource('vistors', 'VistorsController');
 Route::resource('crowneds', 'CrownedController');
 
 Route::resource('gallaries', 'GallariesController');
+
+Route::resource('donateSessions', 'DonateSessionsController');
+
+Route::resource('donationApplicants', 'DonationApplicantsController');
