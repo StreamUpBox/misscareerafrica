@@ -45,21 +45,21 @@
                         style="width: 200px;height:80px;position: relative;bottom:25px"></a></span>
             <nav id="fh5co-menu-wrap" role="navigation">
                 <ul class="sf-menu" id="fh5co-primary-menu">
-                    <li><a href="/" style="color: white;">HOME</a></li>
+                    <li><a href="/" style="color: #556cd6;;">HOME</a></li>
                     <?php $crowned=\App\Models\Crowned::where('published',1)->count(); 
                                     if($crowned > 0){ ?>
-                    <li><a href="crowned" style="color: white;">Crowned</a></li>
+                    <li><a href="crowned" style="color: #556cd6;;">Crowned</a></li>
                     <?php } ?>
 
                   
-                    <li><a href="photos" style="color: white;">Photos</a></li>
+                    <li><a href="photos" style="color: #556cd6;;">Photos</a></li>
 
-                    <li><a class="apply" style="color: white;" href="candidate-application">APPLY
+                    <li><a class="apply" style="color: #556cd6;;" href="candidate-application">APPLY
                             NOW</a></li>
 
-                    <li><a class="can-voting" style="color: white;" href="selected-candidates">SA Region-15
+                    <li><a class="can-voting" style="color: #556cd6;;" href="selected-candidates">SA Region-15
                             Preselected</a></li>
-                    <!-- <li><a class="can-voting" style="color: white;" href="selected-candidates">VOTE PRESELECTED CANDIDATES</a></li> -->
+                    <!-- <li><a class="can-voting" style="color: #556cd6;;" href="selected-candidates">VOTE PRESELECTED CANDIDATES</a></li> -->
 
                     <?php 
                     $opnDonateSessions=\App\Models\DonateSessions::where('can_open_donation_system',1)->count(); 
@@ -67,7 +67,7 @@
                     $appyDonateSessions=\App\Models\DonateSessions::where('can_start_application_system',1)->count(); 
 
                      if($opnDonateSessions > 0 || $appyDonateSessions){ ?>
-                    <li><a style="color: white;" href="#">DONATION</a>
+                    <li><a style="color: #556cd6;;" href="#">DONATION</a>
                         <ul class="fh5co-sub-menu">
                         <?php  if($appyDonateSessions > 0){ ?>
                             <li><a href="apply-donation">Apply For Donation</a></li>
@@ -80,23 +80,23 @@
                     <?php } ?>
 
 
-                    <li><a style="color: white;" href="#">ORGANIZATION</a>
+                    <li><a style="color: #556cd6;;" href="#">ORGANIZATION</a>
                         <ul class="fh5co-sub-menu">
                             <li><a href="blog">Our Blog</a></li>
                             <li><a href="scope">Our scope</a></li>
                             <li><a href="contact">Contact Us</a></li>
                         </ul>
                     </li>
-                    <li><a style="color: white;" href="#">SUPPORT</a>
+                    <li><a style="color: #556cd6;;" href="#">SUPPORT</a>
                         <ul class="fh5co-sub-menu">
                             <li><a href="volunteer">Become a volunteer</a></li>
                             <li><a href="sponsor">Become a sponsor</a></li>
                         </ul>
                     </li>
-                    <li><a style="color: white;" href="#">MORE..</a>
+                    <li><a style="color: #556cd6;;" href="#">MORE..</a>
                         <ul class="fh5co-sub-menu" style="margin-left:-50px">
-                        <li><a class="" style="color: white;" href="past-candidates">PAST CANDIDATES</a></li>
-                            <li><a href="book-mca" style="color: white;">BOOK HER</a></li>
+                        <li><a class="" style="color: #556cd6;;" href="past-candidates">PAST CANDIDATES</a></li>
+                            <li><a href="book-mca" style="color: #556cd6;;">BOOK HER</a></li>
 
                             <li><a href="videos">VIDEO AND LINKS</a></li>
                             <li><a href="scholarship">MCA SCHOLARSHIP</a></li>
