@@ -5,10 +5,10 @@
     <tr>
 
     <td>
-    {!! Form::label('email', 'Enter a Valid Email:') !!}
+    {!! Form::label('email', 'Enter a Phone number:') !!}
    
     </td>
-    <td> {!! Form::email('email', null, ['class' => 'form-control']) !!}</td>
+    <td> {!! Form::text('address', null, ['class' => 'form-control']) !!}</td>
     <td>
     {!! Form::submit('Vote now', ['class' => 'btn btn-info btn-block']) !!}
     </td>

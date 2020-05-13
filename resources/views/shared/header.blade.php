@@ -54,8 +54,7 @@
                   
                     <li><a href="photos" style="color: #556cd6;;">Photos</a></li>
 
-                    <li><a class="apply" style="color: #556cd6;;" href="candidate-application">APPLY
-                            NOW</a></li>
+                    <li><a class="apply" style="color: #556cd6;;" href="candidate-application">APPLY</a></li>
 
                     <li><a class="can-voting" style="color: #556cd6;;" href="selected-candidates">SA Region-15
                             Preselected</a></li>
@@ -80,13 +79,16 @@
                     <?php } ?>
 
 
-                    <li><a style="color: #556cd6;;" href="#">ORGANIZATION</a>
-                        <ul class="fh5co-sub-menu">
-                            <li><a href="blog">Our Blog</a></li>
-                            <li><a href="scope">Our scope</a></li>
-                            <li><a href="contact">Contact Us</a></li>
-                        </ul>
-                    </li>
+                    <li><a class="" style="color: #556cd6;;" href="past-candidates">PAST CANDIDATES</a></li>
+
+                    <li><a style="color: #556cd6;;" href="#">ORG</a>
+                                <ul class="fh5co-sub-menu">
+                                    <li><a href="blog">Our Blog</a></li>
+                                    <li><a href="scope">Our scope</a></li>
+                                    <li><a href="contact">Contact Us</a></li>
+                                </ul>
+                             </li>
+
                     <li><a style="color: #556cd6;;" href="#">SUPPORT</a>
                         <ul class="fh5co-sub-menu">
                             <li><a href="volunteer">Become a volunteer</a></li>
@@ -95,7 +97,7 @@
                     </li>
                     <li><a style="color: #556cd6;;" href="#">MORE..</a>
                         <ul class="fh5co-sub-menu" style="margin-left:-50px">
-                        <li><a class="" style="color: #556cd6;;" href="past-candidates">PAST CANDIDATES</a></li>
+                       
                             <li><a href="book-mca" style="color: #556cd6;;">BOOK HER</a></li>
 
                             <li><a href="videos">VIDEO AND LINKS</a></li>
@@ -103,8 +105,12 @@
                             <li><a href="fund">MCA FUND</a></li>
                             <li><a href="book-mca">BOOK MCA</a></li>
                             <li><a href="eligibility">ELIGIBILITY</a></li>
+
+                           
+
                         </ul>
                     </li>
+
 
 
                 </ul>

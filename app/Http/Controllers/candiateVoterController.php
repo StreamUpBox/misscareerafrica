@@ -61,14 +61,14 @@ class candiateVoterController extends AppBaseController
         $input = $request->all();
         
         $this->validate($request,[
-            'email' => ['required'],
+            'address' => ['required'],
         ]);
 
-        $info=explode('@',$input['email'])[0];
-        if(isset($info) && $info=='info'){
-            Flash::error('Info email ['.$input['email'].'] does not allowed, Please try another email!');
-            return redirect()->back();
-        }
+        // $info=explode('@',$input['email'])[0];
+        // if(isset($info) && $info=='info'){
+        //     Flash::error('Info email ['.$input['email'].'] does not allowed, Please try another email!');
+        //     return redirect()->back();
+        // }
         // $response=$this->emailValidation($input['email']);
 
         // if(isset($response{'message'}) && $response{'message'}=="This feature is unavailable please contact support."){
@@ -82,14 +82,14 @@ class candiateVoterController extends AppBaseController
 
         //  }
 
-       $candidate= candiateVoter::where('phone_number',$input['email'])
+       $candidate= candiateVoter::where('phone_number',$input['address'])
         ->where('candidate_id',$input['candidate_id'])->first();
         
         if($candidate){
             Flash::error('You have voted this candidate');
             return redirect()->back();
         }
-        $input['phone_number']=$input['email'];
+        $input['phone_number']=$input['address'];
         $candiateVoter = $this->candiateVoterRepository->create($input);
 
         Flash::success('Thank you for voting this candidate.');
