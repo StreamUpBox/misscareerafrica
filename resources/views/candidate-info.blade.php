@@ -116,11 +116,16 @@ Facebook: 		https://www.facebook.com/yegobox
                                 <div class="card-footer bg-transparent border-success">
                                     <div class="row">
 
-                                    <div class="col-12 mb-2">
+                                    <div class="col-6 mb-2">
                                    
                                         <a href="/donate" class="donate text-center  btn-block">#Donate2HerProject</a>
                                     
                                     </div>
+                                    <div class="col-6 mb-2">
+                                 <a href="https://www.hireherapp.com/register" style="background:#000;border-color:#000" class="btn btn-info btn-block btn-sm">
+                                 Get Hired
+                                 </a>
+                                 </div>
                                         <div class="col-6">
                                            
                                             <a href="/candiateVoters/{{$candidate->id}}"
@@ -135,6 +140,8 @@ Facebook: 		https://www.facebook.com/yegobox
                                                 Get Ticket
                                             </a>
                                         </div>
+                                       
+                                        
                                     </div>
                                 </div> 
                             </div>

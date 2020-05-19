@@ -43,7 +43,7 @@ function loadCurrentSession(){
                             <div class="float-left"><h4 href="#" class="ml-5 mt-4 card-link text-info">${data.date}  </h4>
                            
                             </div>
-                            <div class="float-right">  ${candidate} ${apply}</div>
+                            <div class="float-right"> <a href="https://www.hireherapp.com/register" class="btn btn-success"> Hire Her </a>  ${candidate} ${apply}</div>
 
                         </h2>
                       
@@ -148,6 +148,12 @@ function loadSelectedCandidates(){
                                         <a href="/donate" class="donate text-center  btn-block">#Donate2HerProject</a>
                                     
                                  </div>
+                                 <div class="col-12">
+                                 <a href="https://www.hireherapp.com/register" style="background:#000;border-color:#000" class="btn btn-info btn-block btn-sm">
+                                 Get Hired
+                                 </a>
+                                 </div>
+
                                 <div class="col-12">
                                 <a href="https://www.theeventx.com/view-event/44" class="btn btn-info btn-block btn-sm">
                                 Get Ticket
