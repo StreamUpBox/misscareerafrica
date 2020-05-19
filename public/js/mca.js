@@ -43,7 +43,7 @@ function loadCurrentSession(){
                             <div class="float-left"><h4 href="#" class="ml-5 mt-4 card-link text-info">${data.date}  </h4>
                            
                             </div>
-                            <div class="float-right"> <a href="https://www.hireherapp.com/register" class="btn btn-success"> Hire Her </a>  ${candidate} ${apply}</div>
+                            <div class="float-right"> <a href="https://hireher.theeventx.com/candidates/Female" class="btn btn-success"> Hire Her </a>  ${candidate} ${apply}</div>
 
                         </h2>
                       

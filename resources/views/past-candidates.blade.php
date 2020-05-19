@@ -104,7 +104,7 @@
                                 </div>
 
                                 <div class="col-12 mb-1">
-                                 <a href="https://www.hireherapp.com/" style="background:#000;border-color:#000" class="btn btn-info btn-block btn-sm">
+                                 <a href="https://www.hireherapp.com/register" style="background:#000;border-color:#000" class="btn btn-info btn-block btn-sm">
                                  Get Hired
                                  </a>
                              </div>
