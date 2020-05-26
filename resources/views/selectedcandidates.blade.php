@@ -52,7 +52,7 @@
                             </a>
                             </div>
                             <div class="col-12 mb-1">
-                                 <a href="https://hireher.theeventx.com/candidates/Female" style="background:#000;border-color:#000" class="btn btn-info btn-block btn-sm">
+                                 <a href="https://hireherapp.com/candidates/Female" style="background:#000;border-color:#000" class="btn btn-info btn-block btn-sm">
                                  Hire Her
                                  </a>
                              </div>
