@@ -41,6 +41,7 @@
 
                         <div class="card-footer bg-transparent border-success">
                    
+                   
                         <div class="col-12 mb-2">
                                    
                                    <a href="/donate" class="donate text-center  btn-block">#Donate2HerProject</a>
