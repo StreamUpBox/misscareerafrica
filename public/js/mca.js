@@ -2,6 +2,7 @@
 loadCurrentSession();
 loadAllSession();
 loadSelectedCandidates();
+loadTopSelectedCandidates();
 // $('.can-voting').hide(); 
 $('.apply').hide();
 function loadCurrentSession(){
@@ -140,6 +141,89 @@ function loadSelectedCandidates(){
                             <div class="card-footer bg-transparent border-success">
                             <div class="col-12">
                             <button type="button" class="btn btn-primary btn-block btn-sm" onclick="votes(${element.id},${element.votes})">
+                            Votes &nbsp;&nbsp;${element.votes}
+                        </button>
+                        </div>
+                              <div class="col-12 mb-2">
+                                   
+                                        <a href="/donate" class="donate text-center  btn-block">#Donate2HerProject</a>
+                                    
+                                 </div>
+                                 <div class="col-12">
+                                 <a href="https://www.hireherapp.com/register" style="background:#000;border-color:#000" class="btn btn-info btn-block btn-sm">
+                                 Get Hired
+                                 </a>
+                                 </div>
+
+                                <div class="col-12">
+                                <a href="https://www.theeventx.com/view-event/44" class="btn btn-info btn-block btn-sm">
+                                Get Ticket
+                                </a>
+                                </div>
+
+                            </div>
+                        </div>
+                  </div>
+
+                    `;
+
+                }
+
+            });
+
+        htmlss.html(rows);
+
+
+        }
+
+        },error:function(err){
+           // console.log(err);
+        }
+    }
+    );
+}
+
+function loadTopSelectedCandidates(){
+    $('.loading-overlay').show();
+    var htmlss= $('#top-selected_candidates');
+    var rows='';
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="_token"]').attr('content')
+        }
+    });
+    $.ajax({
+        url: "/list-top-selected-candidates",
+        method: "GET",
+        dataType: "json",
+        success: function (response) {
+            $('.loading-overlay').hide();
+          //  console.log(response);
+            if(response.success && response.data.length > 0){
+            const datas=response.data;
+            datas.sort(compareValues('votes'));
+            datas.forEach(element => {
+                if(element){
+                   
+                    rows+=`
+                    <div class="col-md-4">
+                            <div class="card border-success mb-3" style="max-width: 100%">
+                            <div class="card-header bg-transparent border-success"><b>${element.fname} ${element.lname}</b></div>
+                            <a href="candidate-page/${element.id}">
+                                    <div class="img-fluid" style=" background-image: url('${element.profile}');
+                                    background-repeat: no-repeat;width:100%;min-height:300px;
+                                    background-size: cover; background-size: center center"></div>
+                                    <div class="card-body text-success">
+                                    <h5 class="card-title"><b>${element.city} - ${element.country}</b></h5>
+                                        <b class="card-text">
+                                        <hr />
+                                        ${element.bio?element.bio.length > 115?element.bio.substring(0,95)+' <a href="candidate-page/'+element.id+'">read more ....</a>':element.bio:''}
+                                        </b>
+                                    </div>
+                            </a>
+                            <div class="card-footer bg-transparent border-success">
+                            <div class="col-12">
+                            <button type="button" class="btn btn-primary btn-block btn-sm" onclick="alert('Voting Closed!')">
                             Votes &nbsp;&nbsp;${element.votes}
                         </button>
                         </div>

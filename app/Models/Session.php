@@ -33,7 +33,8 @@ class Session extends Model
         'numbering',
         'is_current_applying',
         'is_voting_open',
-        'view_past_candidate'
+        'view_past_candidate', 
+        'final_selected'
     ];
 
     /**

@@ -78,6 +78,9 @@ Route::get('/scholarship', function () {
 Route::get('/selected-candidates', function () {
     return view('selectedcandidates');
 });
+Route::get('/top-selected-candidates', function () {
+    return view('topselectedcandidates');
+});
 Route::get('/crowned', function () {
     return view('crowned');
 });
@@ -126,7 +129,7 @@ Route::get('list_sessions', 'SessionController@listSessions');
 
 //
 Route::get('list-selected-candidates', 'CandidateController@listSelectedCandidates');
-
+Route::get('list-top-selected-candidates', 'CandidateController@listFinalSelectedCandidates');
 
 Route::resource('sessions', 'SessionController');
 

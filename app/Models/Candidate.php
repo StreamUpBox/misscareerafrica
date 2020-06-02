@@ -66,7 +66,8 @@ class Candidate extends Model
         'is_selected',
         'votes',
         'profile',
-        'bio'
+        'bio',
+        'final_selected'
     ];
 
     /**

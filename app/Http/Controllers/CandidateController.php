@@ -230,6 +230,25 @@ class CandidateController extends AppBaseController
         return $this->sendResponse(count($candidates) > 0?$candidates:[], 'List Selected Candidates');
     }
 
+    public function listFinalSelectedCandidates(){
+        $candidates =[];
+       
+        $session =    Session::where('final_selected',1)->where('is_voting_open',0)
+        ->where('is_current_applying',0)->first();
+        if($session){
+
+       foreach(Candidate::where('final_selected',1)
+            ->where('session_id',$session->id)
+            ->orderBy('votes', 'DESC')->get() as $cand){
+           $v=candiateVoter::where('candidate_id', $cand->id)->count();
+            $cand->votes=$cand->votes+$v;
+            $candidates[]=$cand;
+            }
+        }
+
+        return $this->sendResponse(count($candidates) > 0?$candidates:[], 'List Selected Candidates');
+    }
+
     public function pastCandidates(){
         $candidates =[];
         $sessions =  Session::where('is_voting_open',0)->where('is_current_applying',0)->pluck('id');

@@ -29,10 +29,13 @@
                 </div>
             </div>
 
-           
+           <?php $finalSelected =    \App\Models\Session::where('final_selected',1)->where('is_voting_open',0)
+                      ->where('is_current_applying',0)->first(); ?>
 
             <div id="fh5co-blog-section">
                 <div class="container" id="contact">
+
+                    <?php if($finalSelected){ ?>
 
                     <div class="card border-success mb-3" style="max-width: 100%">
                         <h1 class="text-center"><b>The Top 10 Selected Candidates|SADC Region</b></h1>
@@ -64,22 +67,14 @@
                     <br>
                     <hr>
                     <br>
-                    <div class="row can-voting" id="selected_candidates">
+
+                    <div class="row" id="top-selected_candidates">
 
                     </div>
-                    <!-- <div class="card border-success mb-3" style="max-width: 100%">
-                        <h1 class="text-center"><b>VOTES CLOSED</b></h1>
-                        <div class="card-footer bg-transparent border-success">
-                            <a href="https://theeventx.com/view-event/30" class="btn btn-success btn-block btn-sm">
-                                Get Ticket
-                            </a>
-
-                        </div>
-                        <img class="img-fluid" src="/images/buy-ticket.jpeg" style="width:100%;">
-
-
-
-                    </div> -->
+                    <?php }else{ ?>
+                            <h1>No Top Selected Candidates</h1>
+                        <?php } ?>
+                   
                 </div>
 
             </div>

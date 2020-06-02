@@ -162,6 +162,14 @@
     </label>
 </div>
 
+<div class="form-group col-sm-6">
+    {!! Form::label('final_selected', 'Final Selected?') !!}
+    <label class="checkbox-inline">
+        {!! Form::hidden('final_selected', 0) !!}
+        {!! Form::checkbox('final_selected', 1, null,  ['data-toggle' => 'toggle']) !!}
+    </label>
+</div>
+
 
 <!-- Submit Field -->
 <div class="form-group col-sm-12">
