@@ -35,7 +35,7 @@
                 <div class="container" id="contact">
 
                     <div class="card border-success mb-3" style="max-width: 100%">
-                        <h1 class="text-center"><b>Online Voting Open Now -Till Tues, 2nd June 2020</b></h1>
+                        <h1 class="text-center"><b>The Top 10 Selected Candidates|SADC Region</b></h1>
 
                         <img class="img-fluid" src="/images/final-sa.jpeg" style="width:100%;">
 
@@ -63,9 +63,9 @@
                     <br>
                     <hr>
                     <br>
-                    <div class="row can-voting" id="selected_candidates">
+                    <!-- <div class="row can-voting" id="selected_candidates">
 
-                    </div>
+                    </div> -->
                     <!-- <div class="card border-success mb-3" style="max-width: 100%">
                         <h1 class="text-center"><b>VOTES CLOSED</b></h1>
                         <div class="card-footer bg-transparent border-success">
