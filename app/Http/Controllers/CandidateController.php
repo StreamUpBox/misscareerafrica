@@ -68,7 +68,7 @@ class CandidateController extends AppBaseController
     //
     public function index(Request $request)
     {
-        $candidates = $this->candidateRepository->paginate(10);
+        $candidates = $this->candidateRepository->orderBy('updated_at','DESC')->paginate(10);
         
 
         return view('candidates.index')
