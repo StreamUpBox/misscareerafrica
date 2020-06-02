@@ -226,6 +226,7 @@ class CandidateController extends AppBaseController
             $candidates[]=$cand;
             }
         }
+        
 
         return $this->sendResponse(count($candidates) > 0?$candidates:[], 'List Selected Candidates');
     }
