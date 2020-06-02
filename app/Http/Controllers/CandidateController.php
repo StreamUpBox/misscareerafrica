@@ -233,8 +233,7 @@ class CandidateController extends AppBaseController
     public function listFinalSelectedCandidates(){
         $candidates =[];
        
-        $session =    Session::where('final_selected',1)->where('is_voting_open',0)
-        ->where('is_current_applying',0)->first();
+        $session =    Session::where('final_selected',1)->first();
         if($session){
 
        foreach(Candidate::where('final_selected',1)

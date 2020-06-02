@@ -29,8 +29,7 @@
                 </div>
             </div>
 
-           <?php $finalSelected =    \App\Models\Session::where('final_selected',1)->where('is_voting_open',0)
-                      ->where('is_current_applying',0)->first(); ?>
+           <?php $finalSelected =    \App\Models\Session::where('final_selected',1)->first(); ?>
 
             <div id="fh5co-blog-section">
                 <div class="container" id="contact">

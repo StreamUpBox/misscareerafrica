@@ -47,8 +47,7 @@
                 <ul class="sf-menu" id="fh5co-primary-menu">
                     <li><a href="/" style="color: #556cd6;;">HOME</a></li>
                     <?php $crowned=\App\Models\Crowned::where('published',1)->count(); 
-                      $finalSelected =    \App\Models\Session::where('final_selected',1)->where('is_voting_open',0)
-                      ->where('is_current_applying',0)->first();
+                      $finalSelected =    \App\Models\Session::where('final_selected',1)->first();
                                     if($crowned > 0){ ?>
                     <li><a href="crowned" style="color: #556cd6;;">Crowned</a></li>
                     <?php } ?>
