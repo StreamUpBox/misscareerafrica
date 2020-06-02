@@ -57,6 +57,8 @@
 
                 <?php }else{?>
                     <h1 class="text-center text-warning"><b>VOTING CLOSED</b></h1> 
+                    <br>
+                    <br>
                     <?php } ?>
 
                     <div class="col-12 mb-2">

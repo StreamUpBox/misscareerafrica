@@ -56,9 +56,9 @@
 
                     <li><a class="apply" style="color: #556cd6;;" href="candidate-application">APPLY</a></li>
 
-                    <li><a class="can-voting" style="color: #556cd6;;" href="selected-candidates">SA Region-15
-                            Preselected</a></li>
-                    <!-- <li><a class="can-voting" style="color: #556cd6;;" href="selected-candidates">VOTE PRESELECTED CANDIDATES</a></li> -->
+                    <!-- <li><a class="can-voting" style="color: #556cd6;;" href="selected-candidates">SA Region-15
+                            Preselected</a></li> -->
+                    <li><a class="can-voting" style="color: #556cd6;;" href="selected-candidates">Top 10 Selected Candidates|SADC Region</a></li>
 
                     <?php 
                     $opnDonateSessions=\App\Models\DonateSessions::where('can_open_donation_system',1)->count(); 
