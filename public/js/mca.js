@@ -185,8 +185,8 @@ function loadSelectedCandidates(){
 
 function loadTopSelectedCandidates(){
     $('.loading-overlay').show();
-    var htmlss= $('#top-selected_candidates');
-    var rows='';
+    var htmlss2= $('#top-selected_candidates');
+    var rows1='';
     $.ajaxSetup({
         headers: {
             'X-CSRF-TOKEN': $('meta[name="_token"]').attr('content')
@@ -198,14 +198,14 @@ function loadTopSelectedCandidates(){
         dataType: "json",
         success: function (response) {
             $('.loading-overlay').hide();
-          //  console.log(response);
+           console.log(response);
             if(response.success && response.data.length > 0){
             const datas=response.data;
             datas.sort(compareValues('votes'));
             datas.forEach(element => {
                 if(element){
                    
-                    rows+=`
+                    rows1+=`
                     <div class="col-md-4">
                             <div class="card border-success mb-3" style="max-width: 100%">
                             <div class="card-header bg-transparent border-success"><b>${element.fname} ${element.lname}</b></div>
@@ -254,7 +254,7 @@ function loadTopSelectedCandidates(){
 
             });
 
-        htmlss.html(rows);
+            htmlss2.html(rows1);
 
 
         }
