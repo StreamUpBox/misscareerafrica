@@ -37,11 +37,11 @@
                     <div class="card border-success mb-3" style="max-width: 100%">
                         <h1 class="text-center"><b>The Top 10 Selected Candidates|SADC Region</b></h1>
 
-                        <img class="img-fluid" src="/images/final-sa.jpeg" style="width:100%;">
+                        <img class="img-fluid" src="/images/final_sa_sa.jpg" style="width:100%;">
 
                         <div class="card-footer bg-transparent border-success">
                    
-                   
+
                         <div class="col-12 mb-2">
                                    
                                    <a href="/donate" class="donate text-center  btn-block">#Donate2HerProject</a>
