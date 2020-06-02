@@ -12,13 +12,7 @@
         <th>City</th>
         <th>Province</th>
         <th>Country</th>
-        <th>Level Education</th>
-        <th>Former School Attended</th>
-        <th>Education Background</th>
-        <th>Current Occupation</th>
-    
-        <th>Session Id</th>
-        <th>Votes</th>
+     
         <th>Is Selected</th>
                 <th colspan="3">Action</th>
             </tr>
@@ -36,13 +30,7 @@
             <td>{!! $candidate->city !!}</td>
             <td>{!! $candidate->province !!}</td>
             <td>{!! $candidate->country !!}</td>
-            <td>{!! $candidate->level_education !!}</td>
-            <td>{!! $candidate->former_school_attended !!}</td>
-            <td>{!! $candidate->education_background !!}</td>
-            <td>{!! $candidate->current_occupation !!}</td>
-           
-            <td>{!! $candidate->session_id !!}</td>
-            <td>{!! $candidate->votes !!}</td>
+         
             <td>{!! $candidate->is_selected?'<label class="badge badge-success">YES</label>':'<label class="badge badge-danger">NO</label>' !!}</td>
                 <td>
                     {!! Form::open(['route' => ['candidates.destroy', $candidate->id], 'method' => 'delete']) !!}
