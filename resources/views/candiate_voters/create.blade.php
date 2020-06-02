@@ -29,7 +29,9 @@
 
     </style>
     <div class="content">
-    <?php  $vistor=new App\Models\Vistors; $vistor->saveVistor('Visit Voted') ?>
+    <?php  $vistor=new App\Models\Vistors; $vistor->saveVistor('Visit Voted');
+       $sessions =  App\Models\Session::where('is_voting_open',1)->first();
+    ?>
         
         <div class="box box-primary">
 
@@ -43,6 +45,7 @@
                                                 class="user-image" alt="User Image"/></a>
                   
                 </section>
+                <?php if($sessions){ ?>
                 @include('adminlte-templates::common.errors')
                 @include('flash::message')
 
@@ -51,6 +54,10 @@
                         @include('candiate_voters.fields')
 
                     {!! Form::close() !!}
+
+                <?php }else{?>
+                    <h1 class="text-center text-warning"><b>VOTING CLOSED</b></h1> 
+                    <?php } ?>
 
                     <div class="col-12 mb-2">
                                    
