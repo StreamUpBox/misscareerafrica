@@ -30,7 +30,7 @@
     </style>
     <div class="content">
     <?php  $vistor=new App\Models\Vistors; $vistor->saveVistor('Visit Voted');
-       $sessions =  App\Models\Session::where('is_voting_open',1)->first();
+       $sessions =  \App\Models\Session::where('is_voting_open',1)->first();
     ?>
         
         <div class="box box-primary">
