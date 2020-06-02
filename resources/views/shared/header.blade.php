@@ -58,7 +58,7 @@
 
                     <!-- <li><a class="can-voting" style="color: #556cd6;;" href="selected-candidates">SA Region-15
                             Preselected</a></li> -->
-                    <li><a class="" style="color: #556cd6;;" href="selected-candidates">Top 10 Selected Candidates|SADC Region</a></li>
+                    <li><a class="can-voting" style="color: #556cd6;;" href="selected-candidates">Top 10 Selected Candidates|SADC Region</a></li>
 
                     <?php 
                     $opnDonateSessions=\App\Models\DonateSessions::where('can_open_donation_system',1)->count(); 

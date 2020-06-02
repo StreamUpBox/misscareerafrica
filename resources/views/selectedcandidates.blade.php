@@ -63,9 +63,9 @@
                     <br>
                     <hr>
                     <br>
-                    <!-- <div class="row can-voting" id="selected_candidates">
+                    <div class="row can-voting" id="selected_candidates">
 
-                    </div> -->
+                    </div>
                     <!-- <div class="card border-success mb-3" style="max-width: 100%">
                         <h1 class="text-center"><b>VOTES CLOSED</b></h1>
                         <div class="card-footer bg-transparent border-success">
