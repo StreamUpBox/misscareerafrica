@@ -30,7 +30,7 @@
             </div>
 
             <?php 
-                $allSessions =  \App\Models\Session::where('view_past_candidate',1)->get();
+                $allSessions =  \App\Models\Session::where('view_past_candidate',1)->orderBy('updated_at','DESC')->get();
                 ?>
             <div id="fh5co-blog-section">
                 <div class="container" id="contact">
