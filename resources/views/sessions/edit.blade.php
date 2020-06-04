@@ -11,7 +11,7 @@
        <div class="box box-primary">
            <div class="box-body">
                <div class="row">
-                   {!! Form::model($session, ['route' => ['sessions.update', $session->id], 'method' => 'patch']) !!}
+                   {!! Form::model($session, ['route' => ['sessions.update', $session->id], 'method' => 'patch', 'files' => true]) !!}
 
                         @include('sessions.fields')
 

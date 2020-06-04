@@ -1,4 +1,6 @@
-@include('shared.styles',['title' => 'Pre-selected Candidate','description'=>'Miss Career Africa',
+<?php $finalSelected =    \App\Models\Session::where('final_selected',1)->first(); ?>
+
+@include('shared.styles',['title' => $finalSelected?$finalSelected->top_selected_title:'Top  Selected Candidates','description'=>'Miss Career Africa',
 'activity'=>'Visit pre-selected Candidate page'])
 
 <body>
@@ -29,40 +31,45 @@
                 </div>
             </div>
 
-           <?php $finalSelected =    \App\Models\Session::where('final_selected',1)->first(); ?>
+            <?php $finalSelected =    \App\Models\Session::where('final_selected',1)->first(); ?>
 
             <div id="fh5co-blog-section">
                 <div class="container" id="contact">
 
                     <?php if($finalSelected){ ?>
-
+                        <?php if($finalSelected->top_selected_image && $finalSelected->top_selected_image!='-'){ ?>
                     <div class="card border-success mb-3" style="max-width: 100%">
-                        <h1 class="text-center"><b>The Top 10 Selected Candidates|SADC Region</b></h1>
-
-                        <img class="img-fluid" src="/images/final_sa_sa.jpg" style="width:100%;">
+                        <h1 class="text-center"><b>
+                                {{$finalSelected->top_selected_title}}
+                                <!-- The Top 10 Selected Candidates|SADC Region -->
+                            </b></h1>
+                       
+                        <img class="img-fluid" src="{{$finalSelected->top_selected_image}}" style="width:100%;">
 
                         <div class="card-footer bg-transparent border-success">
-                   
 
-                        <div class="col-12 mb-2">
-                                   
-                                   <a href="/donate" class="donate text-center  btn-block">#Donate2HerProject</a>
-                               
+
+                            <div class="col-12 mb-2">
+
+                                <a href="/donate" class="donate text-center  btn-block">#Donate2HerProject</a>
+
                             </div>
                             <div class="col-12 mb-1">
-                            <a href="https://theeventx.com/view-event/44" class="btn btn-info btn-block btn-sm">
-                                Get Ticket
-                            </a>
+                                <a href="https://theeventx.com/view-event/44" class="btn btn-info btn-block btn-sm">
+                                    Get Ticket
+                                </a>
                             </div>
                             <div class="col-12 mb-1">
-                                 <a href="https://www.hireherapp.com/candidates/Female" style="background:#000;border-color:#000" class="btn btn-info btn-block btn-sm">
-                                 Hire Her
-                                 </a>
-                             </div>
+                                <a href="https://www.hireherapp.com/candidates/Female"
+                                    style="background:#000;border-color:#000" class="btn btn-info btn-block btn-sm">
+                                    Hire Her
+                                </a>
+                            </div>
 
                         </div>
 
                     </div>
+                    <?php } ?>
                     <br>
                     <hr>
                     <br>
@@ -71,9 +78,9 @@
 
                     </div>
                     <?php }else{ ?>
-                            <h1>No Top Selected Candidates</h1>
-                        <?php } ?>
-                   
+                    <h1>No Top Selected Candidates</h1>
+                    <?php } ?>
+
                 </div>
 
             </div>

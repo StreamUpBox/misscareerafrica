@@ -30,8 +30,52 @@
 
 <!-- Image Field -->
 <div class="form-group">
-    {!! Form::label('image', 'Image:') !!}
-    <p>{!! $session->image !!}</p>
+    {!! Form::label('image', 'Session Image:') !!}
+  
+
+    <p>
+    <figure class="figure" style="width:25%">
+            <img src="{{$session->image}}" style="width:100%" class="figure-img img-fluid rounded">
+
+        </figure>
+    </p>
+</div>
+
+
+<!-- Date Field -->
+<div class="form-group">
+    {!! Form::label('voting_candidate_title', 'Voting System Title:') !!}
+    <p>{!! $session->voting_candidate_title !!}</p>
+</div>
+
+<div class="form-group">
+    {!! Form::label('voting_candidate_image', 'Voting System Image:') !!}
+   
+
+    <p>
+    <figure class="figure" style="width:25%">
+            <img src="{{$session->voting_candidate_image}}" style="width:100%" class="figure-img img-fluid rounded">
+
+        </figure>
+    </p>
+</div>
+
+
+<div class="form-group">
+    {!! Form::label('top_selected_title', 'Top Final Selected Title:') !!}
+    <p>{!! $session->top_selected_title !!}</p>
+</div>
+
+<div class="form-group">
+    {!! Form::label('top_selected_image', 'Top Final Selected Image:') !!}
+  
+
+    <p>
+    <figure class="figure" style="width:25%">
+            <img src="{{$session->top_selected_image}}" style="width:100%" class="figure-img img-fluid rounded">
+
+        </figure>
+    </p>
 </div>
 
 <!-- Numbering Field -->

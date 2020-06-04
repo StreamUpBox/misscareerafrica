@@ -26,10 +26,10 @@ function loadCurrentSession(){
 
                 const data=response.data;
                 if(data.is_current_applying){
-                    var candidate=data.is_voting_open?' <a href="https://www.theeventx.com/view-event/44" class="btn btn-info"> Get Ticket </a><a href="/selected-candidates" style="color:white!important" class="btn btn-success mr-1 text-white can-voting">View SA Region-15 Preselected Candidates</a>':'';
+                    var candidate=data.is_voting_open?' <a href="https://www.theeventx.com/view-event/44" class="btn btn-info"> Get Ticket </a><a href="/selected-candidates" style="color:white!important" class="btn btn-success mr-1 text-white can-voting">'+element.voting_candidate_title+'</a>':'';
                     var apply=!data.is_voting_open?'<a href="/candidate-application" class="btn btn-primary mr-5">APPLY NOW!</a>':'';
                     row=` <div class="card">
-                    <img class="card-img"  style="min-height:350px;max-height:700px" src="/images/${data.image}" alt="${data.title}">
+                    <img class="card-img"  style="min-height:350px;max-height:700px" src="${data.image}" alt="${data.title}">
                     <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
                       <h3 class="wpb_heading wpb_singleimage_heading1 card-title text-center">${data.title} - ${data.country}</h3>
 
@@ -198,7 +198,7 @@ function loadTopSelectedCandidates(){
         dataType: "json",
         success: function (response) {
             $('.loading-overlay').hide();
-           console.log(response);
+        //    console.log(response);
             if(response.success && response.data.length > 0){
             const datas=response.data;
             datas.sort(compareValues('votes'));
@@ -331,7 +331,7 @@ function loadAllSession(){
                     var candidate='';
                     if(element.is_voting_open){
                         $('.can-voting').show(); 
-                     candidate=element.is_voting_open?' <a href="https://www.theeventx.com/view-event/44" class="btn btn-info"> Get Ticket </a><a href="/selected-candidates" style="color:white!important" class="btn btn-success mr-1 text-white can-voting">Top 10 Selected Candidates|SADC Region</a>':'';
+                     candidate=element.is_voting_open?' <a href="https://www.theeventx.com/view-event/44" class="btn btn-info"> Get Ticket </a><a href="/selected-candidates" style="color:white!important" class="btn btn-success mr-1 text-white can-voting">'+element.voting_candidate_title+'</a>':'';
                     }else{
                         // $('.can-voting').hide(); 
                         candidate='';
@@ -339,7 +339,7 @@ function loadAllSession(){
                 row+=`
                 <div class="col-md-6 mt-5">
                         <div class="card">
-                                    <img class="card-img"  style="min-height:350px;max-height:700px" src="/images/${element.image}" alt="${element.title}">
+                                    <img class="card-img"  style="min-height:350px;max-height:700px" src="${element.image}" alt="${element.title}">
                                     <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
                                     <h3 class="wpb_heading wpb_singleimage_heading1 card-title text-center">${element.title} - ${element.country}</h3>
 

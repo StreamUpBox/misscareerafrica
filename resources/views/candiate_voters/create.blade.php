@@ -38,7 +38,7 @@
             <div class="box-body">
                 <div class="row">
                 <div class="col-sm-3"></div>
-                <div class="col-sm-6">
+                <div class="col-sm-6"> 
 
                 <section class="content-header text-center">
                <a href="/"> <img src="../images/logo.png" class="text-center" style="width:150px;border:2px #fff solid"

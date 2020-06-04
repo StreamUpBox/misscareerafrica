@@ -34,7 +34,11 @@ class Session extends Model
         'is_current_applying',
         'is_voting_open',
         'view_past_candidate', 
-        'final_selected'
+        'final_selected',
+        'top_selected_title',
+        'voting_candidate_title',
+        'top_selected_image',
+        'voting_candidate_image'
     ];
 
     /**

@@ -7,7 +7,6 @@
         <th>Session</th>
         <th>Country</th>
         <th>Date</th>
-        <th>Image</th>
         <th>Numbering</th>
         <th>Can Candidate Apply?</th>
         <th>Can Candidate Voting?</th>
@@ -22,7 +21,6 @@
             <td>{!! $session->session !!}</td>
             <td>{!! $session->country !!}</td>
             <td>{!! $session->date !!}</td>
-            <td>{!! $session->image !!}</td>
             <td>{!! $session->numbering !!}</td>
             <td>{!! $session->is_current_applying?'<label class="badge badge-success">YES</label>':'<label class="badge badge-danger">NO</label>' !!}</td>
             <td>{!! $session->is_voting_open?'<label class="badge badge-success">YES</label>':'<label class="badge badge-danger">NO</label>' !!}</td>

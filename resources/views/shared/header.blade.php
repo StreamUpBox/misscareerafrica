@@ -48,19 +48,22 @@
                     <li><a href="/" style="color: #556cd6;;">HOME</a></li>
                     <?php $crowned=\App\Models\Crowned::where('published',1)->count(); 
                       $finalSelected =    \App\Models\Session::where('final_selected',1)->first();
+                      $preSelected =    \App\Models\Session::where('is_voting_open',1)->first();
                                     if($crowned > 0){ ?>
                     <li><a href="crowned" style="color: #556cd6;;">Crowned</a></li>
                     <?php } ?>
 
-                  
+                    <!-- SA Region-15 Preselected -->
                     <li><a href="photos" style="color: #556cd6;;">Photos</a></li>
 
                     <li><a class="apply" style="color: #556cd6;;" href="candidate-application">APPLY</a></li>
+                    <?php if($preSelected){ ?>
+                    <li><a class="can-voting" style="color: #556cd6;;" href="selected-candidates">
+                    {{$preSelected->voting_candidate_title}}</a></li>
+                    <?php } ?>
 
-                    <li><a class="can-voting" style="color: #556cd6;;" href="selected-candidates">SA Region-15
-                            Preselected</a></li>
                  <?php if($finalSelected){ ?>
-                    <li><a class="" style="color: #556cd6;;" href="top-selected-candidates">Top Selected Candidates|SADC Region</a></li>
+                    <li><a class="" style="color: #556cd6;;" href="top-selected-candidates">{{$finalSelected->top_selected_title}}</a></li>
                     <?php } ?>
                     <?php 
                     $opnDonateSessions=\App\Models\DonateSessions::where('can_open_donation_system',1)->count(); 

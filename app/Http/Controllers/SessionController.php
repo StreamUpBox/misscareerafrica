@@ -11,6 +11,7 @@ use Flash;
 use Response;
 use App\Models\Session;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Storage;
 class SessionController extends AppBaseController
 {
     /** @var  SessionRepository */
@@ -56,6 +57,30 @@ class SessionController extends AppBaseController
     public function store(CreateSessionRequest $request)
     {
         $input = $request->all();
+
+        if ($request->file('image')) {
+            $path = $request->file('image')->storePublicly('public');
+            $image = env('APP_URL') . Storage::url($path);
+            $input['image']=$image?$image:'-';
+          }else{
+            $input['image']='-';
+        }
+        if ($request->file('top_selected_image')) {
+            $path = $request->file('top_selected_image')->storePublicly('public');
+            $top_selected_image = env('APP_URL') . Storage::url($path);
+            $input['top_selected_image']=$top_selected_image?$top_selected_image:'-';
+          }else{
+            $input['top_selected_image']='-';
+        }
+
+        if ($request->file('voting_candidate_image')) {
+            $path = $request->file('voting_candidate_image')->storePublicly('public');
+            $voting_candidate_image = env('APP_URL') . Storage::url($path);
+            $input['voting_candidate_image']=$voting_candidate_image?$voting_candidate_image:'-';
+          }else{
+            $input['voting_candidate_image']='-';
+        }
+        
 
         $session = $this->sessionRepository->create($input);
 
@@ -138,7 +163,34 @@ class SessionController extends AppBaseController
             return redirect(route('sessions.index'));
         }
 
-        $session = $this->sessionRepository->update($request->all(), $id);
+        $input = $request->all();
+        //\Log::info($input);
+
+        if ($request->file('image')) {
+            $path = $request->file('image')->storePublicly('public');
+            $image = env('APP_URL') . Storage::url($path);
+            $input['image']=$image?$image:'-';
+          }else{
+            $input['image']=$session->image;
+        }
+        if ($request->file('top_selected_image')) {
+            $path = $request->file('top_selected_image')->storePublicly('public');
+            $top_selected_image = env('APP_URL') . Storage::url($path);
+            $input['top_selected_image']=$top_selected_image?$top_selected_image:'-';
+          }else{
+            $input['top_selected_image']=$session->top_selected_image;
+        }
+
+        if ($request->file('voting_candidate_image')) {
+            $path = $request->file('voting_candidate_image')->storePublicly('public');
+            $voting_candidate_image = env('APP_URL') . Storage::url($path);
+            $input['voting_candidate_image']=$voting_candidate_image?$voting_candidate_image:'-';
+          }else{
+            $input['voting_candidate_image']=$session->voting_candidate_image;;
+        }
+        
+
+        $session = $this->sessionRepository->update($input, $id);
 
         Flash::success('Session updated successfully.');
 
@@ -170,4 +222,7 @@ class SessionController extends AppBaseController
 
         return redirect(route('sessions.index'));
     }
+
+    
+   
 }

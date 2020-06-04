@@ -22,16 +22,13 @@
     {!! Form::text('date', null, ['class' => 'form-control','id'=>'date']) !!}
 </div>
 
-@section('scripts')
-
-@endsection
 
 <!-- Image Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('image', 'Image:') !!}
+    {!! Form::label('image', 'Session Image:') !!}
     {!! Form::file('image') !!}
 </div>
-<div class="clearfix"></div>
+
 
 <!-- Numbering Field -->
 <div class="form-group col-sm-6">
@@ -39,6 +36,33 @@
     {!! Form::number('numbering', null, ['class' => 'form-control']) !!}
 </div>
 
+<hr>
+
+<!-- Image Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('voting_candidate_image', 'Voting System Image:') !!}
+    {!! Form::file('voting_candidate_image') !!}
+</div>
+
+<!-- Title Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('voting_candidate_title', 'Voting System Title:') !!}
+    {!! Form::text('voting_candidate_title', null, ['class' => 'form-control']) !!}
+</div>
+<hr>
+
+<!-- Image Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('top_selected_image', 'Top Final Selected Image:') !!}
+    {!! Form::file('top_selected_image') !!}
+</div>
+
+<!-- Title Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('top_selected_title', 'Top Final Selected Title:') !!}
+    {!! Form::text('top_selected_title', null, ['class' => 'form-control']) !!}
+</div>
+<hr>
 <!-- 'bootstrap / Toggle Switch Is Current Applying Field' -->
 <div class="form-group col-sm-6">
     {!! Form::label('is_current_applying', 'Is Current Applying:') !!}
