@@ -95,7 +95,7 @@
                                     <span class="h1"> Power and Future into the hands of a girl...</span>
 
                                     <div style="text-align: center;font-size: 10px">
-                                                <p class="p" style=" color: #0f1630!important;">
+                                                <p  style="color: #0f1630!important;">
                                                 
                                                 It’s 21st Century and the light is illuminating in the corners of the
                                                     Continent of Africa and Miss Career Africa wants to hold this flagship.
