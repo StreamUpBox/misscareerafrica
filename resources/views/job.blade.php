@@ -1,4 +1,7 @@
-@include('shared.styles',['title' => 'Job :: Miss Career Africa','description'=>'Miss Career Africa',
+<?php 
+                 $job=\App\Models\Content::where('published',1)->where('type','Job')->first();
+?>
+@include('shared.styles',['title' =>  $job? $job->title:'Job :: Miss Career Africa','description'=>'Miss Career Africa',
 'activity'=>'Visit our job page'])
 
 <body>
@@ -32,6 +35,33 @@
 
             <div id="fh5co-blog-section">
                 <div class="container" id="blog">
+                <?php if($job){?>
+                    <div class="row m-0">
+
+                        <div class="mx-auto col-11">
+
+                            <h1 class="text-center">
+                                <span style="text-align: center;">
+                                  
+                                    <span class="h1">{{$job->title}}</span><br>
+                                    
+                                </span>
+                            </h1>
+                            <hr>
+
+
+                            <div style="text-align: left;color: #252525!important;">
+                                <div class="col-md-12 mr-3">
+                                    <img src="{{$job?$job->image:'images/our-job.jpeg'}}"
+                                        class="img-responsive img-rounded" alt="Image">
+                                    <br>
+                                    <p class="p">{!!html_entity_decode($job->content)!!}</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <?php }else{ ?>
                     <div class="row">
 
                         <div class="col-md-6">
@@ -82,7 +112,7 @@
                         </div>
                     </div>
 
-
+                    <?php }?>
 
                 </div>
             </div>

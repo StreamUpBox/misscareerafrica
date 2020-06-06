@@ -1,4 +1,7 @@
-@include('shared.styles',['title' => 'Our Mission :: Miss Career Africa','description'=>'Miss Career Africa',
+<?php 
+                 $mission=\App\Models\Content::where('published',1)->where('type','Mission')->first();
+?>
+@include('shared.styles',['title' => $mission?$mission->title:'Our Mission :: Miss Career Africa','description'=>'Miss Career Africa',
 'activity'=>'Visit our mission page'])
 
 <body>
@@ -32,6 +35,33 @@
 
             <div id="fh5co-blog-section">
                 <div class="container" id="blog">
+                <?php if($mission){?>
+                    <div class="row m-0">
+
+                        <div class="mx-auto col-11">
+
+                            <h1 class="text-center">
+                                <span style="text-align: center;">
+                                  
+                                    <span class="h1">{{$mission->title}}</span><br>
+                                    
+                                </span>
+                            </h1>
+                            <hr>
+
+
+                            <div style="text-align: left;color: #252525!important;">
+                                <div class="col-md-12 mr-3">
+                                    <img src="{{$mission?$mission->image:'images/our-mission.jpeg'}}"
+                                        class="img-responsive img-rounded" alt="Image">
+                                    <br>
+                                    <p class="p">{!!html_entity_decode($mission->content)!!}</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <?php }else{ ?>
                     <div class="row">
                         <div class="col-md-12 m-4">
                             <img src="images/our-mission.jpeg" class="img-responsive img-rounded" alt="Image">
@@ -54,7 +84,7 @@
                                 Throughout the competition and in interviews, And incubations programs or various career
                                 based cohorts, candidates get additional opportunities to advocate for their social
                                 impact initiatives and to demonstrate how they are uniquely qualified for the exciting
-                                and challenging 365-day job of being Miss Career Africa.<br />
+                                and challenging 365-day mission of being Miss Career Africa.<br />
                                 The program exists to step away from just empowering to handing keys of the power to the
                                 young women across Africa to be the best they can be through career guidance, career
                                 placements, cohorts, training, funding opportunities, university scholarship
@@ -66,7 +96,7 @@
 
 
                     </div>
-
+                    <?php }?>
 
 
                 </div>

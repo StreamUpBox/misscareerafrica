@@ -1,4 +1,6 @@
-@include('shared.styles',['title' => 'Scholarship :: Miss Career Africa','description'=>'Miss Career Africa',
+<?php $scholarship=\App\Models\Content::where('published',1)->where('type','MCA-Scholarship')->first();
+?>
+@include('shared.styles',['title' => $scholarship?$scholarship->title:'Scholarship :: Miss Career Africa','description'=>'Miss Career Africa',
 'activity'=>'Visit scholarship page'])
 
 <body>
@@ -35,6 +37,22 @@
 
 
                         <div class="row">
+                        <?php if($scholarship){?>
+                        <div class="col-md-6">
+                            <h1 class="h1">{{$scholarship->title}}</h1>
+
+                            <p style="color: #252525!important;">
+                            <img src="{{$scholarship?$scholarship->image:'images/our-mission.jpeg'}}"
+                                        class="img-responsive img-rounded" alt="Image">
+                                    <br>
+                                    <p class="p">{!!html_entity_decode($scholarship->content)!!}</p>
+                            </p>
+
+                          
+
+
+                        </div>
+                        <?php }else{ ?>
                             <div class="col-md-6">
                                 <p style="color: #252525!important;">
                                     The mission of the Miss Career Africa Scholarship Program is to create a movement of
@@ -92,10 +110,11 @@
                                     are called #ScholarsOnMission. Those who fail to win scholarships in the end, They
                                     have access to Miss Career Fund which finances the most profitable business
                                     modelling(s)/ projects so as to enable start their own businesses as they try other
-                                    possibilities of sponsoring themselves in their local countries from their business
+                                    possibilities of scholarshiping themselves in their local countries from their business
                                     earnings.</p>
 
                             </div>
+                            <?php }?>
 
                             <div class="col-md-6">
                                 <div class="col-md-12">

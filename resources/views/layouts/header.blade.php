@@ -103,9 +103,9 @@ Facebook: 		https://www.facebook.com/yegobox
 						</ul>
 				</li>
 				<li><a class="" href="eligibility.html">ELIGIBILITY</a></li>
-				<li><a href="blog.html">ORGANIZATION</a>
+				<li><a href="#">ORGANIZATION</a>
 					<ul class="fh5co-sub-menu">
-							<li><a href="blog.html">Our Blog</a></li>
+							<li><a href="blog.html">Statements</a></li>
 							<li><a href="history.html">Our Scope</a></li>
 							<li><a href="contact.html">Contact Us</a></li>
 						</ul>

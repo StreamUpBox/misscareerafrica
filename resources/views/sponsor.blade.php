@@ -1,4 +1,6 @@
-@include('shared.styles',['title' => 'Become a sponsor :: Miss Career','description'=>'Miss Career Africa',
+<?php $sponsor=\App\Models\Content::where('published',1)->where('type','Become-sponsor')->first();
+?>
+@include('shared.styles',['title' => $sponsor?$sponsor->title:'Become a sponsor :: Miss Career','description'=>'Miss Career Africa',
 'activity'=>'Visit Become a sponsor aage'])
 
 <body>
@@ -33,7 +35,24 @@
             <div id="fh5co-blog-section">
                 <div class="container" id="contact">
                     <div class="row">
-                        <div class="col-md-7">
+
+                    <?php if($sponsor){?>
+                        <div class="col-md-6">
+                            <h1 class="h1">{{$sponsor->title}}</h1>
+
+                            <p style="color: #252525!important;">
+                            <img src="{{$sponsor?$sponsor->image:'images/our-mission.jpeg'}}"
+                                        class="img-responsive img-rounded" alt="Image">
+                                    <br>
+                                    <p class="p">{!!html_entity_decode($sponsor->content)!!}</p>
+                            </p>
+
+                          
+
+
+                        </div>
+                        <?php }else{ ?>
+                        <div class="col-md-6">
                             <h1 class="h1">HOW TO BECOME A SPONSOR?</h1>
                             <p style="color: #252525!important;">
                                 Partnering with The Miss Career Africa brings a value to your brand. Partners may
@@ -52,7 +71,8 @@
 
 
                         </div>
-                        <div class="col-md-5">
+                        <?php }?>
+                        <div class="col-md-6">
                             <div class="col-md-12">
                                 @include('flash::message')
                                 <h1 class="h1">SPONSORSHIP FORM</h1>

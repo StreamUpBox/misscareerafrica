@@ -150,7 +150,7 @@ class CandidateController extends AppBaseController
             $input['profile']=$profile?$profile:'-';
           }else{
             $input['profile']='-';
-}
+        }
 
         $candidate = $this->candidateRepository->create($input);
         //TODO: send email;

@@ -53,6 +53,10 @@ Route::get('/mission', function () {
 Route::get('/blog', function () {
     return view('blog');
 });
+Route::get('/statement/{id}', function ($id) {
+    return view('statement')->with('id',$id);
+});
+
 
 Route::get('/buy-ticket', function () {
     return view('buy-ticket');
@@ -176,3 +180,7 @@ Route::resource('gallaries', 'GallariesController');
 Route::resource('donateSessions', 'DonateSessionsController');
 
 Route::resource('donationApplicants', 'DonationApplicantsController');
+
+Route::resource('contents', 'ContentController');
+
+Route::resource('statements', 'StatementController');

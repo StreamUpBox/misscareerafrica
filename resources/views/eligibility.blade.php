@@ -1,4 +1,7 @@
-@include('shared.styles',['title' => 'Eligibility :: Miss Career Africa','description'=>'Miss Career Africa',
+<?php $eligibility=\App\Models\Content::where('published',1)->where('type','Eligibility')->first();
+?>
+
+@include('shared.styles',['title' => $eligibility?$eligibility->title:'Eligibility :: Miss Career Africa','description'=>'Miss Career Africa',
 'activity'=>'Visit eligibility page'])
 
 <body>
@@ -29,6 +32,36 @@
 
 
             <div id="fh5co-blog-section">
+            <?php if($eligibility){?>
+                <div class="container" id="blog">
+                    <div class="row m-0">
+
+                        <div class="mx-auto col-11">
+
+                            <h1 class="text-center">
+                                <span style="text-align: center;">
+                                  
+                                    <span class="h1">{{$eligibility->title}}</span><br>
+                                    
+                                </span>
+                            </h1>
+                            <hr>
+
+
+                            <div style="text-align: left;color: #252525!important;">
+                                <div class="col-md-12 mr-3">
+                                    <img src="{{$eligibility?$eligibility->image:'images/our-eligibility.jpeg'}}"
+                                        class="img-responsive img-rounded" alt="Image">
+                                    <br>
+                                    <p class="p">{!!html_entity_decode($eligibility->content)!!}</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                        <?php }else{ ?>
+
                 <div class="container" id="contact" style="background:black;">
                     <p style="color: black;">
                         <br><a href="/candidate-application">APPLY HERE</a><br>
@@ -61,6 +94,8 @@
                         The applicant should be single, unmarried  and no kid(s).
                     </p>
                 </div>
+
+                <?php }?>
             </div>
 
 

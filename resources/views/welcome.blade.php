@@ -59,32 +59,59 @@
                 </header>
             </aside>
 
+            <?php $scope=\App\Models\Content::where('published',1)->where('type','Scope')->first();
+                 $competition=\App\Models\Content::where('published',1)->where('type','Competition')->first();
+                 $job=\App\Models\Content::where('published',1)->where('type','Job')->first();
+                 $mission=\App\Models\Content::where('published',1)->where('type','Mission')->first();
+            ?>
+
 
             <div id="row mt-5" style="margin-top: 10px">
                 <div class="container">
 
-                    <div class="row m-5">
-                        <div class="col-12">
+                   
 
-                            <h1 class="text-center">
+                    <h1 class="text-center">
                                 <span style="text-align: center;">
-                                    <span class="ard-subtitle mb-2 h1"><b>Handing the keys of career,</b></span><br>
-                                    <span class="ard-subtitle mb-2 h1"> <b>Power and Future into the hands of a girl
-                                            ....</b></span>
+                                <?php if($scope){ ?>
+                                    <div class="row m-5">
+                                            <div class="col-12">
+
+                                            <div class="row">
+                                            <div class="col-sm-3"  style="background-image: url('{{$scope->image}}');
+                                                        background-repeat: no-repeat;width:100%;min-height:90px;
+                                                        background-size: cover; background-size: center center">
+
+                                            </div>
+                                            <div class="col-sm-9">
+                                                <h2 class="text-left">{{$scope->title}}  <br> 
+                                            </h2>
+                                            <a href="/scope" class="btn btn-info" style="height:5px;color:#ffff!important;padding:10px">
+                                                <span style="position:relative;bottom:10px"> read more...</span></a>
+                                            </div>
+                                        </div>
+                                <?php }else{?>
+                                    <span class="h1">Handing the keys of career,</span><br>
+                                    <span class="h1"> Power and Future into the hands of a girl...</span>
+
+                                    <div style="text-align: center;font-size: 10px">
+                                                <p class="p">
+                                                
+                                                It’s 21st Century and the light is illuminating in the corners of the
+                                                    Continent of Africa and Miss Career Africa wants to hold this flagship.
+                                                    The Miss Career Africa competition reflects a broad picture of how the keys of
+                                                    career, power and Future should be handed as well to the girls who are the next
+                                                    generation of mothers, teachers and professionals of all kinds.
+                                                    <a href="/scope">read more...</a>
+                                                </p>
+
+                                            </div>
+
+                                    <?php }?>
                                 </span>
                             </h1>
 
-                            <hr>
-                            <div style="text-align: center;font-size: 10px">
-                                <p class="p">It’s 21st Century and the light is illuminating in the corners of the
-                                    Continent of Africa and Miss Career Africa wants to hold this flagship.
-                                    The Miss Career Africa competition reflects a broad picture of how the keys of
-                                    career, power and Future should be handed as well to the girls who are the next
-                                    generation of mothers, teachers and professionals of all kinds.
-                                    <a href="/scope">read more...</a>
-                                </p>
-
-                            </div>
+                           
                         </div>
                     </div>
                 </div>
@@ -107,14 +134,15 @@
 
                 </div>
 
-
+                
+                
 
                 <div class="row mt-5"
                     style="position: relative; left: 2px; margin-top:10px; margin-bottom:35px; box-sizing: border-box;">
 
                     <div class="col-md-4" onclick="window.location.href='/competition'" style="cursor:pointer;background-repeat: no-repeat;
 			background-size: cover;
-			background-position: center center;background-image: url(images/final-sa.jpeg);height:380px">
+			background-position: center center;background-image: url({{$competition?$competition->image:'images/final-sa.jpeg'}});height:380px">
                         <a class="title_link" href="competition">
                             <h2 class="wpb_heading wpb_singleimage_heading text-center">The Competition</h2>
                         </a>
@@ -123,7 +151,7 @@
 
                     <div class="col-md-4" onclick="window.location.href='/competition'" style="cursor:pointer;background-repeat: no-repeat;
 			background-size: cover;
-			background-position: center center;background-image: url(images/our-job.jpeg);height:380px">
+			background-position: center center;background-image: url({{$job?$job->image:'images/our-job.jpeg'}});height:380px">
                         <a class="title_link" href="job">
                             <h2 class="wpb_heading wpb_singleimage_heading text-center">The Job</h2>
                         </a>
@@ -133,7 +161,7 @@
 
                     <div class="col-md-4" onclick="window.location.href='/competition'" style="cursor:pointer;background-repeat: no-repeat;
 			background-size: cover;
-			background-position: center center;background-image: url(images/our-mission.jpeg);height:380px">
+			background-position: center center;background-image: url({{$mission?$mission->image:'images/our-mission.jpeg'}});height:380px">
                         <a class="title_link" href="mission">
                             <h2 class="wpb_heading wpb_singleimage_heading text-center">Our Mission</h2>
                         </a>

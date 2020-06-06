@@ -37,3 +37,7 @@ Route::resource('gallaries', 'GallariesAPIController');
 Route::resource('donate_sessions', 'DonateSessionsAPIController');
 
 Route::resource('donation_applicants', 'DonationApplicantsAPIController');
+
+Route::resource('contents', 'ContentAPIController');
+
+Route::resource('statements', 'StatementAPIController');

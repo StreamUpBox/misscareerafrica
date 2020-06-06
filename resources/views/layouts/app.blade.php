@@ -29,6 +29,13 @@
 
     <link rel="shortcut icon" href="{{ asset('/images/logo.png') }}">
     
+    <script src="https://cdn.tiny.cloud/1/dc3qfuqt55rrl2yp1i22827v9l0hh91figeq4aiya3dnbr9c/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.4.0/min/dropzone.min.css">
+
+    <!-- <link rel="stylesheet" href="/css/gallery-grid.css"> -->
+
+  <script>tinymce.init({selector:'#textarea'}); tinymce.init({selector:'#textarea2'});</script>
+  
     @yield('css')
 </head>
 

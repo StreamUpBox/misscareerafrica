@@ -1,4 +1,6 @@
-@include('shared.styles',['title' => 'Our Scope :: Miss Career Africa','description'=>'Miss Career Africa',
+<?php $scope=\App\Models\Content::where('published',1)->where('type','Scope')->first();
+            ?>
+@include('shared.styles',['title' => $scope?$scope->title:'Our Scope :: Miss Career Africa','description'=>'Miss Career Africa',
 'activity'=>'Visit our scope page'])
 
 <body>
@@ -34,20 +36,34 @@
                 <div class="container" id="blog">
 
                     <div class="row m-0">
-                    <div class="col-md-12 m-4">
-                            <img src="images/our-scope.jpeg" class="img-responsive img-rounded" alt="Image">
-                        </div>
-                        <div class="mx-auto col-12">
+                   
+                        <div class="mx-auto col-10">
 
                             <h1 class="text-center">
                                 <span style="text-align: center;">
+                                <?php if($scope){ ?>
+                                    <span class="h1">{{$scope->title}}</span><br>
+                                <?php }else{?>
                                     <span class="h1">Handing the keys of career,</span><br>
                                     <span class="h1"> Power and Future into the hands of a girl...</span>
+
+                                    <?php }?>
                                 </span>
                             </h1>
                             <hr>
+                          
+                     
                             <div style="text-align: left;color: #252525!important;">
-                                <p class="p">The Miss Career Africa is the Africa’s radical girls’ education promotion
+                            <div class="col-md-12 mr-3">
+                            <img src="{{$scope?$scope->image:'images/our-scope.jpeg'}}" class="img-responsive img-rounded" alt="Image">
+                            <br>
+                        </div>
+
+
+                            <?php if($scope){ ?>
+                                <p class="p">{!!html_entity_decode($scope->content)!!}</p>
+                                <?php }else{?>
+                                    <p class="p">The Miss Career Africa is the Africa’s radical girls’ education promotion
                                     and emancipation based program that originated after two years successful career
                                     guidance for the Esther Girls Scholarship Program-Girls (An American project that
                                     offers scholarships and Character formation to the vulnerable girls of Rwanda). The
@@ -61,6 +77,9 @@
                                     established records of accomplishment in illuminating the hope of innovation and
                                     positive impact in their organizations, institutions, communities, and countries.
                                 </p>
+
+                                    <?php }?>
+                               
                             </div>
                         </div>
                     </div>

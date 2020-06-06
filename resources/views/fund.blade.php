@@ -1,4 +1,6 @@
-@include('shared.styles',['title' => 'Fund Form :: Miss Career','description'=>'Miss Career Africa',
+<?php $fund=\App\Models\Content::where('published',1)->where('type','MCA-Fund')->first();
+?>
+@include('shared.styles',['title' => $fund?$fund->title:'Fund Form :: Miss Career','description'=>'Miss Career Africa',
 'activity'=>'Visit Fund Form page'])
 
 <body>
@@ -33,6 +35,22 @@
             <div id="fh5co-blog-section">
                 <div class="container" id="contact">
                     <div class="row">
+                    <?php if($fund){?>
+                        <div class="col-md-6">
+                            <h1 class="h1">{{$fund->title}}</h1>
+
+                            <p style="color: #252525!important;">
+                            <img src="{{$fund?$fund->image:'images/our-mission.jpeg'}}"
+                                        class="img-responsive img-rounded" alt="Image">
+                                    <br>
+                                    <p class="p">{!!html_entity_decode($fund->content)!!}</p>
+                            </p>
+
+                          
+
+
+                        </div>
+                        <?php }else{ ?>
                         <div class="col-md-6">
                             <h1 class="h1 text-center">Welcome to the most exclusive africa's largest young women's fund
                                 community!</h1>
@@ -65,6 +83,7 @@
                             </p>
 
                         </div>
+                        <?php }?>
                         <div class="col-md-6">
                             <div class="col-md-12">
                                 @include('flash::message')

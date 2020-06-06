@@ -1,4 +1,6 @@
-@include('shared.styles',['title' => 'Become a volunteer :: Miss Career','description'=>'Miss Career Africa',
+<?php $volunteer=\App\Models\Content::where('published',1)->where('type','Become-volunteer')->first();
+?>
+@include('shared.styles',['title' => $volunteer?$volunteer->title:'Become a volunteer :: Miss Career','description'=>'Miss Career Africa',
 'activity'=>'Visit Become a volunteer page'])
 
 <body>
@@ -33,8 +35,25 @@
             <div id="fh5co-blog-section">
                 <div class="container" id="contact">
                     <div class="row">
+                    <?php if($volunteer){?>
                         <div class="col-md-6">
+                            <h1 class="h1">{{$volunteer->title}}</h1>
+
+                            <p style="color: #252525!important;">
+                            <img src="{{$volunteer?$volunteer->image:'images/our-mission.jpeg'}}"
+                                        class="img-responsive img-rounded" alt="Image">
+                                    <br>
+                                    <p class="p">{!!html_entity_decode($volunteer->content)!!}</p>
+                            </p>
+
+                          
+
+
+                        </div>
+                        <?php }else{ ?>
+                            <div class="col-md-6">
                             <h1 class="h1">HOW TO BECOME A VOLUNTEER</h1>
+
                             <p style="color: #252525!important;">
                                 Volunteering in the Miss Career Africa is an eye-Opener gateway and life changing
                                 experience for a brighter future and life of fulfillment. But more so, it is a gift of
@@ -77,6 +96,7 @@
 
 
                         </div>
+                            <?php }?>
                         <div class="col-md-6">
                             <div class="col-md-12">
                                 @include('flash::message')

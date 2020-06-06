@@ -41,29 +41,29 @@
     <div class="mr-5 ml-5">
         <div class="nav-header">
             <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
-            <span id="fh5co-logo"><a href="/"><img src="images/logo.png" class="img-rounded"
+            <span id="fh5co-logo"><a href="/"><img src="/images/logo.png" class="img-rounded"
                         style="width: 200px;height:80px;position: relative;bottom:25px"></a></span>
             <nav id="fh5co-menu-wrap" role="navigation">
                 <ul class="sf-menu" id="fh5co-primary-menu">
-                    <li><a href="/" style="color: #556cd6;;">HOME</a></li>
+                    <li><a href="/" style="color: #d4230b; font-weight:bold">HOME</a></li>
                     <?php $crowned=\App\Models\Crowned::where('published',1)->count(); 
                       $finalSelected =    \App\Models\Session::where('final_selected',1)->first();
                       $preSelected =    \App\Models\Session::where('is_voting_open',1)->first();
                                     if($crowned > 0){ ?>
-                    <li><a href="crowned" style="color: #556cd6;;">Crowned</a></li>
+                    <li><a href="crowned" style="color: #d4230b; font-weight:bold">Crowned</a></li>
                     <?php } ?>
 
                     <!-- SA Region-15 Preselected -->
-                    <li><a href="photos" style="color: #556cd6;;">Photos</a></li>
+                    <li><a href="photos" style="color: #d4230b; font-weight:bold">Photos</a></li>
 
-                    <li><a class="apply" style="color: #556cd6;;" href="candidate-application">APPLY</a></li>
+                    <li><a class="apply" style="color: #d4230b; font-weight:bold" href="candidate-application">APPLY</a></li>
                     <?php if($preSelected){ ?>
-                    <li><a class="can-voting" style="color: #556cd6;;" href="selected-candidates">
+                    <li><a class="can-voting" style="color: #d4230b; font-weight:bold" href="selected-candidates">
                     {{$preSelected->voting_candidate_title}}</a></li>
                     <?php } ?>
 
                  <?php if($finalSelected){ ?>
-                    <li><a class="" style="color: #556cd6;;" href="top-selected-candidates">{{$finalSelected->top_selected_title}}</a></li>
+                    <li><a class="" style="color: #d4230b; font-weight:bold" href="top-selected-candidates">{{$finalSelected->top_selected_title}}</a></li>
                     <?php } ?>
                     <?php 
                     $opnDonateSessions=\App\Models\DonateSessions::where('can_open_donation_system',1)->count(); 
@@ -71,7 +71,7 @@
                     $appyDonateSessions=\App\Models\DonateSessions::where('can_start_application_system',1)->count(); 
 
                      if($opnDonateSessions > 0 || $appyDonateSessions){ ?>
-                    <li><a style="color: #556cd6;;" href="#">DONATION</a>
+                    <li><a style="color: #d4230b; font-weight:bold" href="#">DONATION</a>
                         <ul class="fh5co-sub-menu">
                         <?php  if($appyDonateSessions > 0){ ?>
                             <li><a href="apply-donation">Apply For Donation</a></li>
@@ -84,26 +84,32 @@
                     <?php } ?>
 
 
-                    <li><a class="" style="color: #556cd6;;" href="past-candidates">PAST CANDIDATES</a></li>
+                    <li><a class="" style="color: #d4230b; font-weight:bold" href="past-candidates">PAST CANDIDATES</a></li>
 
-                    <li><a style="color: #556cd6;;" href="#">ORG</a>
+                    <li><a style="color: #d4230b; font-weight:bold" href="#">ORG</a>
                                 <ul class="fh5co-sub-menu">
-                                    <li><a href="blog">Our Blog</a></li>
+                                <?php $statement = \App\Models\Statement::where('allow_to_apply',1)->orderBy('numbering','ASC')->first();
+?>
+                                <?php if( $statement ){ ?>
+                                    <li><a href="/statement/{{$statement->id}}#{{$statement->id}}">Statements</a></li>
+                      
+                       <?php } ?>  
+                                  
                                     <li><a href="scope">Our scope</a></li>
                                     <li><a href="contact">Contact Us</a></li>
                                 </ul>
                              </li>
 
-                    <li><a style="color: #556cd6;;" href="#">SUPPORT</a>
+                    <li><a style="color: #d4230b; font-weight:bold" href="#">SUPPORT</a>
                         <ul class="fh5co-sub-menu">
                             <li><a href="volunteer">Become a volunteer</a></li>
                             <li><a href="sponsor">Become a sponsor</a></li>
                         </ul>
                     </li>
-                    <li><a style="color: #556cd6;;" href="#">MORE..</a>
+                    <li><a style="color: #d4230b; font-weight:bold" href="#">MORE..</a>
                         <ul class="fh5co-sub-menu" style="margin-left:-50px">
                        
-                            <li><a href="book-mca" style="color: #556cd6;;">BOOK HER</a></li>
+                            <li><a href="book-mca" style="color: #d4230b; font-weight:bold">BOOK HER</a></li>
 
                             <li><a href="videos">VIDEO AND LINKS</a></li>
                             <li><a href="scholarship">MCA SCHOLARSHIP</a></li>

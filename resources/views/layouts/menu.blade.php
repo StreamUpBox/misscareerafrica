@@ -4,6 +4,15 @@
 <li class="{{ Request::is('donateSessions*') ? 'active' : '' }}">
     <a href="{!! route('donateSessions.index') !!}"><i class="fa fa-edit"></i><span>Donate Sessions</span></a>
 </li>
+<li class="{{ Request::is('contents*') ? 'active' : '' }}">
+    <a href="{!! route('contents.index') !!}"><i class="fa fa-edit"></i><span>Contents</span></a>
+</li>
+
+<li class="{{ Request::is('statements*') ? 'active' : '' }}">
+    <a href="{!! route('statements.index') !!}"><i class="fa fa-edit"></i><span>Statements</span></a>
+</li>
+
+
 
 <li class="{{ Request::is('candidates*') ? 'active' : '' }}">
     <a href="{!! route('candidates.index') !!}"><i class="fa fa-edit"></i><span>Candidates</span></a>
