@@ -29,7 +29,7 @@ class StatementDataTable extends DataTable
      */
     public function query(Statement $model)
     {
-        return $model->newQuery();
+        return $model->newQuery()->orderBy('numbering','ASC')->first();
     }
 
     /**

@@ -40,7 +40,7 @@ Africa','description'=>'Miss Career Africa',
                                         <div class="col-sm-3">
                                             <ul class="list-group mt-3">
                                                 <li class="list-group-item active"
-                                                    style="border:#0f1630; !important;background:#0f1630;!important;color:#fff!important">
+                                                    style="border:#8d1212; !important;background:#8d1212;!important;color:#fff!important">
                                                     Statements</li>
 
                                                 @foreach($statements as $sts)
@@ -67,7 +67,7 @@ Africa','description'=>'Miss Career Africa',
                                                     {{ $statement->title }}</strong>
                                             </h2>
                                             <hr>
-                                            <p>
+                                            <p class="p">
                                                 <a name="#{{$sts->id}}"></a>
                                                 {!!html_entity_decode($statement->contents)!!}</p>
 
