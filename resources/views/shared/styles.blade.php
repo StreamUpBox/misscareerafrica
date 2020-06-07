@@ -87,8 +87,8 @@ Facebook: 		https://www.facebook.com/yegobox
 p,span{
     font-family: 'Comfortaa', display!important;;
     font-size: 28!important;;
-    font-weight: 400!important;;
-    color: #767676!important;
+    font-weight: 500!important;;
+    /* color: #767676!important; */
     transition: 0.5s!important;;
     -webkit-transition: 0.5s!important;;
     font-style: normal!important;;
