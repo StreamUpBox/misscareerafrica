@@ -80,12 +80,10 @@ Facebook: 		https://www.facebook.com/yegobox
 <script src="js/respond.min.js"></script>
 <![endif]-->
  <style>
- body{
-    font-family:  'Comfortaa', display!important;; 
- }
+
 
 .p.span{
-     font-family:  'Comfortaa', display!important;; 
+    font-family: 'Gilroy-ExtraBold'!important;;
 
    
 }
