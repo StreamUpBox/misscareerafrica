@@ -81,25 +81,13 @@ Facebook: 		https://www.facebook.com/yegobox
 <![endif]-->
  <style>
  body{
-    /* font-family: 'Gilroy-ExtraBold'!important;; */
+    font-family:  'Comfortaa', display!important;; 
  }
 
 .p.span{
-    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif!important;;
-    font-weight: 400!important;;
-    color: #252525!important; */
-    /* font-family: 'Gilroy-ExtraBold'!important;; */
+     font-family:  'Comfortaa', display!important;; 
+
    
-    /* font-weight: 500!important;; */
-    /* color: #767676!important; */
-    /* transition: 0.5s!important;;
-    -webkit-transition: 0.5s!important;;
-    font-style: normal!important;;
-    line-height: 1.6!important;;
-    letter-spacing: 1px!important;;
-    background-attachment: fixed;
-     */
-    
 }
 
  </style>
