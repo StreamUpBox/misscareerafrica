@@ -81,7 +81,15 @@ Facebook: 		https://www.facebook.com/yegobox
 <![endif]-->
  <style>
 
-
+p,span{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif!important;
+    font-weight: 400!important;;
+    /* color: #252525!important; */
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    line-height: 1.2;
+    
+}
 
  </style>
 </head>
