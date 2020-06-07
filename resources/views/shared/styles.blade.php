@@ -87,13 +87,13 @@ Facebook: 		https://www.facebook.com/yegobox
 p,span{
     font-family: 'Gilroy-ExtraBold'!important;;
     /* font-size: 26px!important; */
-    font-weight: 500!important;;
+    /* font-weight: 500!important;; */
     /* color: #767676!important; */
-    transition: 0.5s!important;;
+    /* transition: 0.5s!important;;
     -webkit-transition: 0.5s!important;;
     font-style: normal!important;;
     line-height: 1.6!important;;
-    letter-spacing: 1px!important;;
+    letter-spacing: 1px!important;; */
     /* -webkit-background-clip: text; */
     /* -webkit-text-fill-color: transparent; */
     background-attachment: fixed;
