@@ -84,11 +84,11 @@
 
                                             </div>
                                             <div class="col-sm-9">
-                                                <h2 class="text-left">{{$scope->title}}  <br> 
-                                            </h2>
-                                            <a href="/scope" class="btn btn-info" style="height:5px;color:#ffff!important;padding:10px">
-                                                <span style="position:relative;bottom:10px"> read more...</span></a>
-                                            </div>
+                                            <a href="/scope"> 
+                                                <h2 class="text-left"><span class="h1">{{$scope->title}}  </span> 
+                                                </h2>
+                                            </a>
+                                            
                                         </div>
                                 <?php }else{?>
                                     <span class="h1">Handing the keys of career,</span><br>
