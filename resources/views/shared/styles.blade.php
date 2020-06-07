@@ -86,7 +86,7 @@ Facebook: 		https://www.facebook.com/yegobox
 
 p,span{
     font-family: 'Gilroy-ExtraBold'!important;;
-    font-size: 26px!important;
+    /* font-size: 26px!important; */
     font-weight: 500!important;;
     /* color: #767676!important; */
     transition: 0.5s!important;;
