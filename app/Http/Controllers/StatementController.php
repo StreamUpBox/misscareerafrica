@@ -10,6 +10,7 @@ use App\Repositories\StatementRepository;
 use Flash;
 use App\Http\Controllers\AppBaseController;
 use Response;
+use App\Models\Statement;
 use Illuminate\Http\Request;
 
 class StatementController extends AppBaseController
@@ -30,7 +31,7 @@ class StatementController extends AppBaseController
      */
     public function index(Request $statementDataTable)
     {
-        $statements = $this->statementRepository->paginate(10);
+        $statements = Statement::where('id','!=',0)->orderBy('numbering','ASC')->paginate(10);
 
         return view('statements.index')
             ->with('statements', $statements);
