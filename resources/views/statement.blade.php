@@ -3,11 +3,9 @@
 
 @include('shared.styles',['title' => $statement?$statement->title:'Statements :: Miss Career
 Africa','description'=>'Miss Career Africa',
-'activity'=>'Visit eligibility page'])
+'activity'=>'Visit statement page'])
 
 
-@include('shared.styles',['title' => 'OUR BLOG','description'=>'Miss Career Africa',
-'activity'=>'Visit blog page'])
 
 <body>
     <div id="fh5co-wrapper">
@@ -16,7 +14,7 @@ Africa','description'=>'Miss Career Africa',
   color: #0f1630!important;
 } </style>
 
-            <div id="fh5co-header" style="margin-top:-22px;border-bottom:1px solid #d3682a;height:85px">
+            <div id="fh5co-header" style="margin-top:-6px;border-bottom:1px solid #d3682a;height:85px">
 
                 @include('shared.header')
 

@@ -66,3 +66,11 @@
     <a href="{!! route('donationApplicants.index') !!}"><i class="fa fa-edit"></i><span>Donation Applicants</span></a>
 </li>
 
+<li class="{{ Request::is('teamCategories*') ? 'active' : '' }}">
+    <a href="{!! route('teamCategories.index') !!}"><i class="fa fa-edit"></i><span>Team Categories</span></a>
+</li>
+
+<li class="{{ Request::is('teams*') ? 'active' : '' }}">
+    <a href="{!! route('teams.index') !!}"><i class="fa fa-edit"></i><span>Teams</span></a>
+</li>
+

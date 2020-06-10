@@ -56,7 +56,9 @@ Route::get('/blog', function () {
 Route::get('/statement/{id}', function ($id) {
     return view('statement')->with('id',$id);
 });
-
+Route::get('/teams/{id}', function ($id) {
+    return view('teams')->with('id',$id);
+});
 
 Route::get('/buy-ticket', function () {
     return view('buy-ticket');
@@ -184,3 +186,7 @@ Route::resource('donationApplicants', 'DonationApplicantsController');
 Route::resource('contents', 'ContentController');
 
 Route::resource('statements', 'StatementController');
+
+Route::resource('teamCategories', 'TeamCategoryController');
+
+Route::resource('teams', 'TeamController');

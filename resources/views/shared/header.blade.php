@@ -95,6 +95,14 @@
                       
                        <?php } ?>  
                                   
+                       <?php $team = \App\Models\TeamCategory::where('published',1)->orderBy('numbering','ASC')->first();
+?>
+                                <?php if( $team ){ ?>
+                                    <li><a href="/teams/{{$team->id}}#{{$team->id}}">Our Team</a></li>
+                      
+                       <?php } ?>  
+                                  
+
                                     <li><a href="scope">Our scope</a></li>
                                     <li><a href="contact">Contact Us</a></li>
                                 </ul>

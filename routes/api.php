@@ -41,3 +41,7 @@ Route::resource('donation_applicants', 'DonationApplicantsAPIController');
 Route::resource('contents', 'ContentAPIController');
 
 Route::resource('statements', 'StatementAPIController');
+
+Route::resource('team_categories', 'TeamCategoryAPIController');
+
+Route::resource('teams', 'TeamAPIController');
