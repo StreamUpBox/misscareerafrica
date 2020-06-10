@@ -56,7 +56,7 @@ Route::get('/blog', function () {
 Route::get('/statement/{id}', function ($id) {
     return view('statement')->with('id',$id);
 });
-Route::get('/teams/{id}', function ($id) {
+Route::get('/team-members/{id}', function ($id) {
     return view('teams')->with('id',$id);
 });
 

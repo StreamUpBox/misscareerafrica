@@ -98,7 +98,7 @@
                        <?php $team = \App\Models\TeamCategory::where('published',1)->orderBy('numbering','ASC')->first();
 ?>
                                 <?php if( $team ){ ?>
-                                    <li><a href="/teams/{{$team->id}}#{{$team->id}}">Our Team</a></li>
+                                    <li><a href="/team-members/{{$team->id}}#{{$team->id}}">Our Team Members</a></li>
                       
                        <?php } ?>  
                                   
