@@ -85,7 +85,12 @@
 
 
                     <li><a class="" style="color: #d4230b; font-weight:bold" href="past-candidates">PAST CANDIDATES</a></li>
-
+                    <?php $team = \App\Models\TeamCategory::where('published',1)->orderBy('numbering','ASC')->first();
+?>
+                                <?php if( $team ){ ?>
+                                    <li><a  class="" style="color: #d4230b; font-weight:bold" href="/team-members/{{$team->id}}#{{$team->id}}">Team</a></li>
+                      
+                       <?php } ?>  
                     <li><a style="color: #d4230b; font-weight:bold" href="#">ORG</a>
                                 <ul class="fh5co-sub-menu">
                                 <?php $statement = \App\Models\Statement::where('allow_to_apply',1)->orderBy('numbering','ASC')->first();
@@ -95,12 +100,7 @@
                       
                        <?php } ?>  
                                   
-                       <?php $team = \App\Models\TeamCategory::where('published',1)->orderBy('numbering','ASC')->first();
-?>
-                                <?php if( $team ){ ?>
-                                    <li><a href="/team-members/{{$team->id}}#{{$team->id}}">Our Team Members</a></li>
-                      
-                       <?php } ?>  
+
                                   
 
                                     <li><a href="scope">Our scope</a></li>

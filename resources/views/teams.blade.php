@@ -13,6 +13,32 @@ Africa','description'=>'Miss Career Africa',
                 .sf-menu a:hover {
                     color: #0f1630 !important;
                 }
+ .card-block {
+    -webkit-flex-grow: 0;
+    flex-grow: 0;
+    padding: 2.4rem 2.4rem 0 2.4rem;
+}
+.card-block .testimonial-photo {
+    display: inline-block;
+    width: 160px;
+    height: 160px;
+    margin-bottom: 1.6rem;
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+    left:0;
+}
+
+.card-block .testimonial-photo img {
+    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
 
             </style>
 
@@ -41,7 +67,7 @@ Africa','description'=>'Miss Career Africa',
                             <ul class="list-group mt-3">
                                 <li class="list-group-item active"
                                     style="border:#8d1212; !important;background:#8d1212;!important;color:#fff!important">
-                                    Our Team</li>
+                                 Team</li>
 
                                 @foreach($teams as $sts)
                                 <?php if($sts->id==$id){?>
@@ -78,28 +104,20 @@ Africa','description'=>'Miss Career Africa',
 
                                             <div class="col-md-4">
                                                 <div class="card border-success mb-3" style="max-width: 100%">
-                                                    <div class="card-header bg-transparent border-success">
-                                                        <b>{{$myTeam->name}}</b><br>
-
-                                                        {{$myTeam->title}}
-
-                                                    </div>
-                                                    <a href="#" data-toggle="modal"
-                                                        data-target="#exampleModalLong{{$myTeam->id}}">
-                                                        <div class="img-fluid" style=" background-image: url('{{$myTeam->image}}');
-                                    background-repeat: no-repeat;width:100%;min-height:300px;
-                                    background-size: cover; background-size: center center"></div>
-                                                        <div class="card-body text-success">
-                                                            <div class="row">
-                                                                <div class="col-sm-12">
-                                                                    <h5 class="card-title text-center">
-                                                                        {{$myTeam->country}}
-                                                                    </h5>
-
-                                                                </div>
+                                                <div class="card-header bg-transparent border-success"><b>
+                                                {{$myTeam->name}}</b><br>
+                                        {{$myTeam->title}}</div>
+                                                        <div class="card-block text-center">
+                                                            <div class="testimonial-photo text-center">
+                                                                <img src="{{$myTeam->image}}">
                                                             </div>
-                                                            <hr>
-
+                                                        
+                                                        </div>
+                                                        <div class="card-body text-success">
+                                                        <div class="row mb-5">
+                                                        <b class="card-text text-center mx-auto col-4"
+                                                         style="border-bottom:2px solid; text-align: center">{{$myTeam->country}}</b><br>
+                                                         </div>
                                                             <b class="card-text">
 
                                                                 <a href="#" data-toggle="modal"
@@ -128,7 +146,7 @@ Africa','description'=>'Miss Career Africa',
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                    </a>
+                                               
 
 
 
