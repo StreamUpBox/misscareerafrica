@@ -115,8 +115,12 @@ Route::get('/past-candidates', function () {
     return view('past-candidates');
 });
 
+
 Route::get('/donate', function () {
-     $vistor=new App\Models\Vistors; $vistor->saveVistor('Donate');
+
+     $vistor=new App\Models\Vistors;
+      $vistor->saveVistor('Donate');
+
     return redirect('https://donate.microlendaustralia.com.au/');
 });
 
@@ -137,7 +141,7 @@ Route::get('list_sessions', 'SessionController@listSessions');
 Route::get('list-selected-candidates', 'CandidateController@listSelectedCandidates');
 Route::get('list-top-selected-candidates', 'CandidateController@listFinalSelectedCandidates');
 
-Route::resource('sessions', 'SessionController');
+Route::get('session/{session_id}/applicants', 'CandidateController@sessionCandidates');
 
 Route::resource('candidates', 'CandidateController');
 //

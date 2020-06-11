@@ -75,6 +75,15 @@ class CandidateController extends AppBaseController
             ->with('candidates', $candidates);
     }
 
+    public function sessionCandidates($session_id)
+    {
+        $candidates = Candidate::where('session_id',$session_id)->paginate(10);
+        
+
+        return view('sessions.applicants')
+            ->with('candidates', $candidates);
+    }
+
     /**
      * Show the form for creating a new Candidate.
      *
