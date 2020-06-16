@@ -194,3 +194,5 @@ Route::resource('statements', 'StatementController');
 Route::resource('teamCategories', 'TeamCategoryController');
 
 Route::resource('teams', 'TeamController');
+Route::get('search', 'TeamController@search');
+//search

@@ -7,6 +7,7 @@ use App\Http\Requests\UpdateTeamRequest;
 use App\Repositories\TeamRepository;
 use App\Http\Controllers\AppBaseController;
 use Illuminate\Http\Request;
+use App\Models\Team;
 use Flash;
 use Response;
 use Illuminate\Support\Facades\Storage;
@@ -32,6 +33,18 @@ class TeamController extends AppBaseController
     public function index(Request $request)
     {
         $teams = $this->teamRepository->paginate(10);
+
+        return view('teams.index')
+            ->with('teams', $teams);
+    }
+
+    public function search(Request $request)
+    {
+        $teams=Team::where('country',$request->input('country'))
+        ->orwhere('team_category_id',$request->input('team_category_id'))
+        ->orwhere('name', 'like', '%' . $request->input('search') . '%')
+        ->orwhere('title', 'like', '%' . $request->input('search'). '%')
+        ->orderBy('id','DESC')->paginate(100);
 
         return view('teams.index')
             ->with('teams', $teams);

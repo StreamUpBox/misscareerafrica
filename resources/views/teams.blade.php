@@ -86,9 +86,9 @@ img {
                         </div>
 
                         <div class="col-sm-9">
-                            <h2 class="text-left ml-5">
-                                <strong style="color:#0f1630;!important;"> {{ $team->name }}</strong>
-                            </h2>
+                            <h1 class="text-left ml-5 text-success">
+                                <strong class="text-success" style="color: #28a745!important;"> {{ $team->name }}</strong>
+                            </h1>
                             <hr>
                             <p class="p">
                                 <a name="#{{$sts->id}}"></a>
@@ -98,8 +98,8 @@ img {
 
                                         <div class="row">
                                             <?php
-                    $myTeams = \App\Models\Team::where('published',1)->where('team_category_id',$id)->orderBy('numbering','ASC')->get();
-                    ?>
+                                         $myTeams = \App\Models\Team::where('published',1)->where('team_category_id',$id)->orderBy('numbering','ASC')->get();
+                                            ?>
                                             @foreach($myTeams as $myTeam)
 
                                             <div class="col-md-4">
