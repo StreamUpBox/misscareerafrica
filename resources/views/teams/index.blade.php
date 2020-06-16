@@ -37,9 +37,9 @@
                 </div>
 
                 <div class="form-group col-sm-3">
-                    {!! Form::label('country', 'Filter By Category') !!}
+                    {!! Form::label('country', 'Filter By Country') !!}
                     <select name="country" id="country" value="old('country')" class="form-control">
-                        <option value="">Filter By Category</option>
+                        <option value="">Filter By Country</option>
                         @foreach($countries as $country)
                         <option value="{{$country}}">{{$country}}</option>
                         @endforeach
