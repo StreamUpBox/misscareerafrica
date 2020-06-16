@@ -19,7 +19,7 @@
             <td>{!! $team->title !!}</td>
             <td>{!! $team->country !!}</td>
             <!-- <td>{!! $team->bio !!}</td> -->
-            <td>{!! $team->category->name !!}</td>
+            <td>{!! $team->category?$team->category->name:'' !!}</td>
             <td>{!! $team->published?'Yes':'No' !!}</td>
             <td>{!! $team->numbering !!}</td>
                 <td>
