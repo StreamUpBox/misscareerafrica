@@ -40,7 +40,7 @@ class TeamController extends AppBaseController
 
     public function search(Request $request)
     {
-        $teams=Team::where('country',$request->input('country'))
+        $teams=Team::where('country', 'like', '%' .$request->input('country'). '%')
         ->orwhere('team_category_id',$request->input('team_category_id'))
         ->orwhere('name', 'like', '%' . $request->input('search') . '%')
         ->orwhere('title', 'like', '%' . $request->input('search'). '%')
