@@ -40,11 +40,25 @@ class TeamController extends AppBaseController
 
     public function search(Request $request)
     {
-        $teams=Team::where('country', 'like', '%' .$request->input('country'). '%')
-        ->orwhere('team_category_id',$request->input('team_category_id'))
-        ->orwhere('name', 'like', '%' . $request->input('search') . '%')
-        ->orwhere('title', 'like', '%' . $request->input('search'). '%')
-        ->orderBy('id','DESC')->paginate(100);
+       
+        $result = Team::query();
+
+        if (!empty($request->input('country'))) {
+            $result = $result->where('country', 'like', '%'.$request->input('country').'%');
+        }
+
+        if (!empty($request->input('team_category_id'))) {
+            $result = $result->where('team_category_id', $request->input('team_category_id'));
+        }
+
+        if (!empty($request->input('search'))) {
+            $result = $result->where('name', 'like', '%'.$request->input('search').'%')
+            ->orwhere('title', 'like', '%' . $request->input('search'). '%');
+        }
+
+
+
+        $teams = $result->orderBy('id','DESC')->paginate(100);
 
         return view('teams.index')
             ->with('teams', $teams);

@@ -73,6 +73,7 @@
                     <br>
                     <hr>
                     <br>
+                   
 
                     <div class="row can-voting" id="selected_candidates">
 

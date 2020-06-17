@@ -73,6 +73,9 @@
                     <br>
                     <hr>
                     <br>
+                    <!-- <payment-sdk showbutton='true' 
+  amount='400' 
+  displayText='Pay Now'></payment-sdk> -->
 
                     <div class="row" id="top-selected_candidates">
 

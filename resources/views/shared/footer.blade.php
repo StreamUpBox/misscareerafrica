@@ -118,6 +118,7 @@
 
             <script src="{{ asset('js/custom.js') }}"></script>
             <script src="{{ asset('js/mca.js') }}"></script>
+            <script src="{{ asset('js/payment-sdk.js') }}"></script>
 
             <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
         <script>
