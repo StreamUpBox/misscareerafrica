@@ -99,13 +99,13 @@ img {
                                             ->where('teams.published', '=',1)
                                             ->orderBy('team_categories.numbering', 'ASC')
                                             ->groupBy(['teams.id'])
-                                            ->paginate(8);
+                                            ->select(['team_categories.*','teams.*','team_categories.name as category_name'])->paginate(8);
                                             ?>
                                             @foreach($myTeams as $myTeam)
 
                                             <div class="col-md-4">
                                                 <div class="card border-success mb-3" style="max-width: 100%">
-                                                <div class="card-header bg-transparent border-success"><b>
+                                                <div class="card-header bg-transparent border-success"><b style="color: #8d1212!important;">
                                                 {{$myTeam->name}}</b><br> <strong  style=" color: #28a745!important;">{{$myTeam->title}}</strong></div>
                                                         <div class="card-block text-center">
                                                             <div class="testimonial-photo text-center">

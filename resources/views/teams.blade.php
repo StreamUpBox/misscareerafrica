@@ -109,7 +109,7 @@ img {
 
                                             <div class="col-md-4">
                                                 <div class="card border-success mb-3" style="max-width: 100%">
-                                                <div class="card-header bg-transparent border-success"><b>
+                                                <div class="card-header bg-transparent border-success"><b style="color: #8d1212!important;">
                                                 {{$myTeam->name}}</b><br>
                                                 <strong  style=" color: #28a745!important;">{{$myTeam->title}}</strong></div>
                                                         <div class="card-block text-center">
