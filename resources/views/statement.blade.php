@@ -45,12 +45,12 @@ Africa','description'=>'Miss Career Africa',
                                                 <?php if($sts->id==$id){?>
                                                 <li class="list-group-item">
                                                     <a href="/statement/{{$sts->id}}#{{$sts->id}}" class="mbr-bold"
-                                                        style="color:#d4230b!important;font-size:12px!important;">{{$sts->numbering}} .
+                                                        style="color:#d4230b!important;font-size:14px!important;">{{$sts->numbering}} .
                                                         {{$sts->title}}</a>
                                                     <?php }else{ ?>
                                                 <li class="list-group-item "><a
                                                         href="/statement/{{$sts->id}}#{{$sts->id}}" class="mbr-bold"
-                                                        style="color:#0f1630!important;font-size:12px!important;">{{$sts->numbering}} .
+                                                        style="color:#0f1630!important;font-size:14px!important;">{{$sts->numbering}} .
                                                         {{$sts->title}}</a>
                                                     <?php } ?>
                                                 </li>

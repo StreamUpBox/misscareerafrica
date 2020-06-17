@@ -117,7 +117,7 @@ Facebook: 		https://www.facebook.com/yegobox
                                     <h5 class="card-title"><b>Award: {{$crowned->award}}</b></h5>
                                     <b class="card-text">
                                         <hr />
-                                        {{$crowned->bio}}
+                                        {!! html_entity_decode(str_replace('.', '<br /> <br />', $crowned->bio)) !!}
                                     </b>
                                 </div>
 

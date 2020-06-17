@@ -1,8 +1,4 @@
-<?php $team = \App\Models\TeamCategory::where('published',1)->where('id',$id)->orderBy('numbering','ASC')->first();
-?>
-
-@include('shared.styles',['title' => $team?$team->name:'Team :: Miss Career
-Africa','description'=>'Miss Career Africa',
+@include('shared.styles',['title' =>'Teams :: Miss Career Africa','description'=>'Miss Career Africa',
 'activity'=>'Team'])
 
 
@@ -54,12 +50,12 @@ img {
                 <div class="m-5" id="blog">
 
                     <?php        
-
-                            if($team){
                                         $teams = \App\Models\TeamCategory::where('published',1)->orderBy('numbering','ASC')->get();
-                                        $previous = \App\Models\TeamCategory::where('published',1)->where('id', '<', $id)->orderBy('numbering','ASC')->first();
-                                        $next = \App\Models\TeamCategory::where('published',1)->where('id', '>', $id)->orderBy('numbering','ASC')->first();
-                                    ?>
+                                       
+                                   
+                                   
+                            if(count($teams) > 0){
+                                   ?>
 
                     <div class="row">
 
@@ -70,15 +66,11 @@ img {
                                  Team</li>
 
                                 @foreach($teams as $sts)
-                                <?php if($sts->id==$id){?>
-                                <li class="list-group-item">
-                                    <a href="/team-members/{{$sts->id}}#{{$sts->id}}" class="mbr-bold"
-                                        style="color:#d4230b!important;font-size:15px!important;">{{$sts->name}}</a>
-                                    <?php }else{ ?>
+                          
                                 <li class="list-group-item "><a href="/team-members/{{$sts->id}}#{{$sts->id}}"
                                         class="mbr-bold"
                                         style="color:#0f1630!important;font-size:14px!important;">{{$sts->name}}</a>
-                                    <?php } ?>
+                                  
                                 </li>
                                 @endforeach
                                 <li class="list-group-item text-center"><a href="/all-teams"
@@ -91,27 +83,26 @@ img {
                         </div>
 
                         <div class="col-sm-9">
-                            <span class="text-left ml-5 text-success">
-                                <strong class="text-success" style="font-size:28px; color: #28a745!important;"> {{ $team->name }}</strong>
+                        <!-- <span class="text-left ml-5 text-success">
+                                <strong class="text-success" style="font-size:28px; color: #28a745!important;"> Team</strong>
                             </span>
-                            <hr>
+                            <hr> -->
                             <p class="p">
                                 <a name="#{{$sts->id}}"></a>
 
                                 <div id="">
                                     <div class="container" id="contact">
 
-                                        <div class="row">
+                                        <div class="row" style="margin-top:-20px">
                                             <?php
-                                         $myTeams = \App\Models\Team::where('published',1)->where('team_category_id',$id)->orderBy('numbering','ASC')->get();
+                                            $myTeams = \App\Models\Team::where('published',1)->orderBy('numbering','ASC')->paginate(8);
                                             ?>
                                             @foreach($myTeams as $myTeam)
 
                                             <div class="col-md-4">
                                                 <div class="card border-success mb-3" style="max-width: 100%">
                                                 <div class="card-header bg-transparent border-success"><b>
-                                                {{$myTeam->name}}</b><br>
-                                        {{$myTeam->title}}</div>
+                                                {{$myTeam->name}}</b><br> {{$myTeam->title}}</div>
                                                         <div class="card-block text-center">
                                                             <div class="testimonial-photo text-center">
                                                                 <img src="{{$myTeam->image}}">
@@ -160,7 +151,7 @@ img {
                                                 </div>
                                             </div>
                                             @endforeach
-
+                                            <span class="align-center"> {!! $myTeams->links() !!}</span>
                                             <?php if(count($myTeams) == 0){?>
                                             <div class="media-container-column mx-auto col-lg-8">
 
@@ -178,34 +169,6 @@ img {
 
                             </p>
 
-                            <?php if($previous && $next) { ?>
-                            <div class="row">
-                                <div class="col-6">
-                                    <a class="btn btn-sm btn-primary btn-block display-3"
-                                        href="/team-members/{{$previous->id}}#{{$previous->id}}"
-                                        style="background: #8d1212;color: #fff;border: 2px solid #8d1212;">Previous
-                                    </a>
-                                </div>
-
-                                <div class="col-6">
-                                    <a class="btn btn-sm btn-primary btn-block display-3"
-                                        href="/team-members/{{$next->id}}#{{$next->id}}"
-                                        style="background: #8d1212;color: #fff;border: 2px solid #8d1212;">Next
-                                    </a>
-                                </div>
-                            </div>
-                            <?php }else if(!$previous && $next) { ?>
-                            <a class="btn btn-sm btn-primary btn-block display-3"
-                                href="/team-members/{{$next->id}}#{{$next->id}}"
-                                style="background: #8d1212;color: #fff;border: 2px solid #8d1212;">Next
-                            </a>
-                            <?php  }else if($previous && !$next) { ?>
-                            <a class="btn btn-sm btn-primary btn-block display-3"
-                                href="/team-members/{{$previous->id}}#{{$previous->id}}"
-                                style="background: #8d1212;color: #fff;border: 2px solid #8d1212;">
-                                Previous
-                            </a>
-                            <?php }?>
                         </div>
 
 

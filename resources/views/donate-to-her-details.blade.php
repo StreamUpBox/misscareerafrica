@@ -110,7 +110,7 @@ Facebook: 		https://www.facebook.com/yegobox
 
 
                     </div> -->
-                    <div class="row can-voting">
+                    <div class="row">
                         <div class="col-md-12">
                             <div class="card border-success mb-3" style="max-width: 100%">
                                 <div class="card-header bg-transparent border-success"><b>{{$candidates->full_name}}
@@ -120,7 +120,7 @@ Facebook: 		https://www.facebook.com/yegobox
                                 
                                     <b class="card-text">
                                         <hr />
-                                        {{$candidates->bio}}
+                                        {!! html_entity_decode(str_replace('.', '<br /> <br />', $candidates->bio)) !!}
                                     </b>
                                 </div>
 

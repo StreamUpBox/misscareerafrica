@@ -44,7 +44,8 @@
                         </div>
                         <div class="col-sm-9">
                             <h2 class="text-center">{{$session->title}}</h2>
-                            <h4 class="text-center">{{$session->description}} </h4>
+                            <h4 class="text-center">
+                            {!! html_entity_decode(str_replace('.', '<br /> <br />', $session->description)) !!} </h4>
                         </div>
                     </div>
                     <hr>

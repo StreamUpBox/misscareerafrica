@@ -88,7 +88,7 @@
                     <?php $team = \App\Models\TeamCategory::where('published',1)->orderBy('numbering','ASC')->first();
 ?>
                                 <?php if( $team ){ ?>
-                                    <li><a  class="" style="color: #d4230b; font-weight:bold" href="/team-members/{{$team->id}}#{{$team->id}}">Team</a></li>
+                                    <li><a  class="" style="color: #d4230b; font-weight:bold" href="/all-teams">Team</a></li>
                       
                        <?php } ?>  
                     <li><a style="color: #d4230b; font-weight:bold" href="#">ORG</a>

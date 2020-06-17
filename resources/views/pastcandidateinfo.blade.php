@@ -96,7 +96,7 @@ Facebook: 		https://www.facebook.com/yegobox
                                     <h5 class="card-title"><b>{{$candidate->city}} - {{$candidate->country}}</b></h5>
                                     <b class="card-text">
                                         <hr />
-                                        {{$candidate->bio}}
+                                        {!! html_entity_decode(str_replace('.', '<br /> <br />', $candidate->bio)) !!}
                                     </b>
                                 </div>
                         <div class="card-footer bg-transparent border-success">

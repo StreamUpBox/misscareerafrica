@@ -60,6 +60,11 @@ Route::get('/team-members/{id}', function ($id) {
     return view('teams')->with('id',$id);
 });
 
+//teams
+Route::get('/all-teams', function () {
+    return view('all-teams');
+});
+
 Route::get('/buy-ticket', function () {
     return view('buy-ticket');
 });
