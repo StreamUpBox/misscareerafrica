@@ -152,7 +152,9 @@ img {
                                             </div>
                                             @endforeach
                                             <br><br>
+                                            <div class="media-container-column mx-auto col-lg-8">
                                             <span class="align-center"> {!! $myTeams->links() !!}</span>
+                                            </div>
                                             <?php if(count($myTeams) == 0){?>
                                             <div class="media-container-column mx-auto col-lg-8">
 
