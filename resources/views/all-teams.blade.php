@@ -94,7 +94,6 @@ img {
 
                                         <div class="row" style="margin-top:-20px">
                                             <?php
-                                            $myTeams = \App\Models\Team::where('published',1)->orderBy('numbering','ASC')->paginate(8);
                                             $myTeams = \DB::table('teams')
                                             ->join('team_categories', 'teams.team_category_id', '=', 'team_categories.id')
                                             ->where('teams.published', '=',1)
