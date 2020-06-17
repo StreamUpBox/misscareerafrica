@@ -88,7 +88,6 @@ img {
                             </span>
                             <hr> -->
                             <p class="p">
-                                <a name="#{{$sts->id}}"></a>
 
                                 <div id="">
                                     <div class="container" id="contact">
@@ -96,13 +95,19 @@ img {
                                         <div class="row" style="margin-top:-20px">
                                             <?php
                                             $myTeams = \App\Models\Team::where('published',1)->orderBy('numbering','ASC')->paginate(8);
+                                            $myTeams = \DB::table('teams')
+                                            ->join('team_categories', 'teams.team_category_id', '=', 'team_categories.id')
+                                            ->where('teams.published', '=',1)
+                                            ->orderBy('team_categories.numbering', 'ASC')
+                                            ->groupBy(['teams.id'])
+                                            ->paginate(8);
                                             ?>
                                             @foreach($myTeams as $myTeam)
 
                                             <div class="col-md-4">
                                                 <div class="card border-success mb-3" style="max-width: 100%">
                                                 <div class="card-header bg-transparent border-success"><b>
-                                                {{$myTeam->name}}</b><br> {{$myTeam->title}}</div>
+                                                {{$myTeam->name}}</b><br> <strong  style=" color: #28a745!important;">{{$myTeam->title}}</strong></div>
                                                         <div class="card-block text-center">
                                                             <div class="testimonial-photo text-center">
                                                                 <img src="{{$myTeam->image}}">

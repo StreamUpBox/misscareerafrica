@@ -111,7 +111,7 @@ img {
                                                 <div class="card border-success mb-3" style="max-width: 100%">
                                                 <div class="card-header bg-transparent border-success"><b>
                                                 {{$myTeam->name}}</b><br>
-                                        {{$myTeam->title}}</div>
+                                                <strong  style=" color: #28a745!important;">{{$myTeam->title}}</strong></div>
                                                         <div class="card-block text-center">
                                                             <div class="testimonial-photo text-center">
                                                                 <img src="{{$myTeam->image}}">
