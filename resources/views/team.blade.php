@@ -11,9 +11,13 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title> {{$team->name}} {{$team->title}}</title>
-    <link rel="shortcut icon" href="{{$team->image}}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> {{$team->name}} - {{$team->title}}</title>
+    <link rel="shortcut icon" href="{{$team->image}}" type="image/x-icon">
+    <meta property="og:image" content="{{$team->image}}">
+    <meta name="twitter:image" content="{{$team->image}}">
+    <meta property="og:image:width" content="1365">
+    <meta property="og:image:height" content="406">
     <meta name="description" content="{{$team->bio}}" />
     <meta name="keywords" content="Miss Career, yegobox, flipper" />
     <meta name="author" content="Yegobox Team" />
