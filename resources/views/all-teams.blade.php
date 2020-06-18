@@ -102,16 +102,17 @@ img {
                                             ->select(['team_categories.*','teams.*','team_categories.name as category_name'])->paginate(8);
                                             ?>
                                             @foreach($myTeams as $myTeam)
-
+                                          
                                             <div class="col-md-4">
                                                 <div class="card border-success mb-3" style="max-width: 100%">
                                                 <div class="card-header bg-transparent border-success"><b style="color: #8d1212!important;">
                                                 {{$myTeam->name}}</b><br> <strong  style=" color: #28a745!important;">{{$myTeam->title}}</strong></div>
                                                         <div class="card-block text-center">
+                                                        <a href="/team/{{$myTeam->id}}">
                                                             <div class="testimonial-photo text-center">
                                                                 <img src="{{$myTeam->image}}">
                                                             </div>
-                                                        
+                                                            </a>
                                                         </div>
                                                         <div class="card-body text-success">
                                                         <div class="row mb-5">
@@ -120,32 +121,11 @@ img {
                                                          </div>
                                                             <b class="card-text">
 
-                                                                <a href="#" data-toggle="modal"
-                                                                    data-target="#exampleModalLong{{$myTeam->id}}">{{str_limit($myTeam->bio, $limit = 100, $end = 'read more ....')}}</a>
+                                                                <a href="/team/{{$myTeam->id}}">{{str_limit($myTeam->bio, $limit = 100, $end = 'read more ....')}}</a>
 
                                                             </b>
 
-                                                            <div class="modal fade" id="exampleModalLong{{$myTeam->id}}"
-                                                                tabindex="-1" role="dialog"
-                                                                aria-labelledby="exampleModalLongTitle"
-                                                                aria-hidden="true">
-                                                                <div class="modal-dialog" role="document">
-                                                                    <div class="modal-content">
-                                                                        <div class="modal-header">
-
-                                                                            <button type="button" class="close"
-                                                                                data-dismiss="modal" aria-label="Close">
-                                                                                <span aria-hidden="true">&times;</span>
-                                                                            </button>
-                                                                        </div>
-                                                                        <div class="modal-body">
-                                                                       {!! html_entity_decode(str_replace('.', '<br /> <br />', $myTeam->bio)) !!}
-                                                                           
-                                                                        </div>
-
-                                                                    </div>
-                                                                </div>
-                                                            </div>
+                                                           
                                                         </div>
                                                
 
@@ -154,6 +134,7 @@ img {
 
                                                 </div>
                                             </div>
+                                           
                                             @endforeach
                                             <br><br>
                                             <div class="media-container-column mx-auto col-lg-8">

@@ -13,32 +13,34 @@ Africa','description'=>'Miss Career Africa',
                 .sf-menu a:hover {
                     color: #0f1630 !important;
                 }
- .card-block {
-    -webkit-flex-grow: 0;
-    flex-grow: 0;
-    padding: 2.4rem 2.4rem 0 2.4rem;
-}
-.card-block .testimonial-photo {
-    display: inline-block;
-    width: 160px;
-    height: 160px;
-    margin-bottom: 1.6rem;
-    overflow: hidden;
-    border-radius: 50%;
-    position: relative;
-    left:0;
-}
 
-.card-block .testimonial-photo img {
-    width: 100%;
-    min-width: 100%;
-    min-height: 100%;
-}
+                .card-block {
+                    -webkit-flex-grow: 0;
+                    flex-grow: 0;
+                    padding: 2.4rem 2.4rem 0 2.4rem;
+                }
 
-img {
-    vertical-align: middle;
-    border-style: none;
-}
+                .card-block .testimonial-photo {
+                    display: inline-block;
+                    width: 160px;
+                    height: 160px;
+                    margin-bottom: 1.6rem;
+                    overflow: hidden;
+                    border-radius: 50%;
+                    position: relative;
+                    left: 0;
+                }
+
+                .card-block .testimonial-photo img {
+                    width: 100%;
+                    min-width: 100%;
+                    min-height: 100%;
+                }
+
+                img {
+                    vertical-align: middle;
+                    border-style: none;
+                }
 
             </style>
 
@@ -67,7 +69,7 @@ img {
                             <ul class="list-group mt-3">
                                 <li class="list-group-item active"
                                     style="border:#8d1212; !important;background:#8d1212;!important;color:#fff!important">
-                                 Team</li>
+                                    Team</li>
 
                                 @foreach($teams as $sts)
                                 <?php if($sts->id==$id){?>
@@ -81,10 +83,9 @@ img {
                                     <?php } ?>
                                 </li>
                                 @endforeach
-                                <li class="list-group-item text-center"><a href="/all-teams"
-                                        class="mbr-bold"
+                                <li class="list-group-item text-center"><a href="/all-teams" class="mbr-bold"
                                         style="color:#0f1630!important;font-size:14px!important;">View All</a>
-                                  
+
                                 </li>
                             </ul>
 
@@ -92,7 +93,8 @@ img {
 
                         <div class="col-sm-9">
                             <span class="text-left ml-5 text-success">
-                                <strong class="text-success" style="font-size:28px; color: #28a745!important;"> {{ $team->name }}</strong>
+                                <strong class="text-success" style="font-size:28px; color: #28a745!important;">
+                                    {{ $team->name }}</strong>
                             </span>
                             <hr>
                             <p class="p">
@@ -106,59 +108,45 @@ img {
                                          $myTeams = \App\Models\Team::where('published',1)->where('team_category_id',$id)->orderBy('numbering','ASC')->get();
                                             ?>
                                             @foreach($myTeams as $myTeam)
-
+                                       
                                             <div class="col-md-4">
                                                 <div class="card border-success mb-3" style="max-width: 100%">
-                                                <div class="card-header bg-transparent border-success"><b style="color: #8d1212!important;">
-                                                {{$myTeam->name}}</b><br>
-                                                <strong  style=" color: #28a745!important;">{{$myTeam->title}}</strong></div>
-                                                        <div class="card-block text-center">
-                                                            <div class="testimonial-photo text-center">
-                                                                <img src="{{$myTeam->image}}">
-                                                            </div>
-                                                        
+                                                    <div class="card-header bg-transparent border-success"><b
+                                                            style="color: #8d1212!important;">
+                                                            {{$myTeam->name}}</b><br>
+                                                        <strong
+                                                            style=" color: #28a745!important;">{{$myTeam->title}}</strong>
+                                                    </div>
+                                                    <div class="card-block text-center">
+                                                    <a href="/team/{{$myTeam->id}}">
+                                                        <div class="testimonial-photo text-center">
+                                                            <img src="{{$myTeam->image}}">
                                                         </div>
-                                                        <div class="card-body text-success">
+                                                        </a>
+
+                                                    </div>
+                                                    <div class="card-body text-success">
                                                         <div class="row mb-5">
-                                                        <b class="card-text text-center mx-auto col-8"
-                                                         style="border-bottom:2px solid; text-align: center">{{$myTeam->country}}</b><br>
-                                                         </div>
-                                                            <b class="card-text">
-
-                                                                <a href="#" data-toggle="modal"
-                                                                    data-target="#exampleModalLong{{$myTeam->id}}">{{str_limit($myTeam->bio, $limit = 100, $end = 'read more ....')}}</a>
-
-                                                            </b>
-
-                                                            <div class="modal fade" id="exampleModalLong{{$myTeam->id}}"
-                                                                tabindex="-1" role="dialog"
-                                                                aria-labelledby="exampleModalLongTitle"
-                                                                aria-hidden="true">
-                                                                <div class="modal-dialog" role="document">
-                                                                    <div class="modal-content">
-                                                                        <div class="modal-header">
-
-                                                                            <button type="button" class="close"
-                                                                                data-dismiss="modal" aria-label="Close">
-                                                                                <span aria-hidden="true">&times;</span>
-                                                                            </button>
-                                                                        </div>
-                                                                        <div class="modal-body">
-                                                                       {!! html_entity_decode(str_replace('.', '<br /> <br />', $myTeam->bio)) !!}
-                                                                           
-                                                                        </div>
-
-                                                                    </div>
-                                                                </div>
-                                                            </div>
+                                                            <b class="card-text text-center mx-auto col-8"
+                                                                style="border-bottom:2px solid; text-align: center">{{$myTeam->country}}</b><br>
                                                         </div>
-                                               
+                                                        <b class="card-text">
+
+                                                            <a
+                                                                href="/team/{{$myTeam->id}}">{{str_limit($myTeam->bio, $limit = 100, $end = 'read more ....')}}</a>
+
+                                                        </b>
+
+
+                                                    </div>
+
 
 
 
 
                                                 </div>
                                             </div>
+                                            
                                             @endforeach
 
                                             <?php if(count($myTeams) == 0){?>
