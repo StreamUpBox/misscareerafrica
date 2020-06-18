@@ -101,7 +101,7 @@ Facebook: 		https://www.facebook.com/yegobox
                                         style="border-bottom:2px solid; text-align: center">{{$team->country}}</b><br>
                                     <b class="card-text">
                                         <hr />
-                                        {!! html_entity_decode(str_replace('.', '<br /> <br />', $team->bio)) !!}
+                                        {!! html_entity_decode(str_replace('.', '<br />', $team->bio)) !!}
                                     </b>
                                 </div>
                                 <!-- <div class="card-footer bg-transparent border-success">
