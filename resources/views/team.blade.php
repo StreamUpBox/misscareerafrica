@@ -12,6 +12,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title> {{$team->name}} {{$team->title}}</title>
+    <link rel="shortcut icon" href="{{$team->image}}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="{{$team->bio}}" />
     <meta name="keywords" content="Miss Career, yegobox, flipper" />
