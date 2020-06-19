@@ -116,6 +116,11 @@
                     </div>
                 </div>
 
+                 <payment-sdk showbutton='true' 
+  amount='400' 
+  action='Donate Now'
+  ></payment-sdk>
+
                 <div class="row mt-5 mb-5" style="background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center center;background-image: url(images/arrow_down_input.png);
