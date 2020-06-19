@@ -106,6 +106,10 @@ Route::get('/apply-donation', function () {
 Route::get('/donate-to-her', function () {
     return view('donate-to-her');
 });
+
+Route::get('/payment-testing', function () {
+    return view('donate');
+});
 Route::get('/donate-to-her-details/{id}', function ($id) {
     return view('donate-to-her-details')->with('id',$id);
 });
